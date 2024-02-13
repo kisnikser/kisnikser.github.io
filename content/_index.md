@@ -21,53 +21,27 @@ sections:
   #    columns: '1'
   - block: experience
     content:
-      # The user's folder name in `content/authors/`
-      username: admin
-    design:
-      # Hugo date format
-      date_format: 'January 2006'
-      # Education or Experience section first?
-      is_education_first: true
-  - block: accomplishments
-    content:
-      # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-      title: 'Accomplish&shy;ments'
-      subtitle:
-      # Date format: https://docs.hugoblox.com/customization/#date-format
+      title: Education
+      # Date format for experience
+      #   Refer to https://docs.hugoblox.com/customization/#date-format
       date_format: Jan 2006
-      # Accomplishments.
-      #   Add/remove as many `item` blocks below as you like.
-      #   `title`, `organization`, and `date_start` are the required parameters.
-      #   Leave other parameters empty if not required.
+      # Experiences.
+      #   Add/remove as many `experience` items below as you like.
+      #   Required fields are `title`, `company`, and `date_start`.
+      #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - certificate_url: https://www.coursera.org
+        - title: Bachelor of Science in Applied Mathematics and Physics
+          company: MIPT, Phystech School of Applied Mathematics and Informatics
+          company_url: 'https://mipt.ru/en'
+          #company_logo: org-gc
+          location: Dolgoprudny, Russia
+          date_start: Sept 2020
           date_end: ''
-          date_start: '2021-01-25'
-          description: ''
-          icon: coursera
-          organization: Coursera
-          organization_url: https://www.coursera.org
-          title: Neural Networks and Deep Learning
-          url: ''
-        - certificate_url: https://www.edx.org
-          date_end: ''
-          date_start: '2021-01-01'
-          description: Formulated informed blockchain models, hypotheses, and use cases.
-          icon: edx
-          organization: edX
-          organization_url: https://www.edx.org
-          title: Blockchain Fundamentals
-          url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-        - certificate_url: https://www.datacamp.com
-          date_end: '2020-12-21'
-          date_start: '2020-07-01'
-          description: ''
-          icon: datacamp
-          organization: DataCamp
-          organization_url: https://www.datacamp.com
-          title: 'Object-Oriented Programming in R'
-          url: ''
+          description: |2-
+            - **Thesis:** Distributed Second Order Methods with Fast Rates and Compressed Communication
+            - **Advisor:** Andrey Grabovoy
+              
     design:
       columns: '2'
   - block: portfolio
@@ -134,6 +108,14 @@ sections:
   #  design:
   #    columns: '2'
   #    view: compact
+  - block: markdown
+    id: awards
+    content:
+      title: Awards
+      description:
+        - Fall 2023-2024: K.V. Rudakov scientific academic scholarship for research activities in the field of applied mathematics
+        - Fall 2023-2024: 3rd degree personal scholarship for contributions to the development of numerical optimization methods
+        - 2020-2023: Abramov scholarship for 1-3 year bachelor students with the best grades at MIPT
   - block: contact
     id: contact
     content:
