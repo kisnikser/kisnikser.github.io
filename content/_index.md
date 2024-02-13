@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: ''
-date: Jan 2006
+date: '2024-02-13'
 type: landing
 
 sections:
@@ -36,7 +36,7 @@ sections:
           company_url: 'https://mipt.ru/en'
           #company_logo: org-gc
           location: Dolgoprudny, Russia
-          date_start: Sept 2020
+          date_start: '2020-09-01'
           date_end: ''
           description: |2-
             * Thesis: Distributed Second Order Methods with Fast Rates and Compressed Communication
