@@ -19,7 +19,7 @@ sections:
   #    username: admin
   #  design:
   #    columns: '1'
-  - block: resume-experience
+  - block: experience
     content:
       # The user's folder name in `content/authors/`
       username: admin
