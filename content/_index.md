@@ -39,8 +39,8 @@ sections:
           date_start: Sept 2020
           date_end: ''
           description: |2-
-            - Thesis: Distributed Second Order Methods with Fast Rates and Compressed Communication
-            - Advisor: Andrey Grabovoy
+            * Thesis: Distributed Second Order Methods with Fast Rates and Compressed Communication
+            * Advisor: Andrey Grabovoy
     design:
       columns: '2'
   - block: portfolio
@@ -112,9 +112,9 @@ sections:
     content:
       title: Awards
       text: |2-
-        - Fall 2023-2024: K.V. Rudakov scientific academic scholarship for research activities in the field of applied mathematics
-        - Fall 2023-2024: 3rd degree personal scholarship for contributions to the development of numerical optimization methods
-        - 2020-2023: Abramov scholarship for 1-3 year bachelor students with the best grades at MIPT
+        * Fall 2023-2024: K.V. Rudakov scientific academic scholarship for research activities in the field of applied mathematics
+        * Fall 2023-2024: 3rd degree personal scholarship for contributions to the development of numerical optimization methods
+        * 2020-2023: Abramov scholarship for 1-3 year bachelor students with the best grades at MIPT
   - block: contact
     id: contact
     content:
