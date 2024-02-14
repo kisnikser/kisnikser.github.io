@@ -1,6 +1,6 @@
 ---
 title: Bayesian Sample Size Estimation
-summary: An example of using the in-built project page.
+summary: Using likelihood, loss function and prior distribution for estimating sufficient sample size
 tags:
   - Machine Learning
 

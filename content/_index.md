@@ -39,8 +39,29 @@ sections:
           date_start: '2020-09-01'
           date_end: ''
           description: |2-
-            - Thesis: Distributed Second Order Methods with Fast Rates and Compressed Communication
-            - Advisor: Andrey Grabovoy
+            - Thesis: [Bayesian Sample Size Estimation](https://github.com/intsystems/Kiselev-BS-Thesis)
+            - Advisor: [Andrey Grabovoy](https://andriygav.github.io)
+    design:
+      columns: '2'
+  - block: experience
+    content:
+      title: Work Experience
+      # Date format for experience
+      #   Refer to https://docs.hugoblox.com/customization/#date-format
+      date_format: Jan 2006
+      # Experiences.
+      #   Add/remove as many `experience` items below as you like.
+      #   Required fields are `title`, `company`, and `date_start`.
+      #   Leave `date_end` empty if it's your current employer.
+      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
+      items:
+        - title: Technician
+          company: MIPT, Laboratory of Mathematical Methods of Optimization
+          company_url: 'https://labmmo.ru/en'
+          #company_logo: org-gc
+          location: Dolgoprudny, Russia
+          date_start: '2023-10-15'
+          date_end: ''
     design:
       columns: '2'
   - block: portfolio
@@ -112,6 +133,7 @@ sections:
     content:
       title: Awards
       text: |2-
+        - **Spring 2023-2024:** 3rd degree personal scholarship for contributions to the development of numerical optimization methods
         - **Fall 2023-2024:** K.V. Rudakov scientific academic scholarship for research activities in the field of applied mathematics
         - **Fall 2023-2024:** 3rd degree personal scholarship for contributions to the development of numerical optimization methods
         - **2020-2023:** Abramov scholarship for 1-3 year bachelor students with the best grades at MIPT
@@ -125,18 +147,10 @@ sections:
       contact_links:
         - icon: telegram
           icon_pack: fab
-          name: Write me
+          name: kisnikser
           link: 'https://t.me/kisnikser'
       # Automatically link email and phone or display as text?
       autolink: true
-      # Email form provider
-      form:
-        provider: netlify
-        formspree:
-          id:
-        netlify:
-          # Enable CAPTCHA challenge to reduce spam?
-          captcha: false
     design:
       columns: '2'
 ---
