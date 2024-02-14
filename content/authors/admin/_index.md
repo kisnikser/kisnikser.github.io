@@ -44,6 +44,9 @@ education:
       institution: Moscow Institute of Physics and Technology
       year: 2024
 
+skills:
+  
+
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
@@ -75,5 +78,5 @@ social:
 highlight_name: true
 ---
 
-I am a fourth year Bachelor student in  Applied Mathematics and Physics at Moscow Institute of Physics and Technology working under the supervision of Andrey Grabovoy. I am currently finishing my Bachelor's thesis.  Apart from that, I am working in the Laboratory of Mathematical Methods of Optimization. I am interested in Machine Learning and Optimization.
+I am a fourth year Bachelor student in Applied Mathematics and Physics at [Moscow Institute of Physics and Technology](https://mipt.ru/en) working under the supervision of PhD [Andrey Grabovoy](https://andriygav.github.io). I am currently finishing my [Bachelor's thesis](https://github.com/intsystems/Kiselev-BS-Thesis).  Apart from that, I am working in the [Laboratory of Mathematical Methods of Optimization](https://labmmo.ru/en). I am interested in Machine Learning and Optimization.
 {style="text-align: justify;"}

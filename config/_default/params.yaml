@@ -6,6 +6,8 @@
 # Appearance
 
 appearance:
+  mode: system
+  color: indigo
   theme_day: minimal
   theme_night: minimal
   font: minimal
@@ -37,7 +39,7 @@ header:
     align: l
     show_logo: true
     show_language: false
-    show_day_night: true
+    show_day_night: false
     show_search: true
     highlight_active_link: true
 
@@ -66,7 +68,7 @@ features:
     theme_light: github-light
     theme_dark: dracula
   math:
-    enable: false
+    enable: true
   privacy_pack:
     enable: false
   repository:
