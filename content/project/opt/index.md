@@ -1,6 +1,7 @@
 ---
 title: Optimization methods for quadratic problems with large dimensionality
 summary: Comparing different methods of solving high-dimensional linear regression problems
+date: '2023-05-12'
 tags:
   - Optimization
 

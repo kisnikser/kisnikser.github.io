@@ -1,6 +1,7 @@
 ---
 title: 'Forecasting fMRI Images From Video Sequences: Linear Model Analysis'
 summary: Using linear models and testing hypotheses about the relationship between data
+date: '2024-02-08'
 tags:
   - Machine Learning
 

@@ -1,6 +1,7 @@
 ---
 title: Models of epidemic spread, in particular COVID-19 as a model of stochastic chemical kinetics
 summary: Various approaches to modeling the spread of epidemics, e.g. differential equations and Markov chains
+date: '2023-12-13'
 tags:
   - Other
 

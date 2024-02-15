@@ -1,6 +1,7 @@
 ---
 title: Intelligent Presentation Generator
 summary: Application for generating presentations based on text files using topic modeling
+date: '2022-05-13'
 tags:
   - Machine Learning
 
