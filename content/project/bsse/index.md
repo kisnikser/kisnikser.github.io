@@ -1,6 +1,6 @@
 ---
 title: Bayesian Sample Size Estimation
-summary: Using likelihood, loss function and prior distribution for estimating sufficient sample size
+summary: Posterior distributions proximity and likelihood estimation in the problem of sufficient sample size determination
 date: '2024-02-15'
 tags:
   - Machine Learning

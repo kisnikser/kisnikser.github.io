@@ -1,0 +1,8 @@
+# Font style metadata
+name = "Georgia"
+
+# Font families
+heading_font = "Georgia"
+body_font = "Georgia"
+nav_font = "Georgia"
+mono_font = "Georgia"

@@ -8,9 +8,10 @@
 appearance:
   mode: system
   color: indigo
+  # `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
   theme_day: minimal
   theme_night: minimal
-  font: minimal
+  font: georgia
   font_size: L
 
 # SEO
@@ -20,8 +21,8 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo academic resume theme powered by Hugo Blox Builder.'
-    twitter: 'GetResearchDev'
+    description: ''
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: ''
