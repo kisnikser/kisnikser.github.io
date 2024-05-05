@@ -31,8 +31,8 @@ jobs:
       - name: Deploy
         if: github.ref == 'refs/heads/main'
         run: |
-          cp -R public/* ${GITHUB_WORKSPACE}/built-site/
-          cd ${GITHUB_WORKSPACE}/built-site
+          cp -R public/* /built-site/
+          cd /built-site
           git add .
           git config user.name 'kisnikser'
           git config user.email 'nekitbrain@yandex.ru'
