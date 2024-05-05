@@ -1,4 +1,91 @@
 baseURL: "https://kisnikser.github.io/"
 languageCode: en-us
-title: My New Hugo Site
+title: Nikita Kiselev
 theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  keywords: [CV, Portfolio, Machine Learning]
+  author: Nikita Kiselev
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  profileMode:
+    enabled: true
+    subtitle: Machine Learning & Optimization Researcher
+    imageUrl: "images/photo.jpg"
+    imageWidth: 240
+    imageHeight: 240
+    imageTitle: "Nikita Kiselev"
+    buttons:
+      - name: About
+        url: about
+      - name: Papers
+        url: papers
+      - name: Projects
+        url: projects
+      - name: Awards
+        url: awards
+
+  socialIcons:
+    - name: telegram
+      url: "https://t.me/kisnikser"
+    - name: github
+      url: "https://github.com/kisnikser"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/kisnikser"
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: false
+
+  editPost:
+    URL: ""
+    Text: ""
+    appendFilePath: true
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 1
+    - identifier: papers
+      name: Papers
+      url: /papers/
+      weight: 2
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 3
+    - identifier: awards
+      name: Awards
+      url: /awards/
+      weight: 4
+    - identifier: cv
+      name: CV
+      url: /files/cv.pdf
+      weight: 4

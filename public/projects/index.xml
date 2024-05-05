@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Projects on Nikita Kiselev</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on Nikita Kiselev</description>
+    <generator>Hugo -- 0.125.5</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sample Size Determination: Posterior Distributions Proximity</title>
+      <link>http://localhost:1313/projects/ipg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ipg/</guid>
+      <description>Paper
+Code
+Abstract The paper investigates the problem of estimating a sufficient sample size. The issue of determining a sufficient sample size without specifying a statistical hypothesis about the distribution of model parameters is considered. Two approaches to determining a sufficient sample size based on the proximity of posterior distributions of model parameters on similar subsets are suggested. The correctness of the presented approaches is proven in the model with normal posterior distribution.</description>
+    </item>
+  </channel>
+</rss>
