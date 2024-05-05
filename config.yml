@@ -15,12 +15,12 @@ minify:
 params:
   keywords: [CV, Portfolio, Machine Learning]
   author: Nikita Kiselev
-  DateFormat: "January 2, 2006"
+  DateFormat: "January 2006"
   defaultTheme: auto
   disableThemeToggle: false
 
-  ShowReadingTime: true
-  ShowShareButtons: true
+  ShowReadingTime: false
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
@@ -42,12 +42,10 @@ params:
     buttons:
       - name: About
         url: about
-      - name: Papers
-        url: papers
-      - name: Projects
-        url: projects
-      - name: Awards
-        url: awards
+      - name: Publications
+        url: publications
+      - name: Talks
+        url: talks
 
   socialIcons:
     - name: telegram
@@ -73,19 +71,23 @@ menu:
       name: About
       url: /about/
       weight: 1
-    - identifier: papers
-      name: Papers
-      url: /papers/
+    - identifier: publications
+      name: Publications
+      url: /publications/
       weight: 2
+    - identifier: talks
+      name: Talks
+      url: /talks/
+      weight: 3
     - identifier: projects
       name: Projects
       url: /projects/
-      weight: 3
+      weight: 4
     - identifier: awards
       name: Awards
       url: /awards/
-      weight: 4
+      weight: 5
     - identifier: cv
       name: CV
       url: /files/cv.pdf
-      weight: 4
+      weight: 6

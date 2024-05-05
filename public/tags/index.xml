@@ -6,6 +6,35 @@
     <description>Recent content in Tags on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 04 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linear Regression</title>
+      <link>http://localhost:1313/tags/linear-regression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/linear-regression/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Normal Posterior Distribution</title>
+      <link>http://localhost:1313/tags/normal-posterior-distribution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/normal-posterior-distribution/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Posterior Distributions Proximity</title>
+      <link>http://localhost:1313/tags/posterior-distributions-proximity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/posterior-distributions-proximity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sufficient Sample Size</title>
+      <link>http://localhost:1313/tags/sufficient-sample-size/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sufficient-sample-size/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
