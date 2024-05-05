@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>My New Hugo Site</title>
-    <link>//localhost:1313/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- 0.125.5</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 05 May 2024 11:56:08 +0300</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test</title>
-      <link>//localhost:1313/docs/test/</link>
+      <link>http://localhost:1313/docs/test/</link>
       <pubDate>Sun, 05 May 2024 11:56:08 +0300</pubDate>
-      <guid>//localhost:1313/docs/test/</guid>
+      <guid>http://localhost:1313/docs/test/</guid>
       <description>This is a test page This is a test page!</description>
     </item>
   </channel>
