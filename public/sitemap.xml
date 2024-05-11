@@ -2,19 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/projects/ipg/ipg/</loc>
-    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/talks/mipt66conf/mipt66conf/</loc>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/linear-regression/</loc>
-    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/normal-posterior-distribution/</loc>
-    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/posterior-distributions-proximity/</loc>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sufficient-sample-size/</loc>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/talks/</loc>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/ipg/ipg/</loc>
     <lastmod>2024-04-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
@@ -26,20 +38,10 @@
     <loc>http://localhost:1313/publications/ssd-posterior/ssd-posterior/</loc>
     <lastmod>2024-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sufficient-sample-size/</loc>
-    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/talks/mipt66conf/mipt66conf/</loc>
-  </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/awards/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/talks/</loc>
   </url>
 </urlset>

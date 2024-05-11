@@ -6,8 +6,15 @@
     <description>Recent content in Normal Posterior Distribution on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/normal-posterior-distribution/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Determining a sufficient sample size based on the a posteriori distribution of model parameters</title>
+      <link>http://localhost:1313/talks/mipt66conf/mipt66conf/</link>
+      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talks/mipt66conf/mipt66conf/</guid>
+      <description>66th MIPT All-Russian Scientific Conference</description>
+    </item>
     <item>
       <title>Intelligent Presentation Generator</title>
       <link>http://localhost:1313/projects/ipg/ipg/</link>
