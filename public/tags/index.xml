@@ -36,5 +36,68 @@
       <guid>http://localhost:1313/tags/sufficient-sample-size/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Optimization</title>
+      <link>http://localhost:1313/tags/optimization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/optimization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Random Processes</title>
+      <link>http://localhost:1313/tags/random-processes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/random-processes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sir Models</title>
+      <link>http://localhost:1313/tags/sir-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sir-models/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stochastic Analysis</title>
+      <link>http://localhost:1313/tags/stochastic-analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/stochastic-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>High Dimensionality</title>
+      <link>http://localhost:1313/tags/high-dimensionality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/high-dimensionality/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine Learning</title>
+      <link>http://localhost:1313/tags/machine-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Latex</title>
+      <link>http://localhost:1313/tags/latex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/latex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nlp</title>
+      <link>http://localhost:1313/tags/nlp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/nlp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Topic Modelling</title>
+      <link>http://localhost:1313/tags/topic-modelling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/topic-modelling/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

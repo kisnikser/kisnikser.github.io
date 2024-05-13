@@ -26,17 +26,52 @@
     <loc>http://localhost:1313/talks/</loc>
     <lastmod>2024-04-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/ipg/ipg/</loc>
-    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/publications/</loc>
     <lastmod>2024-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/publications/ssd-posterior/ssd-posterior/</loc>
+    <loc>http://localhost:1313/publications/ssd-posterior/</loc>
     <lastmod>2024-04-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/sir/</loc>
+    <lastmod>2023-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/optimization/</loc>
+    <lastmod>2023-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2023-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/random-processes/</loc>
+    <lastmod>2023-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sir-models/</loc>
+    <lastmod>2023-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/stochastic-analysis/</loc>
+    <lastmod>2023-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/high-dimensionality/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/machine-learning/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/opt2023/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/ipg/</loc>
+    <lastmod>2022-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/latex/</loc>
+    <lastmod>2022-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/nlp/</loc>
+    <lastmod>2022-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/topic-modelling/</loc>
+    <lastmod>2022-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/publications/forecasting-fmri-images/</loc>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>

@@ -6,8 +6,15 @@
     <description>Recent content on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 May 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sample Size Determination: Posterior Distributions Proximity</title>
+      <link>http://localhost:1313/publications/ssd-posterior/</link>
+      <pubDate>Sat, 04 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/ssd-posterior/</guid>
+      <description>Two approaches to determining a sufficient sample size based on the proximity of posterior distributions of model parameters on similar subsets</description>
+    </item>
     <item>
       <title>Determining a sufficient sample size based on the a posteriori distribution of model parameters</title>
       <link>http://localhost:1313/talks/mipt66conf/mipt66conf/</link>
@@ -16,25 +23,41 @@
       <description>66th MIPT All-Russian Scientific Conference</description>
     </item>
     <item>
-      <title>Intelligent Presentation Generator</title>
-      <link>http://localhost:1313/projects/ipg/ipg/</link>
+      <title>Forecasting fMRI Images From Video Sequences: Linear Model Analysis</title>
+      <link>http://localhost:1313/publications/forecasting-fmri-images/</link>
       <pubDate>Thu, 04 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/ipg/ipg/</guid>
-      <description>Application for generating presentations based on text files using topic modeling</description>
+      <guid>http://localhost:1313/publications/forecasting-fmri-images/</guid>
+      <description>Using linear models and testing hypotheses about the relationship between data</description>
     </item>
     <item>
-      <title>Sample Size Determination: Posterior Distributions Proximity</title>
-      <link>http://localhost:1313/publications/ssd-posterior/</link>
-      <pubDate>Thu, 04 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/ssd-posterior/</guid>
-      <description>Two approaches to determining a sufficient sample size based on the proximity of posterior distributions of model parameters on similar subsets</description>
+      <title>Models of epidemic spread, in particular COVID-19 as a model of stochastic chemical kinetics</title>
+      <link>http://localhost:1313/projects/sir/</link>
+      <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/sir/</guid>
+      <description>Various approaches to modeling the spread of epidemics, differential equations and Markov processes</description>
+    </item>
+    <item>
+      <title>Optimization methods for quadratic problems with large dimensionality</title>
+      <link>http://localhost:1313/projects/opt2023/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/opt2023/</guid>
+      <description>Comparison of different methods of solving high-dimensional linear regression problems</description>
+    </item>
+    <item>
+      <title>Intelligent Presentation Generator</title>
+      <link>http://localhost:1313/projects/ipg/</link>
+      <pubDate>Thu, 12 May 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ipg/</guid>
+      <description>Application for generating presentations based on text files using topic modeling</description>
     </item>
     <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>Hi there 👋 I am Nikita Kiselev Fourth year Bachelor student in Applied Mathematics and Physics at Moscow Institute of Physics and Technology working under the supervision of PhD Andrey Grabovoy Currently finishing my Bachelor&amp;rsquo;s thesis Interested in Machine Learning and Optimization </description>
+      <description>Hi there 👋 I am Nikita Kiselev Fourth year Bachelor student in Applied Mathematics and Physics at Moscow Institute of Physics and Technology working under the supervision of PhD Andrey Grabovoy Currently finishing my Bachelor&amp;rsquo;s thesis Interested in Machine Learning and Optimization Education Moscow Institute of Physics and Technology
+BSc in Applied Mathematics and Physics
+Sep 2020 &amp;ndash; Present Thesis: Bayesian Sample Size Estimation Advisor: Andrey Grabovoy GPA: 4.88/5 (8.91/10) </description>
     </item>
     <item>
       <title>Awards</title>

@@ -1,0 +1,3 @@
+features:
+  math:
+    enable: true

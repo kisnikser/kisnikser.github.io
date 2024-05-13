@@ -18,7 +18,6 @@ params:
   DateFormat: "January 2006"
   defaultTheme: auto
   disableThemeToggle: false
-
   ShowReadingTime: false
   ShowShareButtons: false
   ShowPostNavLinks: true
@@ -31,6 +30,8 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
+
+  math: true
 
   profileMode:
     enabled: true
@@ -50,6 +51,8 @@ params:
   socialIcons:
     - name: telegram
       url: "https://t.me/kisnikser"
+    - name: email
+      url: "mailto:kiselev.ns@phystech.edu"
     - name: github
       url: "https://github.com/kisnikser"
     - name: linkedin

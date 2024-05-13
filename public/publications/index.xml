@@ -6,14 +6,21 @@
     <description>Recent content in Publications on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 May 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/publications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sample Size Determination: Posterior Distributions Proximity</title>
       <link>http://localhost:1313/publications/ssd-posterior/</link>
-      <pubDate>Thu, 04 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 04 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publications/ssd-posterior/</guid>
       <description>Two approaches to determining a sufficient sample size based on the proximity of posterior distributions of model parameters on similar subsets</description>
+    </item>
+    <item>
+      <title>Forecasting fMRI Images From Video Sequences: Linear Model Analysis</title>
+      <link>http://localhost:1313/publications/forecasting-fmri-images/</link>
+      <pubDate>Thu, 04 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/forecasting-fmri-images/</guid>
+      <description>Using linear models and testing hypotheses about the relationship between data</description>
     </item>
   </channel>
 </rss>

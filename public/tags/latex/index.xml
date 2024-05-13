@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Latex on Nikita Kiselev</title>
+    <link>http://localhost:1313/tags/latex/</link>
+    <description>Recent content in Latex on Nikita Kiselev</description>
+    <generator>Hugo -- 0.125.5</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 May 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intelligent Presentation Generator</title>
+      <link>http://localhost:1313/projects/ipg/</link>
+      <pubDate>Thu, 12 May 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ipg/</guid>
+      <description>Application for generating presentations based on text files using topic modeling</description>
+    </item>
+  </channel>
+</rss>
