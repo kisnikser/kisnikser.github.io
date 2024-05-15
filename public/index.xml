@@ -6,8 +6,15 @@
     <description>Recent content on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Decentralized Optimization with Coupled Constraints</title>
+      <link>http://localhost:1313/publications/coupled/</link>
+      <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/coupled/</guid>
+      <description>In this paper, we propose the first first-order algorithm with accelerated linear convergence for decentralized optimization with coupled constraints</description>
+    </item>
     <item>
       <title>Sample Size Determination: Posterior Distributions Proximity</title>
       <link>http://localhost:1313/publications/ssd-posterior/</link>
