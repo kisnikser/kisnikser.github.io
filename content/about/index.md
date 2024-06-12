@@ -29,10 +29,10 @@ draft: false
   - GPA: 4.88/5 (8.91/10)
 
 ### Languages
-🇷🇺 Russian - Native <br>
-🇬🇧 English - C1 <br>
+- 🇷🇺 Russian - Native
+- 🇬🇧 English - C1
 
 ### Hobbies
-🏋🏻‍♂️ Gym <br>
-🎸 Guitar <br>
+- 🏋🏻‍♂️ Gym
+- 🎸 Guitar
     
