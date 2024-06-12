@@ -5,34 +5,34 @@ showtoc: false
 draft: false
 ---
 
-### Hi there 👋
+## Nikita Kiselev
 
-- I am Nikita Kiselev
-- [Sber AI](https://ai.sber.ru/en/about) Intern
-- Fourth year Bachelor student in Applied Mathematics and Physics at [Moscow Institute of Physics and Technology](https://mipt.ru/en) working under the supervision of PhD [Andrey Grabovoy](https://andriygav.github.io)
-- Currently finishing my [Bachelor's thesis](https://github.com/intsystems/Kiselev-BS-Thesis)
-- Interested in Machine Learning and Optimization
+**Data Scientist / Deep Learning Engineer**
 
+**Fields of interest:** Machine Learning, Optimization
 
-### Work Experience
+### [CV](https://kisnikser.github.io/files/cv.pdf)
 
-[**Sber AI**](https://ai.sber.ru/en/about)
+### 👨‍💻 Work experience
+* Intern at [Sber AI](https://ai.sber.ru/) (Jun 2024 - Present):
+  - Instruct Image Editing
+    
+* Technician at [Laboratory of Mathematical Methods of Optimization, MIPT](https://labmmo.ru/en) (Oct 2023 - Apr 2024)
+  - Decentralized Optimization with Coupled Constraints
+  - Network design problem
 
-- Intern
-- Jun 2024 –- Present
+### 🎓 Education
+- BSc in Applied Mathematics and Physics (Sep 2020 – Present)
+  - [Moscow Institute of Physics and Technology](https://mipt.ru)
+  - Thesis: [Bayesian Sample Size Estimation](https://github.com/intsystems/Kiselev-BS-Thesis/blob/master/paper/main.pdf)
+  - Advisor: [Andrey Grabovoy](https://andriygav.github.io/)
+  - GPA: 4.88/5 (8.91/10)
 
-[**Laboratory of Mathematical Methods of Optimization, MIPT**](https://labmmo.ru/en)
+### Languages
+🇷🇺 Russian - Native <br>
+🇬🇧 English - C1 <br>
 
-- Technician
-- Oct 2023 –- Apr 2024
-
-### Education
-
-[**Moscow Institute of Physics and Technology**](https://mipt.ru)
-
-BSc in Applied Mathematics and Physics
-- Sep 2020 -- Present
-- Thesis: [Bayesian Sample Size Estimation](https://github.com/intsystems/Kiselev-BS-Thesis/blob/master/paper/main.pdf)
-- Advisor: [Andrey Grabovoy](https://andriygav.github.io)
-- GPA: 4.88/5 (8.91/10)
+### Hobbies
+🏋🏻‍♂️ Gym <br>
+🎸 Guitar <br>
     
