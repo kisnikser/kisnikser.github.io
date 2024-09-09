@@ -6,7 +6,7 @@ author: ["Daniil Dorin", "Nikita Kiselev"]
 description: 
 summary: "Comparison of different methods of solving high-dimensional linear regression problems" 
 cover:
-  image: "projects/opt2023/different_methods.pdf"
+  image: "projects/opt2023/different_methods.png"
   alt: ""
   relative: true
 math: true

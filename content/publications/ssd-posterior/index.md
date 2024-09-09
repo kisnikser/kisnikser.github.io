@@ -6,7 +6,7 @@ author: ["Nikita Kiselev", "Andrey Grabovoy"]
 description: 
 summary: "Two approaches to determining a sufficient sample size based on the proximity of posterior distributions of model parameters on similar subsets" 
 cover:
-  image: "publications/ssd-posterior/sufficient-vs-threshold.pdf"
+  image: "publications/ssd-posterior/sufficient-vs-threshold.png"
   alt: ""
   relative: true
 ---

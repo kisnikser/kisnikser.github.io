@@ -6,7 +6,7 @@ author: ["Nikita Kiselev", "Andrey Grabovoy"]
 description: 
 summary: "Exploring the convergence of the loss landscape in neural networks as the sample size increases, focusing on the Hessian matrix to understand the local geometry of the loss function" 
 cover:
-  image: "publications/landscape-hessian/losses_difference.pdf"
+  image: "publications/landscape-hessian/losses_difference.png"
   alt: ""
   relative: true
 ---

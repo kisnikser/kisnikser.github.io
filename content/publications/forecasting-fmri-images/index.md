@@ -6,7 +6,7 @@ author: ["Daniil Dorin", "Nikita Kiselev", "Andrey Grabovoy"]
 description: 
 summary: "Using linear models and testing hypotheses about the relationship between data" 
 cover:
-  image: "publications/forecasting-fmri-images/scheme.pdf"
+  image: "publications/forecasting-fmri-images/scheme.png"
   alt: ""
   relative: true
 ---
