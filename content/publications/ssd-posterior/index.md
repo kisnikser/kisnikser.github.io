@@ -4,7 +4,7 @@ date: 2024-05-04
 tags: ["sufficient sample size", "posterior distributions proximity", "normal posterior distribution", "linear regression"]
 author: ["Nikita Kiselev", "Andrey Grabovoy"]
 description: 
-summary: "Two approaches to determining a sufficient sample size based on the proximity of posterior distributions of model parameters on similar subsets" 
+summary: "Presenting two approaches to determining a sufficient sample size based on the proximity of posterior distributions of model parameters on similar subsets" 
 cover:
   image: "publications/ssd-posterior/sufficient-vs-threshold.png"
   alt: ""
@@ -23,7 +23,7 @@ cover:
 
 ### Abstract
 
-The issue of sample size determination is crucial for constructing an effective machine learning model. However, the existing methods for determining a sufficient sample size are either not strictly proven, or relate to the specific statistical hypothesis about the distribution of model parameters. In this paper we present two approaches based on the proximity of posterior distributions of model parameters on similar subsamples. We show that these two methods are valid for the model with normal posterior distribution of parameters. Computational experiments demonstrate the convergence of the proposed functions as the sample size increases.
+The issue of sample size determination is crucial for constructing an effective machine learning model. However, the existing methods for determining a sufficient sample size are either not strictly proven, or relate to the specific statistical hypothesis about the distribution of model parameters. In this paper we present two approaches based on the proximity of posterior distributions of model parameters on similar subsamples. We show that these two methods are valid for the model with normal posterior distribution of parameters. Computational experiments demonstrate the convergence of the proposed functions as the sample size increases. We also compare the proposed methods with other approaches on different datasets.
 
 ---
 
