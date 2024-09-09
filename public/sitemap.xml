@@ -2,10 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/linear-regression/</loc>
-    <lastmod>2024-05-04T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/affine-constraints/</loc>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/convex-optimization/</loc>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/coupled-constraints/</loc>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/decentralized-optimization/</loc>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/publications/coupled/</loc>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/publications/</loc>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linear-regression/</loc>
     <lastmod>2024-05-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/normal-posterior-distribution/</loc>
@@ -14,16 +35,13 @@
     <loc>http://localhost:1313/tags/posterior-distributions-proximity/</loc>
     <lastmod>2024-05-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/publications/</loc>
+    <loc>http://localhost:1313/publications/landscape-hessian/</loc>
     <lastmod>2024-05-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/publications/ssd-posterior/</loc>
     <lastmod>2024-05-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/sufficient-sample-size/</loc>
-    <lastmod>2024-05-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-05-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/talks/mipt66conf/mipt66conf/</loc>
@@ -85,8 +103,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/topic-modelling/</loc>
     <lastmod>2022-05-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/publications/coupled/</loc>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>

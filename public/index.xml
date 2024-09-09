@@ -6,8 +6,15 @@
     <description>Recent content on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unraveling the Hessian: A Key to Smooth Convergence in Loss Function Landscapes</title>
+      <link>http://localhost:1313/publications/landscape-hessian/</link>
+      <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/landscape-hessian/</guid>
+      <description>Exploring the convergence of the loss landscape in neural networks as the sample size increases, focusing on the Hessian matrix to understand the local geometry of the loss function</description>
+    </item>
     <item>
       <title>Decentralized Optimization with Coupled Constraints</title>
       <link>http://localhost:1313/publications/coupled/</link>
@@ -62,9 +69,11 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>Hi there 👋 I am Nikita Kiselev Fourth year Bachelor student in Applied Mathematics and Physics at Moscow Institute of Physics and Technology working under the supervision of PhD Andrey Grabovoy Currently finishing my Bachelor&amp;rsquo;s thesis Interested in Machine Learning and Optimization Education Moscow Institute of Physics and Technology
-BSc in Applied Mathematics and Physics
-Sep 2020 &amp;ndash; Present Thesis: Bayesian Sample Size Estimation Advisor: Andrey Grabovoy GPA: 4.88/5 (8.91/10) </description>
+      <description>Nikita Kiselev Data Scientist / Deep Learning Engineer
+Fields of interest: Machine Learning, Optimization
+CV 👨‍💻 Work experience Intern at Sber AI (Jun 2024 - Present):
+Instruct Image Editing Technician at Laboratory of Mathematical Methods of Optimization, MIPT (Oct 2023 - Apr 2024)
+Decentralized Optimization with Coupled Constraints Network design problem 🎓 Education BSc in Applied Mathematics and Physics (Sep 2020 – Present) Moscow Institute of Physics and Technology Thesis: Bayesian Sample Size Estimation Advisor: Andrey Grabovoy GPA: 4.</description>
     </item>
     <item>
       <title>Awards</title>
