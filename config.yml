@@ -35,18 +35,25 @@ params:
 
   profileMode:
     enabled: true
-    subtitle: Machine Learning & Optimization Researcher
+    # subtitle: "Machine Learning & Optimization Researcher"
+    subtitle: "Aspiring researcher in the field of machine learning and optimization. Focused on generative diffu-
+sion and multi-modal models. Motivated for productive work and learning. Having a substantial
+theoretical foundation and mathematical background."
     imageUrl: "images/photo.jpg"
     imageWidth: 240
     imageHeight: 240
     imageTitle: "Nikita Kiselev"
     buttons:
-      - name: About
-        url: about
+      # - name: About
+      #   url: about
       - name: Publications
         url: publications
       - name: Talks
         url: talks
+      - name: Resume
+        url: resume
+      - name: CV
+        url: cv
 
   socialIcons:
     - name: telegram
@@ -70,10 +77,10 @@ params:
 
 menu:
   main:
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 1
+    # - identifier: about
+    #   name: About
+    #   url: /about/
+    #   weight: 1
     - identifier: publications
       name: Publications
       url: /publications/
@@ -90,7 +97,11 @@ menu:
       name: Awards
       url: /awards/
       weight: 5
+    - identifier: resume
+      name: Resume
+      url: https://texlive2020.latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=resume.tex&command=pdflatex
+      weight: 6
     - identifier: cv
       name: CV
-      url: /files/cv.pdf
+      url: https://texlive2020.latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=cv.tex&command=pdflatex
       weight: 6
