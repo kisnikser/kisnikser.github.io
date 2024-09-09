@@ -4,7 +4,7 @@ date: 2024-05-15
 tags: ["decentralized optimization", "convex optimization", "affine constraints", "coupled constraints"]
 author: ["Demyan Yarmoshik", "Alexander Rogozin", "Nikita Kiselev", "Daniil Dorin", "Alexander Gasnikov", "Dmitry Kovalev"]
 description: 
-summary: "In this paper, we propose the first first-order algorithm with accelerated linear convergence for decentralized optimization with coupled constraints" 
+summary: "The method proposed is the first linearly convergent first-order decentralized algorithm for problems with general affine coupled constraints" 
 cover:
   image: #"publications/coupled/coupled.pdf"
   alt: ""
