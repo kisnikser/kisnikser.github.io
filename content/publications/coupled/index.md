@@ -6,7 +6,7 @@ author: ["Demyan Yarmoshik", "Alexander Rogozin", "Nikita Kiselev", "Daniil Dori
 description: 
 summary: "The method proposed is the first linearly convergent first-order decentralized algorithm for problems with general affine coupled constraints" 
 cover:
-  image: #"publications/coupled/coupled.pdf"
+  image: "publications/coupled/plot.png"
   alt: ""
   relative: true
 ---
