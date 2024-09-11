@@ -6,7 +6,7 @@ author: ["Nikita Kiselev", "Andrey Grabovoy"]
 description: 
 summary: "66th MIPT All-Russian Scientific Conference"
 cover:
-  image: "publications/ssd-posterior/sufficient-vs-threshold.png"
+  image: "publications/ssd-posterior/posterior.png"
   alt: ""
   relative: true
 ---
