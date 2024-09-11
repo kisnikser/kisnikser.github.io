@@ -90,9 +90,11 @@ menu:
       weight: 5
     - identifier: resume
       name: Resume
-      url: https://texlive2020.latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=resume.tex&command=pdflatex
+      # url: https://texlive2020.latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=resume.tex&command=pdflatex
+      url: https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=resume.tex&command=xelatex
       weight: 6
     - identifier: cv
       name: CV
-      url: https://texlive2020.latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=cv.tex&command=pdflatex
+      # url: https://texlive2020.latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=cv.tex&command=pdflatex
+      url: https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=cv.tex&command=xelatex
       weight: 7
