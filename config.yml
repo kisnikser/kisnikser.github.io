@@ -46,14 +46,18 @@ params:
 
     My research interests include Generative AI, Computer Vision, and Optimization."
     imageUrl: "images/photo.jpg"
-    imageWidth: 240
-    imageHeight: 240
+    imageWidth: 160
+    imageHeight: 160
     imageTitle: "Nikita Kiselev"
     buttons:
       - name: Publications
         url: publications
       - name: Talks
         url: talks
+      - name: Projects
+        url: projects
+      - name: Resume
+        url: https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=resume.tex&command=xelatex&force=true
       - name: CV
         url: https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=cv.tex&command=xelatex&force=true
 
@@ -62,6 +66,8 @@ params:
       url: "https://t.me/kisnikser"
     - name: email
       url: "mailto:kiselev.ns@phystech.su"
+    - name: Google Scholar
+      url: https://scholar.google.com/citations?user=8BOqs70AAAAJ&hl=ru
     - name: github
       url: "https://github.com/kisnikser"
     - name: linkedin
@@ -69,8 +75,8 @@ params:
 
   cover:
     hidden: true
-    hiddenInList: true
-    hiddenInSingle: false
+    hiddenInList: false
+    hiddenInSingle: true
 
   editPost:
     URL: ""
