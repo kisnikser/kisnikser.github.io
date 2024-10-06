@@ -35,7 +35,16 @@ params:
 
   profileMode:
     enabled: true
-    subtitle: "Data Scientist, Optimization Researcher"
+    subtitle: "**Data Scientist, Optimization Researcher**\n> 
+    
+    I am a master's student in Computer Science in the Intelligent Systems Department 
+    at Moscow Institute of Physics and Technology.
+    Prior to that, I received my bachelor's degree in Applied Mathematics and Physics there.\n>
+    
+    Currently, I am a research intern at Sber AI
+    and mathematician-programmer at Center for Artificial Intelligence, Innopolis University.\n>
+
+    My research interests include Generative AI, Computer Vision, and Optimization."
     imageUrl: "images/photo.jpg"
     imageWidth: 240
     imageHeight: 240
@@ -45,6 +54,8 @@ params:
         url: publications
       - name: Talks
         url: talks
+      - name: CV
+        url: https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=cv.tex&command=xelatex&force=true
 
   socialIcons:
     - name: telegram
@@ -84,10 +95,10 @@ menu:
       name: Projects
       url: /projects/
       weight: 4
-    - identifier: awards
-      name: Awards
-      url: /awards/
-      weight: 5
+    # - identifier: awards
+    #   name: Awards
+    #   url: /awards/
+    #   weight: 5
     - identifier: resume
       name: Resume
       # url: https://texlive2020.latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=resume.tex&command=pdflatex

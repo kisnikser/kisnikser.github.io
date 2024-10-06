@@ -13,7 +13,7 @@
       <link>http://localhost:1313/publications/landscape-hessian/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publications/landscape-hessian/</guid>
-      <description>Two approaches to determining a sufficient sample size based on the proximity of posterior distributions of model parameters on similar subsets</description>
+      <description>Exploring the convergence of the loss landscape in neural networks as the sample size increases, focusing on the Hessian matrix to understand the local geometry of the loss function</description>
     </item>
   </channel>
 </rss>

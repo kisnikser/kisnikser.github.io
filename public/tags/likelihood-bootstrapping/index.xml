@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Likelihood Bootstrapping on Nikita Kiselev</title>
+    <link>http://localhost:1313/tags/likelihood-bootstrapping/</link>
+    <description>Recent content in Likelihood Bootstrapping on Nikita Kiselev</description>
+    <generator>Hugo -- 0.125.5</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/likelihood-bootstrapping/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sample Size Determination: Likelihood Bootstrapping</title>
+      <link>http://localhost:1313/publications/ssd-likelihood/</link>
+      <pubDate>Sun, 06 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/ssd-likelihood/</guid>
+      <description>Presenting two approaches to determining a sufficient sample size based on likelihood values from resampled subsets</description>
+    </item>
+  </channel>
+</rss>

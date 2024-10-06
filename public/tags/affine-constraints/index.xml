@@ -13,7 +13,7 @@
       <link>http://localhost:1313/publications/coupled/</link>
       <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publications/coupled/</guid>
-      <description>In this paper, we propose the first first-order algorithm with accelerated linear convergence for decentralized optimization with coupled constraints</description>
+      <description>The method proposed is the first linearly convergent first-order decentralized algorithm for problems with general affine coupled constraints</description>
     </item>
   </channel>
 </rss>

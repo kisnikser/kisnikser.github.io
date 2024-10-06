@@ -13,7 +13,7 @@
       <link>http://localhost:1313/publications/forecasting-fmri-images/</link>
       <pubDate>Thu, 04 Apr 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publications/forecasting-fmri-images/</guid>
-      <description>Using linear models and testing hypotheses about the relationship between data</description>
+      <description>Exploring the correlation between video sequences and fMRI images, using a linear autoregressive model</description>
     </item>
   </channel>
 </rss>
