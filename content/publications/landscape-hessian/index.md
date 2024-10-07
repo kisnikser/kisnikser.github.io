@@ -15,7 +15,7 @@ cover:
 
 ### Links
 
-- [📝 Paper](https://github.com/kisnikser/landscape-hessian/blob/main/paper/main.pdf) 
+- [📝 arXiv](https://arxiv.org/abs/2409.11995) 
 - [</> Code](https://github.com/kisnikser/landscape-hessian/tree/main/code)
 
 ---

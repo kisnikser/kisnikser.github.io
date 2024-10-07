@@ -16,16 +16,16 @@
     --code-block-bg: rgb(28, 29, 33);
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
-    --darkcolor: rgb(56,115,179);
+    --darkcolor: rgb(56, 115, 179);
     --lightcolor: rgb(254, 213, 130);
     --semibold: 500;
     --homesize: 16px;
-    --textsize: 18px;
+    --textsize: 16px;
     --h1size: 25px;
     --entrysize: 15px;
     --headersize: 16px;
     --footersize: 13px;
-    --lineheight: 1.45;
+    /* --lineheight: 1.45; */
     --lineclamp: 8;
     --marginleft: 26px;
 }

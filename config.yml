@@ -83,6 +83,10 @@ params:
     Text: ""
     appendFilePath: true
 
+  label:
+    icon: favicon.ico
+    iconHeight: 18
+
 menu:
   main:
     # - identifier: about
