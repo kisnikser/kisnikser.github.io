@@ -12,6 +12,21 @@ minify:
   disableXML: true
   minifyOutput: true
 
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
+
 params:
   keywords: [CV, Portfolio, Machine Learning]
   author: Nikita Kiselev
