@@ -1,6 +1,349 @@
-<!doctype html><html lang=en dir=auto><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="noindex, nofollow"><title>Forecasting fMRI Images From Video Sequences: Linear Model Analysis | Nikita Kiselev</title>
-<meta name=keywords content="time series forecasting,fmri images,linear models,correlation analysis"><meta name=description content="Exploring the correlation between video sequences and fMRI images, using a linear autoregressive model"><meta name=author content="Daniil Dorin,&#8201;Nikita Kiselev,&#8201;Andrey Grabovoy"><link rel=canonical href=http://localhost:1313/publications/forecasting-fmri-images/><link crossorigin=anonymous href=/assets/css/stylesheet.68514932aa2e0046c9219057505de93c7d54131c159176006ed79ecedf385c76.css integrity="sha256-aFFJMqouAEbJIZBXUF3pPH1UExwVkXYAbteezt84XHY=" rel="preload stylesheet" as=style><link rel=icon href=http://localhost:1313/favicon.ico><link rel=icon type=image/png sizes=16x16 href=http://localhost:1313/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=http://localhost:1313/favicon-32x32.png><link rel=apple-touch-icon href=http://localhost:1313/apple-touch-icon.png><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=http://localhost:1313/publications/forecasting-fmri-images/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:title" content="Forecasting fMRI Images From Video Sequences: Linear Model Analysis"><meta property="og:description" content="Exploring the correlation between video sequences and fMRI images, using a linear autoregressive model"><meta property="og:type" content="article"><meta property="og:url" content="http://localhost:1313/publications/forecasting-fmri-images/"><meta property="og:image" content="http://localhost:1313/publications/forecasting-fmri-images/publications/forecasting-fmri-images/scheme.png"><meta property="article:section" content="publications"><meta property="article:published_time" content="2024-04-04T00:00:00+00:00"><meta property="article:modified_time" content="2024-04-04T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="http://localhost:1313/publications/forecasting-fmri-images/publications/forecasting-fmri-images/scheme.png"><meta name=twitter:title content="Forecasting fMRI Images From Video Sequences: Linear Model Analysis"><meta name=twitter:description content="Exploring the correlation between video sequences and fMRI images, using a linear autoregressive model"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Publications","item":"http://localhost:1313/publications/"},{"@type":"ListItem","position":2,"name":"Forecasting fMRI Images From Video Sequences: Linear Model Analysis","item":"http://localhost:1313/publications/forecasting-fmri-images/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Forecasting fMRI Images From Video Sequences: Linear Model Analysis","name":"Forecasting fMRI Images From Video Sequences: Linear Model Analysis","description":"Exploring the correlation between video sequences and fMRI images, using a linear autoregressive model","keywords":["time series forecasting","fmri images","linear models","correlation analysis"],"articleBody":" Links 📝 Paper \u003c/\u003e Code Abstract Over the past few decades, a variety of significant scientific breakthroughs have been achieved in the fields of brain encoding and decoding using the functional magnetic resonance imaging (fMRI). Many studies have been conducted on the topic of human brain reaction to visual stimuli. However, the relationship between fMRI images and video sequences viewed by humans remains complex and is often studied using large transformer models. In this paper, we investigate the correlation between videos presented to participants during an experiment and the resulting fMRI images. To achieve this, we propose a method for creating a linear model that predicts changes in fMRI signals based on video sequence images. A linear model is constructed for each individual voxel in the fMRI image, assuming that the image sequence follows a Markov property. Through the comprehensive qualitative experiments, we demonstrate the relationship between the two time series. We hope that our findings contribute to a deeper understanding of the human brain’s reaction to external stimuli and provide a basis for future research in this area.\n","wordCount":"179","inLanguage":"en","image":"http://localhost:1313/publications/forecasting-fmri-images/publications/forecasting-fmri-images/scheme.png","datePublished":"2024-04-04T00:00:00Z","dateModified":"2024-04-04T00:00:00Z","author":[{"@type":"Person","name":"Daniil Dorin"},{"@type":"Person","name":"Nikita Kiselev"},{"@type":"Person","name":"Andrey Grabovoy"}],"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:1313/publications/forecasting-fmri-images/"},"publisher":{"@type":"Organization","name":"Nikita Kiselev","logo":{"@type":"ImageObject","url":"http://localhost:1313/favicon.ico"}}}</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css integrity=sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js integrity=sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js integrity=sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk crossorigin=anonymous onload=renderMathInElement(document.body)></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\begin{equation}",right:"\\end{equation}",display:!0},{left:"\\begin{equation*}",right:"\\end{equation*}",display:!0},{left:"\\begin{align}",right:"\\end{align}",display:!0},{left:"\\begin{align*}",right:"\\end{align*}",display:!0},{left:"\\begin{alignat}",right:"\\end{alignat}",display:!0},{left:"\\begin{gather}",right:"\\end{gather}",display:!0},{left:"\\begin{CD}",right:"\\end{CD}",display:!0}],throwOnError:!1})})</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=http://localhost:1313/ accesskey=h title="Nikita Kiselev (Alt + H)"><img src=http://localhost:1313/favicon.ico alt aria-label=logo height=18>Nikita Kiselev</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=http://localhost:1313/publications/ title=Publications><span>Publications</span></a></li><li><a href=http://localhost:1313/talks/ title=Talks><span>Talks</span></a></li><li><a href=http://localhost:1313/projects/ title=Projects><span>Projects</span></a></li><li><a href="https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&amp;target=resume.tex&amp;command=xelatex&amp;force=true" title=Resume><span>Resume</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li><li><a href="https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&amp;target=cv.tex&amp;command=xelatex&amp;force=true" title=CV><span>CV</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=http://localhost:1313/>Home</a>&nbsp;»&nbsp;<a href=http://localhost:1313/publications/>Publications</a></div><h1 class="post-title entry-hint-parent">Forecasting fMRI Images From Video Sequences: Linear Model Analysis</h1><div class=post-meta><span title='2024-04-04 00:00:00 +0000 UTC'>April 2024</span>&nbsp;&#183;&nbsp;Daniil Dorin,&#8201;Nikita Kiselev,&#8201;Andrey Grabovoy</div></header><div class=post-content><hr><h3 id=links>Links<a hidden class=anchor aria-hidden=true href=#links>#</a></h3><ul><li><a href=https://github.com/DorinDaniil/Forecasting-fMRI-Images/blob/main/paper/main.pdf target=_blank>📝 Paper</a></li><li><a href=https://github.com/DorinDaniil/Forecasting-fMRI-Images/tree/main/code target=_blank>&lt;/> Code</a></li></ul><hr><h3 id=abstract>Abstract<a hidden class=anchor aria-hidden=true href=#abstract>#</a></h3><p>Over the past few decades, a variety of significant scientific breakthroughs have been achieved in the fields of brain encoding and decoding using the functional magnetic resonance imaging (fMRI). Many studies have been conducted on the topic of human brain reaction to visual stimuli. However, the relationship between fMRI images and video sequences viewed by humans remains complex and is often studied using large transformer models. In this paper, we investigate the correlation between videos presented to participants during an experiment and the resulting fMRI images. To achieve this, we propose a method for creating a linear model that predicts changes in fMRI signals based on video sequence images. A linear model is constructed for each individual voxel in the fMRI image, assuming that the image sequence follows a Markov property. Through the comprehensive qualitative experiments, we demonstrate the relationship between the two time series. We hope that our findings contribute to a deeper understanding of the human brain&rsquo;s reaction to external stimuli and provide a basis for future research in this area.</p><hr></div><footer class=post-footer><ul class=post-tags><li><a href=http://localhost:1313/tags/time-series-forecasting/>Time Series Forecasting</a></li><li><a href=http://localhost:1313/tags/fmri-images/>Fmri Images</a></li><li><a href=http://localhost:1313/tags/linear-models/>Linear Models</a></li><li><a href=http://localhost:1313/tags/correlation-analysis/>Correlation Analysis</a></li></ul><nav class=paginav><a class=prev href=http://localhost:1313/publications/ssd-posterior/><span>&larr;&nbsp;Sample Size Determination: Posterior Distributions Proximity</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2024 <a href=http://localhost:1313/>Nikita Kiselev</a></span> ·
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Forecasting fMRI images from video sequences: linear model analysis | Nikita Kiselev</title>
+<meta name="keywords" content="Neuroimaging, fMRI, Video sequences, Correlation analysis, Hypothesis testing, Linear model, Forecasting">
+<meta name="description" content="This paper propose a method for creating a linear model that predicts changes in fMRI signals based on video sequence images. Published in the Health Information Science and Systems, 2024.">
+<meta name="author" content="Daniil Dorin,&thinsp;Nikita Kiselev,&thinsp;Andrey Grabovoy,&thinsp;Vadim Strijov">
+<link rel="canonical" href="http://localhost:1313/publications/forecasting-fmri-images/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.4582bb023ced504ba996f5488ce21d28596094f4d74f23b448645b0853334c4b.css" integrity="sha256-RYK7AjztUEuplvVIjOIdKFlglPTXTyO0SGRbCFMzTEs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/publications/forecasting-fmri-images/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Forecasting fMRI images from video sequences: linear model analysis" />
+<meta property="og:description" content="This paper propose a method for creating a linear model that predicts changes in fMRI signals based on video sequence images. Published in the Health Information Science and Systems, 2024." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/publications/forecasting-fmri-images/" />
+<meta property="og:image" content="http://localhost:1313/overview.png" /><meta property="article:section" content="publications" />
+<meta property="article:published_time" content="2024-11-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-12-07T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:1313/overview.png" />
+<meta name="twitter:title" content="Forecasting fMRI images from video sequences: linear model analysis"/>
+<meta name="twitter:description" content="This paper propose a method for creating a linear model that predicts changes in fMRI signals based on video sequence images. Published in the Health Information Science and Systems, 2024."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Publications",
+      "item": "http://localhost:1313/publications/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Forecasting fMRI images from video sequences: linear model analysis",
+      "item": "http://localhost:1313/publications/forecasting-fmri-images/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Forecasting fMRI images from video sequences: linear model analysis",
+  "name": "Forecasting fMRI images from video sequences: linear model analysis",
+  "description": "This paper propose a method for creating a linear model that predicts changes in fMRI signals based on video sequence images. Published in the Health Information Science and Systems, 2024.",
+  "keywords": [
+    "Neuroimaging", "fMRI", "Video sequences", "Correlation analysis", "Hypothesis testing", "Linear model", "Forecasting"
+  ],
+  "articleBody": " Links Paper Code Video Poster Abstract Over the past few decades, a variety of significant scientific breakthroughs have been achieved in the fields of brain encoding and decoding using the functional magnetic resonance imaging (fMRI). Many studies have been conducted on the topic of human brain reaction to visual stimuli. However, the relationship between fMRI images and video sequences viewed by humans remains complex and is often studied using large transformer models. In this paper, we investigate the correlation between videos presented to participants during an experiment and the resulting fMRI images. To achieve this, we propose a method for creating a linear model that predicts changes in fMRI signals based on video sequence images. A linear model is constructed for each individual voxel in the fMRI image, assuming that the image sequence follows a Markov property. Through the comprehensive qualitative experiments, we demonstrate the relationship between the two time series. We hope that our findings contribute to a deeper understanding of the human brain’s reaction to external stimuli and provide a basis for future research in this area.\nFigure 1: Method Overview Citation @article{dorin2024forecastingfmriimages, author = {Dorin, Daniil and Kiselev, Nikita and Grabovoy, Andrey and Strijov, Vadim}, journal = {Health Information Science and Systems}, number = {1}, pages = {55}, title = {Forecasting fMRI images from video sequences: linear model analysis}, volume = {12}, year = {2024} } ",
+  "wordCount" : "229",
+  "inLanguage": "en",
+  "image":"http://localhost:1313/overview.png","datePublished": "2024-11-15T00:00:00Z",
+  "dateModified": "2024-12-07T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Daniil Dorin"
+  }, {
+    "@type": "Person",
+    "name": "Nikita Kiselev"
+  }, {
+    "@type": "Person",
+    "name": "Andrey Grabovoy"
+  }, {
+    "@type": "Person",
+    "name": "Vadim Strijov"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/publications/forecasting-fmri-images/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nikita Kiselev",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Nikita Kiselev">
+                <img src="http://localhost:1313/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Nikita Kiselev</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/publications/" title="Publications">
+                    <span>Publications</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/talks/" title="Talks">
+                    <span>Talks</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&amp;target=resume.tex&amp;command=xelatex&amp;force=true" title="Resume">
+                    <span>Resume</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&amp;target=cv.tex&amp;command=xelatex&amp;force=true" title="CV">
+                    <span>CV</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archive/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Forecasting fMRI images from video sequences: linear model analysis
+    </h1>
+    <div class="post-meta"><span title='2024-11-15 00:00:00 +0000 UTC'>November 2024</span>&nbsp;&middot;&nbsp;Daniil Dorin,&thinsp;Nikita Kiselev,&thinsp;Andrey Grabovoy,&thinsp;Vadim Strijov&nbsp;&middot;&nbsp;<a href="https://doi.org/10.1007/s13755-024-00315-5" rel="noopener noreferrer" target="_blank">Health Information Science and Systems</a>
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<h5 id="links">Links</h5>
+<ul>
+<li><a href="https://rdcu.be/d0oV0" target="_blank">Paper</a></li>
+<li><a href="https://github.com/DorinDaniil/Forecasting-fMRI-Images" target="_blank">Code</a></li>
+<li><a href="https://www.youtube.com/live/WnIRaRl730A?si=Txo-uVvyS6JaTzRT&amp;t=4305" target="_blank">Video</a></li>
+<li><a href="https://github.com/DorinDaniil/Forecasting-fMRI-Images/blob/main/poster/poster.pdf" target="_blank">Poster</a></li>
+</ul>
+<hr>
+<h5 id="abstract">Abstract</h5>
+<p>Over the past few decades, a variety of significant scientific breakthroughs have been achieved in the fields of brain encoding and decoding using the functional magnetic resonance imaging (fMRI). Many studies have been conducted on the topic of human brain reaction to visual stimuli. However, the relationship between fMRI images and video sequences viewed by humans remains complex and is often studied using large transformer models. In this paper, we investigate the correlation between videos presented to participants during an experiment and the resulting fMRI images. To achieve this, we propose a method for creating a linear model that predicts changes in fMRI signals based on video sequence images. A linear model is constructed for each individual voxel in the fMRI image, assuming that the image sequence follows a Markov property. Through the comprehensive qualitative experiments, we demonstrate the relationship between the two time series. We hope that our findings contribute to a deeper understanding of the human brain’s reaction to external stimuli and provide a basis for future research in this area.</p>
+<hr>
+<h5 id="figure-1-method-overview">Figure 1: Method Overview</h5>
+<p><img loading="lazy" src="overview.png" alt=""  />
+</p>
+<hr>
+<h5 id="citation">Citation</h5>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-BibTeX" data-lang="BibTeX"><span style="display:flex;"><span><span style="color:#3f6e75">@article</span>{<span style="color:#000">dorin2024forecastingfmriimages</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#836c28">author</span> = <span style="color:#c41a16">{Dorin, Daniil and Kiselev, Nikita and Grabovoy, Andrey and Strijov, Vadim}</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#836c28">journal</span> = <span style="color:#c41a16">{Health Information Science and Systems}</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#836c28">number</span> = <span style="color:#c41a16">{1}</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#836c28">pages</span> = <span style="color:#c41a16">{55}</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#836c28">title</span> = <span style="color:#c41a16">{Forecasting fMRI images from video sequences: linear model analysis}</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#836c28">volume</span> = <span style="color:#c41a16">{12}</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#836c28">year</span> = <span style="color:#c41a16">{2024}</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><!-- ---
+
+##### Related material
+
++ [Presentation slides](presentation1.pdf)
++ [Summary of the paper](https://www.penguinrandomhouse.com/books/110403/unusual-uses-for-olive-oil-by-alexander-mccall-smith/) -->
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/neuroimaging/">Neuroimaging</a></li>
+      <li><a href="http://localhost:1313/tags/fmri/">FMRI</a></li>
+      <li><a href="http://localhost:1313/tags/video-sequences/">Video Sequences</a></li>
+      <li><a href="http://localhost:1313/tags/correlation-analysis/">Correlation Analysis</a></li>
+      <li><a href="http://localhost:1313/tags/hypothesis-testing/">Hypothesis Testing</a></li>
+      <li><a href="http://localhost:1313/tags/linear-model/">Linear Model</a></li>
+      <li><a href="http://localhost:1313/tags/forecasting/">Forecasting</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://localhost:1313/">Nikita Kiselev</a></span> ·     
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">a modified version</a>
+         of 
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

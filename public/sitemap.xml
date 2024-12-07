@@ -3,162 +3,167 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/gumbel-softmax/</loc>
-    <lastmod>2024-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/relaxit/</loc>
-    <lastmod>2024-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/library/</loc>
-    <lastmod>2024-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/package/</loc>
-    <lastmod>2024-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2024-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/pyro/</loc>
-    <lastmod>2024-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/python/</loc>
-    <lastmod>2024-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/pytorch/</loc>
-    <lastmod>2024-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/relaxation/</loc>
-    <lastmod>2024-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/straight-through-estimator/</loc>
-    <lastmod>2024-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-12-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/computational-linear-algebra/</loc>
-    <lastmod>2024-10-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/likelihood-bootstrapping/</loc>
-    <lastmod>2024-10-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/linear-regression/</loc>
-    <lastmod>2024-10-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/publications/</loc>
-    <lastmod>2024-10-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/publications/ssd-likelihood/</loc>
-    <lastmod>2024-10-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/sufficient-sample-size/</loc>
-    <lastmod>2024-10-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/convergence-analysis/</loc>
-    <lastmod>2024-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/hessian-matrix/</loc>
-    <lastmod>2024-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/image-classification/</loc>
-    <lastmod>2024-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/loss-function-landscape/</loc>
-    <lastmod>2024-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/neural-networks/</loc>
-    <lastmod>2024-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/publications/landscape-hessian/</loc>
-    <lastmod>2024-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/affine-constraints/</loc>
-    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/convex-optimization/</loc>
-    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/coupled-constraints/</loc>
-    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/decentralized-optimization/</loc>
-    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/publications/coupled/</loc>
-    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/normal-posterior-distribution/</loc>
-    <lastmod>2024-05-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/posterior-distributions-proximity/</loc>
-    <lastmod>2024-05-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/publications/ssd-posterior/</loc>
-    <lastmod>2024-05-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/talks/mipt66conf/mipt66conf/</loc>
-    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/talks/</loc>
-    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/correlation-analysis/</loc>
-    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/fmri-images/</loc>
-    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/fmri/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/forecasting/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/publications/forecasting-fmri-images/</loc>
-    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/linear-models/</loc>
-    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/hypothesis-testing/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/time-series-forecasting/</loc>
-    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/linear-model/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/neuroimaging/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/publications/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/video-sequences/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/computational-linear-algebra/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/likelihood-bootstrapping/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linear-regression/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/publications/ssd-likelihood/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sufficient-sample-size/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/convergence-analysis/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hessian-matrix/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/image-classification/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/loss-function-landscape/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/neural-networks/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/publications/landscape-hessian/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/affine-constraints/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/convex-optimization/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/coupled-constraints/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/decentralized-optimization/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/publications/coupled/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/normal-posterior-distribution/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/posterior-distributions-proximity/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/publications/ssd-posterior/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/talks/mipt66conf/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/talks/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/sir/</loc>
-    <lastmod>2023-12-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/optimization/</loc>
-    <lastmod>2023-12-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/random-processes/</loc>
-    <lastmod>2023-12-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/sir-models/</loc>
-    <lastmod>2023-12-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/stochastic-analysis/</loc>
-    <lastmod>2023-12-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/high-dimensionality/</loc>
-    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/machine-learning/</loc>
-    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/opt2023/</loc>
-    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/ipg/</loc>
-    <lastmod>2022-05-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/latex/</loc>
-    <lastmod>2022-05-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/nlp/</loc>
-    <lastmod>2022-05-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/topic-modelling/</loc>
-    <lastmod>2022-05-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
-  </url><url>
-    <loc>http://localhost:1313/awards/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/archive/</loc>
   </url>
 </urlset>

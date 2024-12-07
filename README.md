@@ -1,7 +1,15 @@
-# My Academic Website
+# Source Code and Assets of kisnikser.github.io
 
-This repository contains source code for my homepage, created using [Hugo](https://github.com/gohugoio/hugo), specifically with [PaperMod theme](https://github.com/adityatelange/hugo-PaperMod).
+This repository contains the source code and assets of Nikita Kiselev's website at https://kisnikser.github/io. 
 
-The website is hosted on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).
+## Source code
 
-<img width="1470" alt="Screenshot 2024-10-07 at 13 54 20" src="https://github.com/user-attachments/assets/2498757e-ca25-4d4e-be6d-a1e9c9b2c58e">
+The website is built with [Hugo](https://github.com/gohugoio/hugo). The source code comes from the minimalist website template at [pmichaillat/hugo-website](https://github.com/pmichaillat/hugo-website).
+
+## Assets
+
+The website's assets include [publications](https://kisnikser.github.io/publications/), [talks](https://kisnikser.github.io/talks/), and [projects](https://kisnikser.github.io/projects/). The assets are stored in the `static` folder (mostly as PDF files) and `content` folder (mostly as Markdown files), and they can be batch downloaded from there.
+
+## License
+
+Except where otherwise noted, the website's content was created by Nikita Kiselev and is licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).

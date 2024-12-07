@@ -1,27 +1,31 @@
 ---
 title: "Intelligent Presentation Generator"
 date: 2022-05-12
+lastmod: 2024-12-07
 tags: ["topic modelling", "nlp", "latex"]
 author: ["Daniil Dorin", "Nikita Kiselev", "Lidia Kottsova", "Maria Nikitina"]
-description: 
-summary: "Application for generating presentations based on text files using topic modeling" 
+description:
+summary: "Application for generating presentations based on text files using topic modeling." 
 cover:
-  image: "projects/ipg/ipg.png"
-  alt: ""
-  relative: true
-math: true
----
+    image: "ipg.png"
+    alt: "Overview"
+    relative: false
+editPost:
+    URL: 
+    Text:
 
 ---
 
-### Links
+---
 
-- [📝 Terms of reference](https://github.com/kisnikser/Intelligent-Presentation-Generator/blob/main/terms_of_reference/terms_of_reference.pdf) 
-- [</> Code](https://github.com/kisnikser/Intelligent-Presentation-Generator)
+##### Links
+
+- [Terms of reference](https://github.com/kisnikser/Intelligent-Presentation-Generator/blob/main/terms_of_reference/terms_of_reference.pdf) 
+- [Code](https://github.com/kisnikser/Intelligent-Presentation-Generator)
 
 ---
 
-### Abstract
+##### Abstract
 
 The user is faced with the task of creating a presentation in a short time.
 The program allows you to save a lot of time and automate this process.
@@ -32,3 +36,6 @@ We use top modeling to determine the number of topics in a document and then ide
 
 ---
 
+##### Figure 1: Overview
+
+![](ipg.png)

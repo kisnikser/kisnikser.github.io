@@ -57,7 +57,7 @@
 }
 
 .entry-content {
-    margin: 10px 0px;
+    margin: 20px 10px;
     color: var(--secondary);
     font-size: var(--entrysize);
     line-height: var(--lineheight);
@@ -68,8 +68,7 @@
 }
 
 .entry-footer {
-    /* color: var(--content); */
-    color: var(--secondary);
+    color: var(--content);
     font-size: var(--entrysize);
 }
 

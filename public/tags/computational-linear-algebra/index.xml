@@ -5,15 +5,15 @@
     <link>http://localhost:1313/tags/computational-linear-algebra/</link>
     <description>Recent content in Computational Linear Algebra on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 06 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <language>en</language>
+    <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/computational-linear-algebra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sample Size Determination: Likelihood Bootstrapping</title>
       <link>http://localhost:1313/publications/ssd-likelihood/</link>
       <pubDate>Sun, 06 Oct 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publications/ssd-likelihood/</guid>
-      <description>Presenting two approaches to determining a sufficient sample size based on likelihood values from resampled subsets</description>
+      <description>This paper presents two approaches to determining a sufficient sample size based on likelihood values from resampled subsets.</description>
     </item>
   </channel>
 </rss>

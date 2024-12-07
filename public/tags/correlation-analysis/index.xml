@@ -5,15 +5,15 @@
     <link>http://localhost:1313/tags/correlation-analysis/</link>
     <description>Recent content in Correlation Analysis on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 04 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <language>en</language>
+    <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/correlation-analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Forecasting fMRI Images From Video Sequences: Linear Model Analysis</title>
+      <title>Forecasting fMRI images from video sequences: linear model analysis</title>
       <link>http://localhost:1313/publications/forecasting-fmri-images/</link>
-      <pubDate>Thu, 04 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publications/forecasting-fmri-images/</guid>
-      <description>Exploring the correlation between video sequences and fMRI images, using a linear autoregressive model</description>
+      <description>This paper propose a method for creating a linear model that predicts changes in fMRI signals based on video sequence images. Published in the Health Information Science and Systems, 2024.</description>
     </item>
   </channel>
 </rss>

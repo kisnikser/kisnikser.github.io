@@ -1,136 +1,120 @@
-baseURL: "https://kisnikser.github.io/"
-languageCode: en-us
+baseURL: "https://kisnikser.github.io/" 
 title: Nikita Kiselev
 theme: PaperMod
 
+enableInlineShortcodes: true
 enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
 
-minify:
-  disableXML: true
-  minifyOutput: true
-
-markup:
-  goldmark:
-    extensions:
-      passthrough:
-        delimiters:
-          block:
-          - - \[
-            - \]
-          - - $$
-            - $$
-          inline:
-          - - \(
-            - \)
-        enable: true
-
-params:
-  keywords: [CV, Portfolio, Machine Learning]
-  author: Nikita Kiselev
-  DateFormat: "January 2006"
-  defaultTheme: auto
-  disableThemeToggle: false
-  ShowReadingTime: false
-  ShowShareButtons: false
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: false
-  hidemeta: false
-  hideSummary: false
-  showtoc: false
-  tocopen: false
-
-  math: true
-
-  profileMode:
-    enabled: true
-    subtitle: "**Data Scientist, Optimization Researcher**\n> 
-    
-    I am a master's student in Computer Science in the Intelligent Systems Department 
-    at Moscow Institute of Physics and Technology.
-    Prior to that, I received my bachelor's degree in Applied Mathematics and Physics there.\n>
-    
-    Currently, I am a research intern at Sber AI
-    and mathematician-programmer at Center for Artificial Intelligence, Innopolis University.\n>
-
-    My research interests include Generative AI, Computer Vision, and Optimization."
-    imageUrl: "images/photo.jpg"
-    imageWidth: 160
-    imageHeight: 160
-    imageTitle: "Nikita Kiselev"
-    buttons:
-      - name: Publications
-        url: publications
-      - name: Talks
-        url: talks
-      - name: Projects
-        url: projects
-      - name: Resume
-        url: https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=resume.tex&command=xelatex&force=true
-      - name: CV
-        url: https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=cv.tex&command=xelatex&force=true
-
-  socialIcons:
-    - name: telegram
-      url: "https://t.me/kisnikser"
-    - name: email
-      url: "mailto:kiselev.ns@phystech.su"
-    - name: Google Scholar
-      url: https://scholar.google.com/citations?user=8BOqs70AAAAJ&hl=ru
-    - name: github
-      url: "https://github.com/kisnikser"
-    - name: linkedin
-      url: "https://www.linkedin.com/in/kisnikser"
-
-  cover:
-    hidden: true
-    hiddenInList: false
-    hiddenInSingle: true
-
-  editPost:
-    URL: ""
-    Text: ""
-    appendFilePath: true
-
-  label:
-    icon: favicon.ico
-    iconHeight: 18
+taxonomies:
+    tag: tags
 
 menu:
-  main:
-    # - identifier: about
-    #   name: About
-    #   url: /about/
-    #   weight: 1
-    - identifier: publications
-      name: Publications
-      url: /publications/
-      weight: 2
-    - identifier: talks
-      name: Talks
-      url: /talks/
-      weight: 3
-    - identifier: projects
-      name: Projects
-      url: /projects/
-      weight: 4
-    # - identifier: awards
-    #   name: Awards
-    #   url: /awards/
-    #   weight: 5
-    - identifier: resume
-      name: Resume
-      # url: https://texlive2020.latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=resume.tex&command=pdflatex
-      url: https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=resume.tex&command=xelatex&force=true
-      weight: 6
-    - identifier: cv
-      name: CV
-      # url: https://texlive2020.latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=cv.tex&command=pdflatex
-      url: https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=cv.tex&command=xelatex&force=true
-      weight: 7
+    main:
+        - name: Publications
+          url: publications/
+          weight: 1
+        - name: Talks
+          url: talks/
+          weight: 2
+        - name: Projects
+          url: projects/
+          weight: 3
+        - name: Resume
+          url: https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=resume.tex&command=xelatex&force=true
+          weight: 4
+        - name: CV
+          url: https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=cv.tex&command=xelatex&force=true
+          weight: 5
+        - name: Tags
+          url: tags/
+          weight: 6
+        - name: Archive
+          url: archive/
+          weight: 7
+
+params:
+    description: "I am a master's student in Computer Science in the Intelligent Systems Department at Moscow Institute of Physics and Technology. 
+    My research focuses mostly on Generative AI, Computer Vision, and Optimization."
+    author: Nikita Kiselev
+    # googleAnalyticsID: "G-XXXXX"
+    DateFormat: "January 2006"
+    defaultTheme: light
+    hideFooter: false
+    disableThemeToggle: true
+    ShowShareButtons: false
+    ShowReadingTime: false
+    disableSpecial1stPost: true
+    disableAnchoredHeadings: true
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: true
+    ShowAllPagesInArchive: false
+    MainSections: ["publications","talks","projects"]
+    ShowToc: false
+    disableScrollToTop: true
+    TocOpen: true
+    ShowWordCount: false
+    UseHugoToc: true
+    comments: false
+    math: true
+    profileMode:
+          enabled: true
+          title: Nikita Kiselev
+          subtitle: "**Data Scientist, Optimization Researcher**\n> 
+
+          I am a master's student in Computer Science in the Intelligent Systems Department 
+          at Moscow Institute of Physics and Technology.
+          Prior to that, I received my bachelor's degree in Applied Mathematics and Physics there.\n>
+          
+          Currently, I am a research intern at Sber AI
+          and mathematician-programmer at Center for Artificial Intelligence, Innopolis University.\n>
+
+          My research interests include Generative AI, Computer Vision, and Optimization."
+          imageUrl: "photo.jpg"
+          imageWidth: 160
+          imageHeight: 160
+          buttons:
+            - name: Publications
+              url: publications/
+            - name: Talks
+              url: talks/
+            - name: Projects
+              url: projects/
+            - name: Resume
+              url: https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=resume.tex&command=xelatex&force=true
+            - name: CV
+              url: https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=cv.tex&command=xelatex&force=true
+
+    socialIcons:
+        - name: telegram
+          url: https://t.me/kisnikser
+        - name: email
+          url: kiselev.ns@phystech.edu
+        - name: Google Scholar
+          url: https://scholar.google.com/citations?user=8BOqs70AAAAJ&hl=ru
+        - name: github
+          url: https://github.com/kisnikser
+        - name: linkedin
+          url: https://www.linkedin.com/in/kisnikser
+
+    assets:
+        disableScrollBarStyle: true
+    cover:
+        hiddenInList: false
+        hiddenInSingle: true
+    label:
+      text: "Nikita Kiselev"
+      icon: favicon.ico
+      iconHeight: 18
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        guessSyntax: true
+        style: xcode 
+    tableOfContents:
+        endLevel: 3
+        ordered: false
+        startLevel: 2

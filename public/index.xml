@@ -5,96 +5,78 @@
     <link>http://localhost:1313/</link>
     <description>Recent content on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 06 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <language>en</language>
+    <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Just Relax It! Leveraging relaxation for discrete variables optimization</title>
       <link>http://localhost:1313/projects/relaxit/</link>
-      <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/relaxit/</guid>
       <description>We release a cutting-edge Python library designed to streamline the optimization of discrete probability distributions in neural networks, offering a suite of advanced relaxation techniques compatible with PyTorch.</description>
+    </item>
+    <item>
+      <title>Forecasting fMRI images from video sequences: linear model analysis</title>
+      <link>http://localhost:1313/publications/forecasting-fmri-images/</link>
+      <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/forecasting-fmri-images/</guid>
+      <description>This paper propose a method for creating a linear model that predicts changes in fMRI signals based on video sequence images. Published in the Health Information Science and Systems, 2024.</description>
     </item>
     <item>
       <title>Sample Size Determination: Likelihood Bootstrapping</title>
       <link>http://localhost:1313/publications/ssd-likelihood/</link>
       <pubDate>Sun, 06 Oct 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publications/ssd-likelihood/</guid>
-      <description>Presenting two approaches to determining a sufficient sample size based on likelihood values from resampled subsets</description>
+      <description>This paper presents two approaches to determining a sufficient sample size based on likelihood values from resampled subsets.</description>
     </item>
     <item>
       <title>Unraveling the Hessian: A Key to Smooth Convergence in Loss Function Landscapes</title>
       <link>http://localhost:1313/publications/landscape-hessian/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publications/landscape-hessian/</guid>
-      <description>Exploring the convergence of the loss landscape in neural networks as the sample size increases, focusing on the Hessian matrix to understand the local geometry of the loss function</description>
+      <description>This paper explore the convergence of the loss landscape in neural networks as the sample size increases, focusing on the Hessian matrix to understand the local geometry of the loss function.</description>
     </item>
     <item>
       <title>Decentralized Optimization with Coupled Constraints</title>
       <link>http://localhost:1313/publications/coupled/</link>
       <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publications/coupled/</guid>
-      <description>The method proposed is the first linearly convergent first-order decentralized algorithm for problems with general affine coupled constraints</description>
+      <description>The method proposed is the first linearly convergent first-order decentralized algorithm for problems with general affine coupled constraints.</description>
     </item>
     <item>
       <title>Sample Size Determination: Posterior Distributions Proximity</title>
       <link>http://localhost:1313/publications/ssd-posterior/</link>
       <pubDate>Sat, 04 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publications/ssd-posterior/</guid>
-      <description>Presenting two approaches to determining a sufficient sample size based on the proximity of posterior distributions of model parameters on similar subsets</description>
+      <description>This paper presents two approaches to determining a sufficient sample size based on the proximity of posterior distributions of model parameters on similar subsets.</description>
     </item>
     <item>
       <title>Determining a sufficient sample size based on the a posteriori distribution of model parameters</title>
-      <link>http://localhost:1313/talks/mipt66conf/mipt66conf/</link>
+      <link>http://localhost:1313/talks/mipt66conf/</link>
       <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/mipt66conf/mipt66conf/</guid>
+      <guid>http://localhost:1313/talks/mipt66conf/</guid>
       <description>66th MIPT All-Russian Scientific Conference</description>
-    </item>
-    <item>
-      <title>Forecasting fMRI Images From Video Sequences: Linear Model Analysis</title>
-      <link>http://localhost:1313/publications/forecasting-fmri-images/</link>
-      <pubDate>Thu, 04 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/forecasting-fmri-images/</guid>
-      <description>Exploring the correlation between video sequences and fMRI images, using a linear autoregressive model</description>
     </item>
     <item>
       <title>Models of epidemic spread, in particular COVID-19 as a model of stochastic chemical kinetics</title>
       <link>http://localhost:1313/projects/sir/</link>
       <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/sir/</guid>
-      <description>Various approaches to modeling the spread of epidemics, differential equations and Markov processes</description>
+      <description>Various approaches to modeling the spread of epidemics, differential equations and Markov processes.</description>
     </item>
     <item>
       <title>Optimization methods for quadratic problems with large dimensionality</title>
       <link>http://localhost:1313/projects/opt2023/</link>
       <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/opt2023/</guid>
-      <description>Comparison of different methods of solving high-dimensional linear regression problems</description>
+      <description>Comparison of different methods of solving high-dimensional linear regression problems.</description>
     </item>
     <item>
       <title>Intelligent Presentation Generator</title>
       <link>http://localhost:1313/projects/ipg/</link>
       <pubDate>Thu, 12 May 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/ipg/</guid>
-      <description>Application for generating presentations based on text files using topic modeling</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>Nikita Kiselev Data Scientist / Deep Learning Engineer
-Fields of interest: Machine Learning, Optimization
-CV 👨‍💻 Work experience Intern at Sber AI (Jun 2024 - Present):
-Instruct Image Editing Technician at Laboratory of Mathematical Methods of Optimization, MIPT (Oct 2023 - Apr 2024)
-Decentralized Optimization with Coupled Constraints Network design problem 🎓 Education BSc in Applied Mathematics and Physics (Sep 2020 – Present) Moscow Institute of Physics and Technology Thesis: Bayesian Sample Size Estimation Advisor: Andrey Grabovoy GPA: 4.</description>
-    </item>
-    <item>
-      <title>Awards</title>
-      <link>http://localhost:1313/awards/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/awards/</guid>
-      <description>Spring 2023&amp;ndash;2024 3rd degree personal scholarship for contributions to the development of numerical optimization methods Fall 2023&amp;ndash;2024 K.V. Rudakov scientific academic scholarship for research activities in the field of applied mathematics 3rd degree personal scholarship for contributions to the development of numerical optimization methods 2020&amp;ndash;2023 Abramov scholarship for 1-3 year bachelor students with the best grades at MIPT </description>
+      <description>Application for generating presentations based on text files using topic modeling.</description>
     </item>
   </channel>
 </rss>

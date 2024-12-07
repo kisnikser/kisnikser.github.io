@@ -5,15 +5,15 @@
     <link>http://localhost:1313/tags/high-dimensionality/</link>
     <description>Recent content in High Dimensionality on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 12 May 2023 00:00:00 +0000</lastBuildDate>
+    <language>en</language>
+    <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/high-dimensionality/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Optimization methods for quadratic problems with large dimensionality</title>
       <link>http://localhost:1313/projects/opt2023/</link>
       <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/opt2023/</guid>
-      <description>Comparison of different methods of solving high-dimensional linear regression problems</description>
+      <description>Comparison of different methods of solving high-dimensional linear regression problems.</description>
     </item>
   </channel>
 </rss>
