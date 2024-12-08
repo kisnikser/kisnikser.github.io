@@ -1,6 +1,6 @@
 # Source Code and Assets of kisnikser.github.io
 
-This repository contains the source code and assets of Nikita Kiselev's website at https://kisnikser.github/io. 
+This repository contains the source code and assets of Nikita Kiselev's website at https://kisnikser.github.io/. 
 
 ## Source code
 
