@@ -1,0 +1,18 @@
+{{ if .Get "summary" }}
+{{ else }}
+{{ warnf "missing value for param 'summary': %s" .Position }}
+{{ end }}
+<style>
+    summary h3 {
+        display: inline;
+        margin: 0;
+    }
+</style>
+<p>
+    <details {{ if (eq (.Get "openByDefault") true) }} open=true {{ end }}>
+        <summary markdown="span">
+            <h3>{{ .Get "summary" | markdownify }}</h3>
+        </summary>
+        {{ .Inner | markdownify }}
+    </details>
+</p>
