@@ -10,6 +10,12 @@ The website is built with [Hugo](https://github.com/gohugoio/hugo). The source c
 
 The website's assets include [publications](https://kisnikser.github.io/publications/), [talks](https://kisnikser.github.io/talks/), and [projects](https://kisnikser.github.io/projects/). The assets are stored in the `static` folder (mostly as PDF files) and `content` folder (mostly as Markdown files), and they can be batch downloaded from there.
 
+## Tips
+
+> [!TIP]
+> You may face a tricky problem with LaTeX, i.e. some formulas cannot be correctly viewed on the website.
+> Check [this](https://kiwamizamurai.github.io/posts/2022-03-06/#problem).
+
 ## License
 
 Except where otherwise noted, the website's content was created by Nikita Kiselev and is licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
