@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Image Classification on Nikita Kiselev</title>
-    <link>https://kisnikser.github.io/tags/image-classification/</link>
+    <link>http://localhost:1313/tags/image-classification/</link>
     <description>Recent content in Image Classification on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
     <language>en</language>
     <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://kisnikser.github.io/tags/image-classification/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/image-classification/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unraveling the Hessian: A Key to Smooth Convergence in Loss Function Landscapes</title>
-      <link>https://kisnikser.github.io/publications/landscape-hessian/</link>
+      <link>http://localhost:1313/publications/landscape-hessian/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://kisnikser.github.io/publications/landscape-hessian/</guid>
+      <guid>http://localhost:1313/publications/landscape-hessian/</guid>
       <description>This paper explore the convergence of the loss landscape in neural networks as the sample size increases, focusing on the Hessian matrix to understand the local geometry of the loss function.</description>
     </item>
   </channel>

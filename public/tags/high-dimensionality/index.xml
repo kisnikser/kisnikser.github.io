@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>High Dimensionality on Nikita Kiselev</title>
-    <link>https://kisnikser.github.io/tags/high-dimensionality/</link>
+    <link>http://localhost:1313/tags/high-dimensionality/</link>
     <description>Recent content in High Dimensionality on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
     <language>en</language>
     <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://kisnikser.github.io/tags/high-dimensionality/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/high-dimensionality/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Optimization methods for quadratic problems with large dimensionality</title>
-      <link>https://kisnikser.github.io/projects/opt2023/</link>
+      <link>http://localhost:1313/projects/opt2023/</link>
       <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://kisnikser.github.io/projects/opt2023/</guid>
+      <guid>http://localhost:1313/projects/opt2023/</guid>
       <description>Comparison of different methods of solving high-dimensional linear regression problems.</description>
     </item>
   </channel>

@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Linear Regression on Nikita Kiselev</title>
-    <link>https://kisnikser.github.io/tags/linear-regression/</link>
+    <link>http://localhost:1313/tags/linear-regression/</link>
     <description>Recent content in Linear Regression on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
     <language>en</language>
     <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://kisnikser.github.io/tags/linear-regression/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/linear-regression/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sample Size Determination: Likelihood Bootstrapping</title>
-      <link>https://kisnikser.github.io/publications/ssd-likelihood/</link>
+      <link>http://localhost:1313/publications/ssd-likelihood/</link>
       <pubDate>Sun, 06 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://kisnikser.github.io/publications/ssd-likelihood/</guid>
+      <guid>http://localhost:1313/publications/ssd-likelihood/</guid>
       <description>This paper presents two approaches to determining a sufficient sample size based on likelihood values from resampled subsets.</description>
     </item>
     <item>
       <title>Sample Size Determination: Posterior Distributions Proximity</title>
-      <link>https://kisnikser.github.io/publications/ssd-posterior/</link>
+      <link>http://localhost:1313/publications/ssd-posterior/</link>
       <pubDate>Sat, 04 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://kisnikser.github.io/publications/ssd-posterior/</guid>
+      <guid>http://localhost:1313/publications/ssd-posterior/</guid>
       <description>This paper presents two approaches to determining a sufficient sample size based on the proximity of posterior distributions of model parameters on similar subsets.</description>
     </item>
     <item>
       <title>Determining a sufficient sample size based on the a posteriori distribution of model parameters</title>
-      <link>https://kisnikser.github.io/talks/mipt66conf/</link>
+      <link>http://localhost:1313/talks/mipt66conf/</link>
       <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://kisnikser.github.io/talks/mipt66conf/</guid>
+      <guid>http://localhost:1313/talks/mipt66conf/</guid>
       <description>66th MIPT All-Russian Scientific Conference</description>
     </item>
     <item>
       <title>Optimization methods for quadratic problems with large dimensionality</title>
-      <link>https://kisnikser.github.io/projects/opt2023/</link>
+      <link>http://localhost:1313/projects/opt2023/</link>
       <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://kisnikser.github.io/projects/opt2023/</guid>
+      <guid>http://localhost:1313/projects/opt2023/</guid>
       <description>Comparison of different methods of solving high-dimensional linear regression problems.</description>
     </item>
   </channel>

@@ -11,8 +11,8 @@ cover:
     alt: "Overview"
     relative: false
 editPost:
-    URL: 
-    Text:
+    URL: https://github.com/intsystems/relaxit
+    Text: GitHub
 showToc: true 
 showReadingTime: true
 ---
@@ -142,7 +142,7 @@ The rest of the blog-post is about these other relaxation methods.
 In this section, we shortly discuss each of the methods implemented in our Python library ["Just Relax It"](https://github.com/intsystems/discrete-variables-relaxation).
 Firtly, we generalize all relaxation methods into the following problem formulation (see [Introduction](#introduction) for details): 
 
-> Given discrete random variable $\mathbf{c} \sim p_{\boldsymbol{\phi}}(\mathbf{c})$, estimate the gradient w.r.t. $\boldsymbol{\phi}$ of the expected value of some deterministic function $f(\mathbf{c})$, using reparameterization trick with relaxation $\mathbf{c} \approx \hat{\mathbf{c}}(\mathbf{z}, \tau)$, where $\mathbf{z} \sim p(\mathbf{z})$ and $\tau > 0$ is a temperature parameter. In other words,
+> Given discrete random variable $\mathbf{c} \sim p_{\boldsymbol{\phi}}(\mathbf{c})$, estimate the gradient w.r.t. $\boldsymbol{\phi}$ of the expected value of some deterministic function $f(\mathbf{c})$, using reparameterization trick with relaxation $\mathbf{c}~\approx~\hat{\mathbf{c}}(\mathbf{z}, \tau)$, where $\mathbf{z} \sim p(\mathbf{z})$ and $\tau > 0$ is a temperature parameter. In other words,
 $$
     \nabla\_{\boldsymbol{\phi}} \mathbb{E}\_{p_{\boldsymbol{\phi}}(\mathbf{c})} f(\mathbf{c}) \approx \mathbb{E}\_{p(\mathbf{z})} \left[ \nabla\_{\boldsymbol{\phi}} f(\hat{\mathbf{c}}(\mathbf{z}, \tau)) \right].
 $$
@@ -162,7 +162,7 @@ where $\mu$ is trainable and $\sigma$ is fixed during training.
 
 {{< /collapse-h3 >}}
 
-{{< collapse-h3 summary="Hard Concrete ([Louizos et al. 2018](https://arxiv.org/abs/1712.01312))" >}}
+{{< collapse-h3 summary="Hard Concrete ([Louizos et al. 2018](https://arxiv.org/abs/1712.01312))" >}} <a></a>
 
 This method relaxes **Bernoulli** random variable $c \sim \mathrm{Be}(\pi)$.
 It is inspired by [Relaxed Bernoulli](#relaxedbernoulli), but uses another random variable to clip onto $(0, 1)$ — Gumbel-Softmax.
@@ -178,11 +178,11 @@ This method applies hard-sigmoid technique to make two delta peaks at zero and o
 
 {{< /collapse-h3 >}}
 
-{{< collapse-h3 summary="Straight-Through Bernoulli ([Cheng et al. 2019](https://arxiv.org/abs/1910.02176))" >}}
+{{< collapse-h3 summary="Straight-Through Bernoulli ([Cheng et al. 2019](https://arxiv.org/abs/1910.02176))" >}} <a></a>
 
 This method relaxes **Bernoulli** random variable $c \sim \mathrm{Be}(\pi)$.
 In order to achieve gradient flow through distribution parameter $\pi$, this method replaces the gradient w.r.t. $c$ with the gradient of a continuos relaxation $\pi$.
-Other words, it can be formulated using `torch` notation as follows:
+Other words, it can be formulated using `torch` [notation](https://pytorch.org/docs/stable/generated/torch.Tensor.detach.html) as follows:
 $$
 \hat{c} = \pi + (c - \pi)\verb|.detach()|.
 $$
@@ -190,7 +190,7 @@ It means that on the **forward pass** $\hat{c} = c$, but on the **backward pass*
 
 {{< /collapse-h3 >}}
 
-{{< collapse-h3 summary="Stochastic Times Smooth ([Bengio et al. 2013](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=62c76ca0b2790c34e85ba1cce09d47be317c7235))" >}}
+{{< collapse-h3 summary="Stochastic Times Smooth ([Bengio et al. 2013](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=62c76ca0b2790c34e85ba1cce09d47be317c7235))" >}} <a></a>
 
 This method relaxes **Bernoulli** random variable $c \sim \mathrm{Be}(\pi)$ by the following:
 $$
@@ -204,7 +204,7 @@ where $a$ is a parameter of this distribution.
 
 {{< /collapse-h3 >}}
 
-{{< collapse-h3 summary="Correlated relaxed Bernoulli ([Lee & Imrie et al. 2022](https://openreview.net/pdf?id=oDFvtxzPOx))" >}}
+{{< collapse-h3 summary="Correlated relaxed Bernoulli ([Lee & Imrie et al. 2022](https://openreview.net/pdf?id=oDFvtxzPOx))" >}} <a></a>
 
 This method relaxes **multivariate Bernoulli** random variable $\mathbf{c} \sim \mathrm{MultiBe}(\boldsymbol{\pi}, \mathbf{R})$.
 
@@ -226,7 +226,7 @@ where $\sigma(x) = (1 + \exp(-x))^{-1}$ is a sigmoid function, and $\tau$ is a t
 
 {{< /collapse-h3 >}}
 
-{{< collapse-h3 summary="Invertible Gaussian ([Potapczynski et al. 2019](https://arxiv.org/abs/1912.09588))" >}}
+{{< collapse-h3 summary="Invertible Gaussian ([Potapczynski et al. 2019](https://arxiv.org/abs/1912.09588))" >}} <a></a>
 
 This method relaxes **Categorical** random variable $\mathbf{c} \sim \mathrm{Cat}(\boldsymbol{\pi})$.
 The idea is to transform Gaussian noise $\boldsymbol{\epsilon}$ through invertible transformation $g(\cdot, \tau)$ with temperature $\tau$ onto the simplex:
@@ -243,7 +243,7 @@ $$
 $$
 {{< /collapse-h3 >}}
 
-{{< collapse-h3 summary="Gumbel-Softmax TOP-K ([Kool et al. 2019](https://arxiv.org/abs/1903.06059))" >}}
+{{< collapse-h3 summary="Gumbel-Softmax TOP-K ([Kool et al. 2019](https://arxiv.org/abs/1903.06059))" >}} <a></a>
 
 This method relaxes **Categorical** random variable $\mathbf{c} \sim \mathrm{Cat}(\boldsymbol{\pi})$.
 However, it solves quite different problem.
@@ -267,7 +267,7 @@ $$
 
 {{< /collapse-h3 >}}
 
-{{< collapse-h3 summary="Closed-form Laplace Bridge ([Hobbhahn et al. 2020](https://arxiv.org/abs/2003.01227))" >}}
+{{< collapse-h3 summary="Closed-form Laplace Bridge ([Hobbhahn et al. 2020](https://arxiv.org/abs/2003.01227))" >}} <a></a>
 
 This method is not a relaxation technique, but is quite useful in terms of dicrete variables approximation.
 This is an approach of approximating Dirichlet distribution with Logistic-Normal, and vice versa.
