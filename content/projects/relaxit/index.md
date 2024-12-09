@@ -204,7 +204,7 @@ where $a$ is a parameter of this distribution.
 
 {{< /collapse-h3 >}}
 
-{{< collapse-h3 summary="Correlated relaxed Bernoulli ([Lee, Imrie et al. 2022](https://openreview.net/pdf?id=oDFvtxzPOx))" >}}
+{{< collapse-h3 summary="Correlated relaxed Bernoulli ([Lee & Imrie et al. 2022](https://openreview.net/pdf?id=oDFvtxzPOx))" >}}
 
 This method relaxes **multivariate Bernoulli** random variable $\mathbf{c} \sim \mathrm{MultiBe}(\boldsymbol{\pi}, \mathbf{R})$.
 
@@ -357,3 +357,23 @@ Thank you for reading, and happy coding!
 [Daniil Dorin](https://github.com/DorinDaniil), [Igor Ignashin](https://github.com/ThunderstormXX), [**Nikita Kiselev**](https://kisnikser.github.io/), [Andrey Veprikov](https://github.com/Vepricov)
 
 ## References
+
+[1] Kingma and Welling. ["Auto-Encoding Variational Bayes"](https://arxiv.org/abs/1312.6114). arXiv preprint arXiv:1312.6114 (2013).
+
+[2] Jang et al. ["Categorical Reparameterization with Gumbel-Softmax"](https://arxiv.org/abs/1611.01144). arXiv preprint arXiv:1611.01144 (2016).
+
+[3] Maddison et al. ["The Concrete Distribution: A Continuous Relaxation of Discrete Random Variables"](https://arxiv.org/abs/1611.00712). arXiv preprint arXiv:1611.00712 (2016).
+
+[4] Yamada, Lindenbaum et al. ["Feature Selection using Stochastic Gates"](https://arxiv.org/abs/1810.04247). PMLR, 2020.
+
+[5] Lee, Imrie et al. ["Self-Supervision Enhanced Feature Selection with Correlated Gates"](https://openreview.net/forum?id=oDFvtxzPOx). ICLR, 2022.
+
+[6] Kool et al. ["Stochastic Beams and Where to Find Them: The Gumbel-Top-k Trick for Sampling Sequences Without Replacement"](https://arxiv.org/abs/1903.06059). PMLR, 2019.
+
+[7] Bengio et al. ["Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation"](https://arxiv.org/abs/1308.3432). arXiv preprint arXiv:1308.3432 (2013).
+
+[8] Potapczynski et al. ["Invertible Gaussian Reparameterization: Revisiting the Gumbel-Softmax"](https://arxiv.org/abs/1912.09588). arXiv preprint arXiv:1912.09588 (2019).
+
+[9] Louizos et al. ["Learning Sparse Neural Networks through $L_0$ Regularization"](https://arxiv.org/abs/1712.01312). arXiv preprint arXiv:1712.01312 (2017).
+
+[10] Hobbhahn et al. ["Fast Predictive Uncertainty for Classification with Bayesian Deep Networks"](https://arxiv.org/abs/2003.01227). PMLR, 2022.
