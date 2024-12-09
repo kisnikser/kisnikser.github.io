@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Convex Optimization on Nikita Kiselev</title>
-    <link>http://localhost:1313/tags/convex-optimization/</link>
+    <link>https://kisnikser.github.io/tags/convex-optimization/</link>
     <description>Recent content in Convex Optimization on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
     <language>en</language>
     <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/convex-optimization/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kisnikser.github.io/tags/convex-optimization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Decentralized Optimization with Coupled Constraints</title>
-      <link>http://localhost:1313/publications/coupled/</link>
+      <link>https://kisnikser.github.io/publications/coupled/</link>
       <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/coupled/</guid>
+      <guid>https://kisnikser.github.io/publications/coupled/</guid>
       <description>The method proposed is the first linearly convergent first-order decentralized algorithm for problems with general affine coupled constraints.</description>
     </item>
   </channel>

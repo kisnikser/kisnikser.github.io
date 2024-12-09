@@ -2,283 +2,283 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Nikita Kiselev</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://kisnikser.github.io/tags/</link>
     <description>Recent content in Tags on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
     <language>en</language>
     <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kisnikser.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gumbel-Softmax</title>
-      <link>http://localhost:1313/tags/gumbel-softmax/</link>
+      <link>https://kisnikser.github.io/tags/gumbel-softmax/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/gumbel-softmax/</guid>
+      <guid>https://kisnikser.github.io/tags/gumbel-softmax/</guid>
       <description></description>
     </item>
     <item>
       <title>Library</title>
-      <link>http://localhost:1313/tags/library/</link>
+      <link>https://kisnikser.github.io/tags/library/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/library/</guid>
+      <guid>https://kisnikser.github.io/tags/library/</guid>
       <description></description>
     </item>
     <item>
       <title>Package</title>
-      <link>http://localhost:1313/tags/package/</link>
+      <link>https://kisnikser.github.io/tags/package/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/package/</guid>
+      <guid>https://kisnikser.github.io/tags/package/</guid>
       <description></description>
     </item>
     <item>
       <title>Pyro</title>
-      <link>http://localhost:1313/tags/pyro/</link>
+      <link>https://kisnikser.github.io/tags/pyro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pyro/</guid>
+      <guid>https://kisnikser.github.io/tags/pyro/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>https://kisnikser.github.io/tags/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>https://kisnikser.github.io/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>PyTorch</title>
-      <link>http://localhost:1313/tags/pytorch/</link>
+      <link>https://kisnikser.github.io/tags/pytorch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pytorch/</guid>
+      <guid>https://kisnikser.github.io/tags/pytorch/</guid>
       <description></description>
     </item>
     <item>
       <title>Relaxation</title>
-      <link>http://localhost:1313/tags/relaxation/</link>
+      <link>https://kisnikser.github.io/tags/relaxation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/relaxation/</guid>
+      <guid>https://kisnikser.github.io/tags/relaxation/</guid>
       <description></description>
     </item>
     <item>
       <title>Straight-Through Estimator</title>
-      <link>http://localhost:1313/tags/straight-through-estimator/</link>
+      <link>https://kisnikser.github.io/tags/straight-through-estimator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/straight-through-estimator/</guid>
+      <guid>https://kisnikser.github.io/tags/straight-through-estimator/</guid>
       <description></description>
     </item>
     <item>
       <title>Correlation Analysis</title>
-      <link>http://localhost:1313/tags/correlation-analysis/</link>
+      <link>https://kisnikser.github.io/tags/correlation-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/correlation-analysis/</guid>
+      <guid>https://kisnikser.github.io/tags/correlation-analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>FMRI</title>
-      <link>http://localhost:1313/tags/fmri/</link>
+      <link>https://kisnikser.github.io/tags/fmri/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/fmri/</guid>
+      <guid>https://kisnikser.github.io/tags/fmri/</guid>
       <description></description>
     </item>
     <item>
       <title>Forecasting</title>
-      <link>http://localhost:1313/tags/forecasting/</link>
+      <link>https://kisnikser.github.io/tags/forecasting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/forecasting/</guid>
+      <guid>https://kisnikser.github.io/tags/forecasting/</guid>
       <description></description>
     </item>
     <item>
       <title>Hypothesis Testing</title>
-      <link>http://localhost:1313/tags/hypothesis-testing/</link>
+      <link>https://kisnikser.github.io/tags/hypothesis-testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hypothesis-testing/</guid>
+      <guid>https://kisnikser.github.io/tags/hypothesis-testing/</guid>
       <description></description>
     </item>
     <item>
       <title>Linear Model</title>
-      <link>http://localhost:1313/tags/linear-model/</link>
+      <link>https://kisnikser.github.io/tags/linear-model/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/linear-model/</guid>
+      <guid>https://kisnikser.github.io/tags/linear-model/</guid>
       <description></description>
     </item>
     <item>
       <title>Neuroimaging</title>
-      <link>http://localhost:1313/tags/neuroimaging/</link>
+      <link>https://kisnikser.github.io/tags/neuroimaging/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/neuroimaging/</guid>
+      <guid>https://kisnikser.github.io/tags/neuroimaging/</guid>
       <description></description>
     </item>
     <item>
       <title>Video Sequences</title>
-      <link>http://localhost:1313/tags/video-sequences/</link>
+      <link>https://kisnikser.github.io/tags/video-sequences/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/video-sequences/</guid>
+      <guid>https://kisnikser.github.io/tags/video-sequences/</guid>
       <description></description>
     </item>
     <item>
       <title>Computational Linear Algebra</title>
-      <link>http://localhost:1313/tags/computational-linear-algebra/</link>
+      <link>https://kisnikser.github.io/tags/computational-linear-algebra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/computational-linear-algebra/</guid>
+      <guid>https://kisnikser.github.io/tags/computational-linear-algebra/</guid>
       <description></description>
     </item>
     <item>
       <title>Likelihood Bootstrapping</title>
-      <link>http://localhost:1313/tags/likelihood-bootstrapping/</link>
+      <link>https://kisnikser.github.io/tags/likelihood-bootstrapping/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/likelihood-bootstrapping/</guid>
+      <guid>https://kisnikser.github.io/tags/likelihood-bootstrapping/</guid>
       <description></description>
     </item>
     <item>
       <title>Linear Regression</title>
-      <link>http://localhost:1313/tags/linear-regression/</link>
+      <link>https://kisnikser.github.io/tags/linear-regression/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/linear-regression/</guid>
+      <guid>https://kisnikser.github.io/tags/linear-regression/</guid>
       <description></description>
     </item>
     <item>
       <title>Sufficient Sample Size</title>
-      <link>http://localhost:1313/tags/sufficient-sample-size/</link>
+      <link>https://kisnikser.github.io/tags/sufficient-sample-size/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sufficient-sample-size/</guid>
+      <guid>https://kisnikser.github.io/tags/sufficient-sample-size/</guid>
       <description></description>
     </item>
     <item>
       <title>Convergence Analysis</title>
-      <link>http://localhost:1313/tags/convergence-analysis/</link>
+      <link>https://kisnikser.github.io/tags/convergence-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/convergence-analysis/</guid>
+      <guid>https://kisnikser.github.io/tags/convergence-analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>Hessian Matrix</title>
-      <link>http://localhost:1313/tags/hessian-matrix/</link>
+      <link>https://kisnikser.github.io/tags/hessian-matrix/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hessian-matrix/</guid>
+      <guid>https://kisnikser.github.io/tags/hessian-matrix/</guid>
       <description></description>
     </item>
     <item>
       <title>Image Classification</title>
-      <link>http://localhost:1313/tags/image-classification/</link>
+      <link>https://kisnikser.github.io/tags/image-classification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/image-classification/</guid>
+      <guid>https://kisnikser.github.io/tags/image-classification/</guid>
       <description></description>
     </item>
     <item>
       <title>Loss Function Landscape</title>
-      <link>http://localhost:1313/tags/loss-function-landscape/</link>
+      <link>https://kisnikser.github.io/tags/loss-function-landscape/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/loss-function-landscape/</guid>
+      <guid>https://kisnikser.github.io/tags/loss-function-landscape/</guid>
       <description></description>
     </item>
     <item>
       <title>Neural Networks</title>
-      <link>http://localhost:1313/tags/neural-networks/</link>
+      <link>https://kisnikser.github.io/tags/neural-networks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/neural-networks/</guid>
+      <guid>https://kisnikser.github.io/tags/neural-networks/</guid>
       <description></description>
     </item>
     <item>
       <title>Affine Constraints</title>
-      <link>http://localhost:1313/tags/affine-constraints/</link>
+      <link>https://kisnikser.github.io/tags/affine-constraints/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/affine-constraints/</guid>
+      <guid>https://kisnikser.github.io/tags/affine-constraints/</guid>
       <description></description>
     </item>
     <item>
       <title>Convex Optimization</title>
-      <link>http://localhost:1313/tags/convex-optimization/</link>
+      <link>https://kisnikser.github.io/tags/convex-optimization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/convex-optimization/</guid>
+      <guid>https://kisnikser.github.io/tags/convex-optimization/</guid>
       <description></description>
     </item>
     <item>
       <title>Coupled Constraints</title>
-      <link>http://localhost:1313/tags/coupled-constraints/</link>
+      <link>https://kisnikser.github.io/tags/coupled-constraints/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/coupled-constraints/</guid>
+      <guid>https://kisnikser.github.io/tags/coupled-constraints/</guid>
       <description></description>
     </item>
     <item>
       <title>Decentralized Optimization</title>
-      <link>http://localhost:1313/tags/decentralized-optimization/</link>
+      <link>https://kisnikser.github.io/tags/decentralized-optimization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/decentralized-optimization/</guid>
+      <guid>https://kisnikser.github.io/tags/decentralized-optimization/</guid>
       <description></description>
     </item>
     <item>
       <title>Normal Posterior Distribution</title>
-      <link>http://localhost:1313/tags/normal-posterior-distribution/</link>
+      <link>https://kisnikser.github.io/tags/normal-posterior-distribution/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/normal-posterior-distribution/</guid>
+      <guid>https://kisnikser.github.io/tags/normal-posterior-distribution/</guid>
       <description></description>
     </item>
     <item>
       <title>Posterior Distributions Proximity</title>
-      <link>http://localhost:1313/tags/posterior-distributions-proximity/</link>
+      <link>https://kisnikser.github.io/tags/posterior-distributions-proximity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/posterior-distributions-proximity/</guid>
+      <guid>https://kisnikser.github.io/tags/posterior-distributions-proximity/</guid>
       <description></description>
     </item>
     <item>
       <title>Optimization</title>
-      <link>http://localhost:1313/tags/optimization/</link>
+      <link>https://kisnikser.github.io/tags/optimization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/optimization/</guid>
+      <guid>https://kisnikser.github.io/tags/optimization/</guid>
       <description></description>
     </item>
     <item>
       <title>Random Processes</title>
-      <link>http://localhost:1313/tags/random-processes/</link>
+      <link>https://kisnikser.github.io/tags/random-processes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/random-processes/</guid>
+      <guid>https://kisnikser.github.io/tags/random-processes/</guid>
       <description></description>
     </item>
     <item>
       <title>Sir Models</title>
-      <link>http://localhost:1313/tags/sir-models/</link>
+      <link>https://kisnikser.github.io/tags/sir-models/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sir-models/</guid>
+      <guid>https://kisnikser.github.io/tags/sir-models/</guid>
       <description></description>
     </item>
     <item>
       <title>Stochastic Analysis</title>
-      <link>http://localhost:1313/tags/stochastic-analysis/</link>
+      <link>https://kisnikser.github.io/tags/stochastic-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/stochastic-analysis/</guid>
+      <guid>https://kisnikser.github.io/tags/stochastic-analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>High Dimensionality</title>
-      <link>http://localhost:1313/tags/high-dimensionality/</link>
+      <link>https://kisnikser.github.io/tags/high-dimensionality/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/high-dimensionality/</guid>
+      <guid>https://kisnikser.github.io/tags/high-dimensionality/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine Learning</title>
-      <link>http://localhost:1313/tags/machine-learning/</link>
+      <link>https://kisnikser.github.io/tags/machine-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/machine-learning/</guid>
+      <guid>https://kisnikser.github.io/tags/machine-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Latex</title>
-      <link>http://localhost:1313/tags/latex/</link>
+      <link>https://kisnikser.github.io/tags/latex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/latex/</guid>
+      <guid>https://kisnikser.github.io/tags/latex/</guid>
       <description></description>
     </item>
     <item>
       <title>Nlp</title>
-      <link>http://localhost:1313/tags/nlp/</link>
+      <link>https://kisnikser.github.io/tags/nlp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/nlp/</guid>
+      <guid>https://kisnikser.github.io/tags/nlp/</guid>
       <description></description>
     </item>
     <item>
       <title>Topic Modelling</title>
-      <link>http://localhost:1313/tags/topic-modelling/</link>
+      <link>https://kisnikser.github.io/tags/topic-modelling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/topic-modelling/</guid>
+      <guid>https://kisnikser.github.io/tags/topic-modelling/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Nikita Kiselev</title>
-    <link>http://localhost:1313/</link>
+    <link>https://kisnikser.github.io/</link>
     <description>Recent content on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
     <language>en</language>
     <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kisnikser.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Just Relax It! Leveraging relaxation for discrete variables optimization</title>
-      <link>http://localhost:1313/projects/relaxit/</link>
+      <link>https://kisnikser.github.io/projects/relaxit/</link>
       <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/relaxit/</guid>
+      <guid>https://kisnikser.github.io/projects/relaxit/</guid>
       <description>We release a cutting-edge Python library designed to streamline the optimization of discrete probability distributions in neural networks, offering a suite of advanced relaxation techniques compatible with PyTorch.</description>
     </item>
     <item>
       <title>Forecasting fMRI images from video sequences: linear model analysis</title>
-      <link>http://localhost:1313/publications/forecasting-fmri-images/</link>
+      <link>https://kisnikser.github.io/publications/forecasting-fmri-images/</link>
       <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/forecasting-fmri-images/</guid>
+      <guid>https://kisnikser.github.io/publications/forecasting-fmri-images/</guid>
       <description>This paper propose a method for creating a linear model that predicts changes in fMRI signals based on video sequence images. Published in the Health Information Science and Systems, 2024.</description>
     </item>
     <item>
       <title>Sample Size Determination: Likelihood Bootstrapping</title>
-      <link>http://localhost:1313/publications/ssd-likelihood/</link>
+      <link>https://kisnikser.github.io/publications/ssd-likelihood/</link>
       <pubDate>Sun, 06 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/ssd-likelihood/</guid>
+      <guid>https://kisnikser.github.io/publications/ssd-likelihood/</guid>
       <description>This paper presents two approaches to determining a sufficient sample size based on likelihood values from resampled subsets.</description>
     </item>
     <item>
       <title>Unraveling the Hessian: A Key to Smooth Convergence in Loss Function Landscapes</title>
-      <link>http://localhost:1313/publications/landscape-hessian/</link>
+      <link>https://kisnikser.github.io/publications/landscape-hessian/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/landscape-hessian/</guid>
+      <guid>https://kisnikser.github.io/publications/landscape-hessian/</guid>
       <description>This paper explore the convergence of the loss landscape in neural networks as the sample size increases, focusing on the Hessian matrix to understand the local geometry of the loss function.</description>
     </item>
     <item>
       <title>Decentralized Optimization with Coupled Constraints</title>
-      <link>http://localhost:1313/publications/coupled/</link>
+      <link>https://kisnikser.github.io/publications/coupled/</link>
       <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/coupled/</guid>
+      <guid>https://kisnikser.github.io/publications/coupled/</guid>
       <description>The method proposed is the first linearly convergent first-order decentralized algorithm for problems with general affine coupled constraints.</description>
     </item>
     <item>
       <title>Sample Size Determination: Posterior Distributions Proximity</title>
-      <link>http://localhost:1313/publications/ssd-posterior/</link>
+      <link>https://kisnikser.github.io/publications/ssd-posterior/</link>
       <pubDate>Sat, 04 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/ssd-posterior/</guid>
+      <guid>https://kisnikser.github.io/publications/ssd-posterior/</guid>
       <description>This paper presents two approaches to determining a sufficient sample size based on the proximity of posterior distributions of model parameters on similar subsets.</description>
     </item>
     <item>
       <title>Determining a sufficient sample size based on the a posteriori distribution of model parameters</title>
-      <link>http://localhost:1313/talks/mipt66conf/</link>
+      <link>https://kisnikser.github.io/talks/mipt66conf/</link>
       <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/mipt66conf/</guid>
+      <guid>https://kisnikser.github.io/talks/mipt66conf/</guid>
       <description>66th MIPT All-Russian Scientific Conference</description>
     </item>
     <item>
       <title>Models of epidemic spread, in particular COVID-19 as a model of stochastic chemical kinetics</title>
-      <link>http://localhost:1313/projects/sir/</link>
+      <link>https://kisnikser.github.io/projects/sir/</link>
       <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/sir/</guid>
+      <guid>https://kisnikser.github.io/projects/sir/</guid>
       <description>Various approaches to modeling the spread of epidemics, differential equations and Markov processes.</description>
     </item>
     <item>
       <title>Optimization methods for quadratic problems with large dimensionality</title>
-      <link>http://localhost:1313/projects/opt2023/</link>
+      <link>https://kisnikser.github.io/projects/opt2023/</link>
       <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/opt2023/</guid>
+      <guid>https://kisnikser.github.io/projects/opt2023/</guid>
       <description>Comparison of different methods of solving high-dimensional linear regression problems.</description>
     </item>
     <item>
       <title>Intelligent Presentation Generator</title>
-      <link>http://localhost:1313/projects/ipg/</link>
+      <link>https://kisnikser.github.io/projects/ipg/</link>
       <pubDate>Thu, 12 May 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/ipg/</guid>
+      <guid>https://kisnikser.github.io/projects/ipg/</guid>
       <description>Application for generating presentations based on text files using topic modeling.</description>
     </item>
   </channel>

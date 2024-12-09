@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Talks on Nikita Kiselev</title>
-    <link>http://localhost:1313/talks/</link>
+    <link>https://kisnikser.github.io/talks/</link>
     <description>Recent content in Talks on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
     <language>en</language>
     <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/talks/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kisnikser.github.io/talks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Determining a sufficient sample size based on the a posteriori distribution of model parameters</title>
-      <link>http://localhost:1313/talks/mipt66conf/</link>
+      <link>https://kisnikser.github.io/talks/mipt66conf/</link>
       <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/mipt66conf/</guid>
+      <guid>https://kisnikser.github.io/talks/mipt66conf/</guid>
       <description>66th MIPT All-Russian Scientific Conference</description>
     </item>
   </channel>
