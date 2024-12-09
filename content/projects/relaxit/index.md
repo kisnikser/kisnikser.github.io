@@ -142,7 +142,7 @@ The rest of the blog-post is about these other relaxation methods.
 In this section, we shortly discuss each of the methods implemented in our Python library ["Just Relax It"](https://github.com/intsystems/discrete-variables-relaxation).
 Firtly, we generalize all relaxation methods into the following problem formulation (see [Introduction](#introduction) for details): 
 
-> Given discrete random variable $\mathbf{c} \sim p_{\boldsymbol{\phi}}(\mathbf{c})$, estimate the gradient w.r.t. $\boldsymbol{\phi}$ of the expected value of some deterministic function $f(\mathbf{c})$, using reparameterization trick with relaxation $\mathbf{c}~\approx~\hat{\mathbf{c}}(\mathbf{z}, \tau)$, where $\mathbf{z} \sim p(\mathbf{z})$ and $\tau > 0$ is a temperature parameter. In other words,
+> Given discrete random variable $\mathbf{c} \sim p_{\boldsymbol{\phi}}(\mathbf{c})$, estimate the gradient w.r.t. $\boldsymbol{\phi}$ of the expected value of some deterministic function $f(\mathbf{c})$, using reparameterization trick with relaxation $\mathbf{c} \approx \hat{\mathbf{c}}(\mathbf{z}, \tau)$, where $\mathbf{z} \sim p(\mathbf{z})$ and $\tau > 0$ is a temperature parameter. In other words,
 $$
     \nabla\_{\boldsymbol{\phi}} \mathbb{E}\_{p_{\boldsymbol{\phi}}(\mathbf{c})} f(\mathbf{c}) \approx \mathbb{E}\_{p(\mathbf{z})} \left[ \nabla\_{\boldsymbol{\phi}} f(\hat{\mathbf{c}}(\mathbf{z}, \tau)) \right].
 $$
