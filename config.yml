@@ -20,10 +20,10 @@ menu:
           url: projects/
           weight: 3
         - name: Resume
-          url: https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=resume.tex&command=xelatex&force=true
+          url: resume.pdf
           weight: 4
         - name: CV
-          url: https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=cv.tex&command=xelatex&force=true
+          url: cv.pdf
           weight: 5
         - name: Tags
           url: tags/
@@ -81,9 +81,9 @@ params:
             - name: Projects
               url: projects/
             - name: Resume
-              url: https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=resume.tex&command=xelatex&force=true
+              url: resume.pdf
             - name: CV
-              url: https://latexonline.cc/compile?git=https://github.com/kisnikser/CV&target=cv.tex&command=xelatex&force=true
+              url: cv.pdf
 
     socialIcons:
         - name: telegram
