@@ -19,7 +19,7 @@ showReadingTime: true
 
 <img src="overview.png" style="width: 80%;" class="center" />
 
-In this blog-post we present our Python library ["Just Relax It"](https://github.com/intsystems/discrete-variables-relaxation) (or `relaxit`) designed to streamline the optimization of discrete probability distributions in neural networks, offering a suite of advanced relaxation techniques compatible with PyTorch.
+In this blog-post we present our Python library ["Just Relax It"](https://github.com/intsystems/relaxit) (or `relaxit`) designed to streamline the optimization of discrete probability distributions in neural networks, offering a suite of advanced relaxation techniques compatible with PyTorch.
 
 ## Introduction <a name="introduction"></a>
 
@@ -31,7 +31,7 @@ Therefore, training a generative model often boils down to optimizing the parame
 Pioneering generative models typically work with **continous** distributions like the Normal distribution.
 However, for some modalities, such as texts or graphs, it is more natural to use **discrete** distributions — Bernoulli, Categorical, etc.
 
-Thus, we present our new Python library ["Just Relax It"](https://github.com/intsystems/discrete-variables-relaxation) that combines the best techniques for relaxing discrete distributions (we will explain what that means later) into an easy-to-use package. And it is compatible with PyTorch!
+Thus, we present our new Python library ["Just Relax It"](https://github.com/intsystems/relaxit) that combines the best techniques for relaxing discrete distributions (we will explain what that means later) into an easy-to-use package. And it is compatible with PyTorch!
 
 We start with a basic Variational Autoencoder (VAE) example that shows how parameter optimization typically happens for continuous distributions, then we move on to the case of discrete distributions. 
 After that, we overview relaxation methods used in our library and provide a demo of training a VAE with discrete latent variables.
@@ -141,7 +141,7 @@ The rest of the blog-post is about these other relaxation methods.
 
 ## Package Contents
 
-In this section, we shortly discuss each of the methods implemented in our Python library ["Just Relax It"](https://github.com/intsystems/discrete-variables-relaxation).
+In this section, we shortly discuss each of the methods implemented in our Python library ["Just Relax It"](https://github.com/intsystems/relaxit).
 Firtly, we generalize all relaxation methods into the following problem formulation (see [Introduction](#introduction) for details): 
 
 > Given discrete random variable $\mathbf{c} \sim p_{\boldsymbol{\phi}}(\mathbf{c})$, estimate the gradient w.r.t. $\boldsymbol{\phi}$ of the expected value of some deterministic function $f(\mathbf{c})$, using reparameterization trick with relaxation $\mathbf{c} \approx \hat{\mathbf{c}}(\mathbf{z}, \tau)$, where $\mathbf{z} \sim p(\mathbf{z})$ and $\tau > 0$ is a temperature parameter. In other words,
@@ -306,7 +306,7 @@ For closed-form Laplace Bridge between Dirichlet and Logistic-Normal distributio
 
 ## Demo
 
-Our demo code is available at [this link](https://github.com/intsystems/discrete-variables-relaxation/tree/main/demo). For demonstration purposes, we divide our algorithms in two different groups. Each group relates to the particular experiment:
+Our demo code is available at [this link](https://github.com/intsystems/relaxit/tree/main/demo). For demonstration purposes, we divide our algorithms in two different groups. Each group relates to the particular experiment:
 
 1. Laplace Bridge between Dirichlet and Logistic-Normal distributions;
 2. Other relaxation methods.
