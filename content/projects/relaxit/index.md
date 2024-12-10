@@ -17,7 +17,7 @@ showToc: true
 showReadingTime: true
 ---
 
-![](overview.png)
+<img src="overview.png" style="width: 80%;" class="center" />
 
 In this blog-post we present our Python library ["Just Relax It"](https://github.com/intsystems/discrete-variables-relaxation) (or `relaxit`) designed to streamline the optimization of discrete probability distributions in neural networks, offering a suite of advanced relaxation techniques compatible with PyTorch.
 
@@ -40,7 +40,8 @@ After that, we overview relaxation methods used in our library and provide a dem
 
 We assume that you are already familiar with the concept of a Variational Autoencoder (VAE), at least at the level that it consists of two parts: an encoder and a decoder, and tries to approximate the distribution $p(\mathbf{x})$ of data $\mathbf{x}$ using latent variables $\mathbf{z}$. If this is not the case, then we recommend that you to read a [blog-post](https://lilianweng.github.io/posts/2018-08-12-vae/) by Lilian Weng.
 
-![](demo.png)
+<img src="demo.png" style="width: 80%;" class="center" />
+<figcaption>Fig. 1. Illustration of Variational Autoencoder (VAE) architecture. </figcaption>
 
 The original VAE ([Kingma & Welling, 2014](https://arxiv.org/abs/1312.6114)) has two main parts:
 
@@ -123,7 +124,8 @@ Further, they **relax** $\arg\max$ operation into $\mathrm{softmax}$, introducin
 As temperature $\tau \to \infty$, Gumbel-Softmax distribution $\mathrm{GS}(\boldsymbol{\pi}, \tau)$ becomes more uniformly distributed (consider the analogy with melting ice).
 In contrast, as temperature limits to zero, that is $\tau \to 0$, the distribution becomes more and more similar with initial one — defined with $\arg\max$.
 
-![](gumbel-softmax.png)
+<img src="gumbel-softmax.png" style="width: 60%;" class="center" />
+<figcaption>Fig. 2. Illustration of Gumbel-Softmax trick. </figcaption>
 
 The **key idea** is that $\mathrm{softmax}$ is differential function, which allows us to do backward pass in neural networks!
 Such technique is called **relaxation**.
@@ -340,13 +342,11 @@ $$
 
 Finally, after training we obtained reconstruction and sampling results for a MNIST dataset that we provide below. We see that VAE has learned something adequate, which means that the reparameterization is happening correctly. For the rest of the methods, VAE are also implemented, which you can get engaged using scripts in the demo experiments directory.
 
-| VAE with discrete latents <br> Reconstruction |
-| :--: |
-| ![](correlated_bernoulli_reconstruction.png) |
+<img src="correlated_bernoulli_reconstruction.png" style="width: 80%;" class="center" />
+<figcaption>Fig. 3. VAE with Correlated Relaxed Bernoulli latents. Reconstruction. </figcaption>
 
-| VAE with discrete latents <br> Sampling |
-| :--: |
-| ![](correlated_bernoulli_sample.png) |
+<img src="correlated_bernoulli_sample.png" style="width: 65%;" class="center" />
+<figcaption>Fig. 4. VAE with Correlated Relaxed Bernoulli latents. Sampling. </figcaption>
 
 ## Conclusion
 
