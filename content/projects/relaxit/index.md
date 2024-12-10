@@ -293,7 +293,7 @@ And this is what is called **Laplace Bridge between Dirichlet and Logistic-Norma
 
 {{< /collapse-h3 >}}
 
-## Implementation (see our [GitHub]([](https://github.com/intsystems/relaxit)) for details)
+## Implementation (see our [GitHub](https://github.com/intsystems/relaxit) for details)
 
 In this section we describe our package design. The most famous Python probabilistic libraries with a built-in differentiation engine are [PyTorch](https://pytorch.org/docs/stable/index.html) and [Pyro](https://docs.pyro.ai/en/dev/index.html). Thus, we implement the `relaxit` library consistently with both of them. Specifically, we
 
