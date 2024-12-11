@@ -28,7 +28,7 @@ Any generative model contains some source of randomness to make new objects.
 This randomness is represented by a probability distribution, from which random variables are sampled.
 Therefore, training a generative model often boils down to optimizing the parameters of this distribution.
 
-Pioneering generative models typically work with **continous** distributions like the Normal distribution.
+Pioneering generative models typically work with **continuous** distributions like the Normal distribution.
 However, for some modalities, such as texts or graphs, it is more natural to use **discrete** distributions — Bernoulli, Categorical, etc.
 
 Thus, we present our new Python library ["Just Relax It"](https://github.com/intsystems/relaxit) that combines the best techniques for relaxing discrete distributions (we will explain what that means later) into an easy-to-use package. And it is compatible with PyTorch!
@@ -142,7 +142,7 @@ The rest of the blog-post is about these other relaxation methods.
 ## Package Contents
 
 In this section, we shortly discuss each of the methods implemented in our Python library ["Just Relax It"](https://github.com/intsystems/relaxit).
-Firtly, we generalize all relaxation methods into the following problem formulation (see [Introduction](#introduction) for details): 
+Firstly, we generalize all relaxation methods into the following problem formulation (see [Introduction](#introduction) for details): 
 
 > Given discrete random variable $\mathbf{c} \sim p_{\boldsymbol{\phi}}(\mathbf{c})$, estimate the gradient w.r.t. $\boldsymbol{\phi}$ of the expected value of some deterministic function $f(\mathbf{c})$, using reparameterization trick with relaxation $\mathbf{c} \approx \hat{\mathbf{c}}(\mathbf{z}, \tau)$, where $\mathbf{z} \sim p(\mathbf{z})$ and $\tau > 0$ is a temperature parameter. In other words,
 $$
@@ -183,7 +183,7 @@ This method applies hard-sigmoid technique to make two delta peaks at zero and o
 {{< collapse-h3 summary="Straight-Through Bernoulli ([Cheng et al. 2019](https://arxiv.org/abs/1910.02176))" >}} <a></a>
 
 This method relaxes **Bernoulli** random variable $c \sim \mathrm{Be}(\pi)$.
-In order to achieve gradient flow through distribution parameter $\pi$, this method replaces the gradient w.r.t. $c$ with the gradient of a continuos relaxation $\pi$.
+In order to achieve gradient flow through distribution parameter $\pi$, this method replaces the gradient w.r.t. $c$ with the gradient of a continuous relaxation $\pi$.
 Other words, it can be formulated using `torch` [notation](https://pytorch.org/docs/stable/generated/torch.Tensor.detach.html) as follows:
 $$
 \hat{c} = \pi + (c - \pi)\verb|.detach()|.
@@ -311,7 +311,7 @@ Our demo code is available at [this link](https://github.com/intsystems/relaxit/
 1. Laplace Bridge between Dirichlet and Logistic-Normal distributions;
 2. Other relaxation methods.
 
-**Laplace Bridge.** This part relates to the demonstation of closed-form Laplace Bridge between Dirichlet and Logistic-Normal distributions. We subsequently 1) initialize a Dirichlet distribution with random parameters; 2) approximate it with a Logistic-Normal distribution; 3) approximate obtained Logistic-Normal distribution with Dirichlet one. 
+**Laplace Bridge.** This part relates to the demonstration of closed-form Laplace Bridge between Dirichlet and Logistic-Normal distributions. We subsequently 1) initialize a Dirichlet distribution with random parameters; 2) approximate it with a Logistic-Normal distribution; 3) approximate obtained Logistic-Normal distribution with Dirichlet one. 
 
 | Dirichlet <br> (with random parameters) | Logistic-Normal <br> (approximation to Dirichlet) | Dirichlet <br> (approximation to obtained Logistic-Normal) |
 | :--: | :--: | :--: |
