@@ -41,7 +41,7 @@ The issue of sample size determination is crucial for constructing an effective 
 ##### Citation
 
 ```BibTeX
-@article{dorin2024forecastingfmriimages,
+@article{kiselev2025ssdposterior,
   author = {Kiselev, Nikita and Grabovoy, Andrey},
   title = {Sample size determination: posterior distributions proximity},
   journal = {Health Information Science and Systems},
