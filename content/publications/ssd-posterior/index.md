@@ -1,8 +1,8 @@
 ---
 title: "Sample Size Determination: Posterior Distributions Proximity"
-date: 2024-05-04
-lastmod: 2024-12-07
-tags: ["sufficient sample size", "posterior distributions proximity", "normal posterior distribution", "linear regression"]
+date: 2025-01-07
+lastmod: 2025-01-09
+tags: ["Sufficient sample size", "Posterior distributions proximity", "Normal posterior distribution", "Linear regression"]
 author: ["Nikita Kiselev", "Andrey Grabovoy"]
 description:
 summary: "This paper presents two approaches to determining a sufficient sample size based on the proximity of posterior distributions of model parameters on similar subsets." 
@@ -11,8 +11,8 @@ cover:
     alt: "Overview"
     relative: false
 editPost:
-    URL:
-    Text:
+    URL: "https://doi.org/10.1007/s10287-024-00528-9"
+    Text: "Computational Management Science"
 
 ---
 
@@ -20,7 +20,7 @@ editPost:
 
 ##### Links
 
-+ [Paper](https://github.com/kisnikser/Posterior-Distributions-Proximity/blob/main/paper/main.pdf) 
++ [Paper](https://rdcu.be/d5x08) 
 + [Code](https://github.com/kisnikser/Posterior-Distributions-Proximity)
 + [Video](https://www.youtube.com/watch?v=WnIRaRl730A&t=1728s)
 
@@ -36,21 +36,21 @@ The issue of sample size determination is crucial for constructing an effective 
 
 ![](posterior.png)
 
-<!-- ---
+---
 
 ##### Citation
 
 ```BibTeX
 @article{dorin2024forecastingfmriimages,
-  author = {Dorin, Daniil and Kiselev, Nikita and Grabovoy, Andrey and Strijov, Vadim},
+  author = {Kiselev, Nikita and Grabovoy, Andrey},
+  title = {Sample size determination: posterior distributions proximity},
   journal = {Health Information Science and Systems},
+  year = {2025},
+  volume = {22},
   number = {1},
-  pages = {55},
-  title = {Forecasting fMRI images from video sequences: linear model analysis},
-  volume = {12},
-  year = {2024}
+  pages = {1}
 }
-``` -->
+```
 
 <!-- ---
 
