@@ -2,23 +2,29 @@
 title: "ConvNets Landscape Convergence: Hessian-Based Analysis of Matricized Networks"
 date: 2024-12-12
 lastmod: 2025-03-11
-tags: ["convolutional neural network", "loss function", "Hessian matrix", "convergence rate", "sample size determination"]
+tags:
+  [
+    "convolutional neural network",
+    "loss function",
+    "Hessian matrix",
+    "convergence rate",
+    "sample size determination",
+  ]
 author: ["Vladislav Meshkov", "Nikita Kiselev", "Andrey Grabovoy"]
-description: 
+description:
 summary: "This paper introduces a method for estimating the Hessian matrix norm in convolutional neural networks, offering insights into the loss landscape's local behaviour, supported by empirical convergence analysis."
 editPost:
-    URL: "https://doi.org/10.1109/ISPRAS64596.2024.10899113"
-    Text: "2024 Ivannikov Ispras Open Conference (ISPRAS)"
-
+  URL: "https://doi.org/10.1109/ISPRAS64596.2024.10899113"
+  Text: "2024 Ivannikov Ispras Open Conference (ISPRAS)"
 ---
 
 ---
 
 ##### Links
 
-+ [IEEEXplore](https://ieeexplore.ieee.org/document/10899113)
-+ [ResearchGate](https://www.researchgate.net/publication/389459624_ConvNets_Landscape_Convergence_Hessian-Based_Analysis_of_Matricized_Networks)
-+ [Code](https://github.com/Drago160/Hessian-Based-Analysis-of-Matricized-Networks)
+- [IEEEXplore](https://ieeexplore.ieee.org/document/10899113)
+- [ResearchGate](https://www.researchgate.net/publication/389459624_ConvNets_Landscape_Convergence_Hessian-Based_Analysis_of_Matricized_Networks)
+- [Code](https://github.com/Drago160/Hessian-Based-Analysis-of-Matricized-Networks)
 
 ---
 

@@ -2,18 +2,28 @@
 title: "Just Relax It! Leveraging relaxation for discrete variables optimization"
 date: 2024-12-07
 lastmod: 2024-12-07
-tags: ["Relaxation", "Gumbel-Softmax", "Straight-Through Estimator", "Python", "Library", "Package", "PyTorch", "Pyro"]
+tags:
+  [
+    "Relaxation",
+    "Gumbel-Softmax",
+    "Straight-Through Estimator",
+    "Python",
+    "Library",
+    "Package",
+    "PyTorch",
+    "Pyro",
+  ]
 author: ["Daniil Dorin", "Igor Ignashin", "Nikita Kiselev", "Andrey Veprikov"]
 description:
 summary: "We release a cutting-edge Python library designed to streamline the optimization of discrete probability distributions in neural networks, offering a suite of advanced relaxation techniques compatible with PyTorch."
 cover:
-    image: "overview.png"
-    alt: "Overview"
-    relative: false
+  image: "overview.png"
+  alt: "Overview"
+  relative: false
 editPost:
-    URL: https://github.com/intsystems/relaxit
-    Text: GitHub
-showToc: true 
+  URL: https://github.com/intsystems/relaxit
+  Text: GitHub
+showToc: true
 showReadingTime: true
 ---
 
@@ -23,7 +33,7 @@ In this blog-post we present our Python library ["Just Relax It"](https://github
 
 ## Introduction <a name="introduction"></a>
 
-Rapid advancement of generative models, such as Variational Autoencoders (VAEs) and Diffusion Models, has driven the development of relevant mathematical tools. 
+Rapid advancement of generative models, such as Variational Autoencoders (VAEs) and Diffusion Models, has driven the development of relevant mathematical tools.
 Any generative model contains some source of randomness to make new objects.
 This randomness is represented by a probability distribution, from which random variables are sampled.
 Therefore, training a generative model often boils down to optimizing the parameters of this distribution.
@@ -33,7 +43,7 @@ However, for some modalities, such as texts or graphs, it is more natural to use
 
 Thus, we present our new Python library ["Just Relax It"](https://github.com/intsystems/relaxit) that combines the best techniques for relaxing discrete distributions (we will explain what that means later) into an easy-to-use package. And it is compatible with PyTorch!
 
-We start with a basic Variational Autoencoder (VAE) example that shows how parameter optimization typically happens for continuous distributions, then we move on to the case of discrete distributions. 
+We start with a basic Variational Autoencoder (VAE) example that shows how parameter optimization typically happens for continuous distributions, then we move on to the case of discrete distributions.
 After that, we overview relaxation methods used in our library and provide a demo of training a VAE with discrete latent variables.
 
 {{< collapse-h3 summary="VAE Example" >}}
@@ -48,7 +58,7 @@ The original VAE ([Kingma & Welling, 2014](https://arxiv.org/abs/1312.6114)) has
 1. **Encoder** $q_{\boldsymbol{\phi}}(\mathbf{z}|\mathbf{x})$: A neural network $g_{\boldsymbol{\phi}}(\mathbf{x})$ that outputs parameters of the latent Gaussian distribution.
 2. **Decoder** $p_{\boldsymbol{\theta}}(\mathbf{x}|\mathbf{z})$: A neural network $f_{\boldsymbol{\theta}}(\mathbf{z})$ that outputs parameters of the sample distribution (usually Gaussian or Bernoulli).
 
-Training a VAE involves maximizing the ELBO (evidence lower bound) with respect to the encoder and decoder parameters: 
+Training a VAE involves maximizing the ELBO (evidence lower bound) with respect to the encoder and decoder parameters:
 
 $$
 \mathcal{L}\_{\boldsymbol{\phi}, \boldsymbol{\theta}}(\mathbf{x}) = \mathbb{E}\_{q_{\boldsymbol{\phi}}(\mathbf{z}|\mathbf{x})} \log p_{\boldsymbol{\theta}}(\mathbf{x}|\mathbf{z}) - KL(q_{\boldsymbol{\phi}}(\mathbf{z}|\mathbf{x}) \| p(\mathbf{z})) \to \max_{\boldsymbol{\phi}, \boldsymbol{\theta}}.
@@ -111,16 +121,16 @@ has a categorical distribution $c \sim \mathrm{Categorical}(\boldsymbol{\pi})$.
 
 - We can sample from the discrete distribution using Gumbel-Max reparameterization.
 - Parameters and random variable sampling are separated (reparameterization trick).
-- **Problem:** The $\arg\max$ operation is non-differentiable. 
+- **Problem:** The $\arg\max$ operation is non-differentiable.
 
 To overcome the above problem, the authors propose to consider **one-hot Categorical distribution**, that is simply replace random variable $c \in \\{1, \ldots, K\\}$ with a random vector $\mathbf{c} \in \\{0, 1\\}^{K}$, such that
-$$ c = k \quad \Leftrightarrow \quad \mathbf{c}_k = 1. $$
+$$ c = k \quad \Leftrightarrow \quad \mathbf{c}\_k = 1. $$
 
 #### Gumbel-Softmax Relaxation
 
 $$ \hat{\mathbf{c}} = \mathrm{softmax}\left( \frac{\log \boldsymbol{\pi} + \mathbf{g}}{\tau} \right) $$
 
-Further, they **relax** $\arg\max$ operation into $\mathrm{softmax}$, introducing a temperature parameter $\tau > 0$. 
+Further, they **relax** $\arg\max$ operation into $\mathrm{softmax}$, introducing a temperature parameter $\tau > 0$.
 As temperature $\tau \to \infty$, Gumbel-Softmax distribution $\mathrm{GS}(\boldsymbol{\pi}, \tau)$ becomes more uniformly distributed (consider the analogy with melting ice).
 In contrast, as temperature limits to zero, that is $\tau \to 0$, the distribution becomes more and more similar with initial one — defined with $\arg\max$.
 
@@ -134,17 +144,18 @@ Such technique is called **relaxation**.
 
 ### Other relaxation methods
 
-We talked about one example of a relaxation for VAE with discrete latents — Gumbel-Softmax. 
-There are other ways too. 
-They give more flexible and better estimates of gradients. 
-The rest of the blog-post is about these other relaxation methods. 
+We talked about one example of a relaxation for VAE with discrete latents — Gumbel-Softmax.
+There are other ways too.
+They give more flexible and better estimates of gradients.
+The rest of the blog-post is about these other relaxation methods.
 
 ## Package Contents
 
 In this section, we shortly discuss each of the methods implemented in our Python library ["Just Relax It"](https://github.com/intsystems/relaxit).
-Firstly, we generalize all relaxation methods into the following problem formulation (see [Introduction](#introduction) for details): 
+Firstly, we generalize all relaxation methods into the following problem formulation (see [Introduction](#introduction) for details):
 
 > Given discrete random variable $\mathbf{c} \sim p_{\boldsymbol{\phi}}(\mathbf{c})$, estimate the gradient w.r.t. $\boldsymbol{\phi}$ of the expected value of some deterministic function $f(\mathbf{c})$, using reparameterization trick with relaxation $\mathbf{c} \approx \hat{\mathbf{c}}(\mathbf{z}, \tau)$, where $\mathbf{z} \sim p(\mathbf{z})$ and $\tau > 0$ is a temperature parameter. In other words,
+
 $$
     \nabla\_{\boldsymbol{\phi}} \mathbb{E}\_{p_{\boldsymbol{\phi}}(\mathbf{c})} f(\mathbf{c}) \approx \mathbb{E}\_{p(\mathbf{z})} \left[ \nabla\_{\boldsymbol{\phi}} f(\hat{\mathbf{c}}(\mathbf{z}, \tau)) \right].
 $$
@@ -153,6 +164,7 @@ $$
 
 This method relaxes **Bernoulli** random variable $c \sim \mathrm{Be}(\pi)$.
 The idea is to clip a Gaussian random variable onto $(0, 1)$ and tune the mean $\mu$ and scale $\sigma$ instead of $\pi$:
+
 $$
 \begin{aligned}
 \epsilon &\sim \mathcal{N}(0, 1),\\\
@@ -160,6 +172,7 @@ z &= \sigma \cdot \epsilon + \mu,\\\
 \hat{c} &= \min (1, \max (0, z)),
 \end{aligned}
 $$
+
 where $\mu$ is trainable and $\sigma$ is fixed during training.
 
 {{< /collapse-h3 >}}
@@ -169,6 +182,7 @@ where $\mu$ is trainable and $\sigma$ is fixed during training.
 This method relaxes **Bernoulli** random variable $c \sim \mathrm{Be}(\pi)$.
 It is inspired by [Relaxed Bernoulli](#relaxedbernoulli), but uses another random variable to clip onto $(0, 1)$ — Gumbel-Softmax.
 Moreover, they additionally "stretch" it from $(0, 1)$ to the wider interval $(a, b)$, where $a < 0$ and $b > 0$ as follows:
+
 $$
 \begin{aligned}
 z &\sim \mathrm{GS}(\pi, \tau),\\\
@@ -176,6 +190,7 @@ z &\sim \mathrm{GS}(\pi, \tau),\\\
 \hat{c} &= \min (1, \max (0, \tilde{z})),
 \end{aligned}
 $$
+
 This method applies hard-sigmoid technique to make two delta peaks at zero and one.
 
 {{< /collapse-h3 >}}
@@ -185,9 +200,11 @@ This method applies hard-sigmoid technique to make two delta peaks at zero and o
 This method relaxes **Bernoulli** random variable $c \sim \mathrm{Be}(\pi)$.
 In order to achieve gradient flow through distribution parameter $\pi$, this method replaces the gradient w.r.t. $c$ with the gradient of a continuous relaxation $\pi$.
 Other words, it can be formulated using `torch` [notation](https://pytorch.org/docs/stable/generated/torch.Tensor.detach.html) as follows:
+
 $$
 \hat{c} = \pi + (c - \pi)\verb|.detach()|.
 $$
+
 It means that on the **forward pass** $\hat{c} = c$, but on the **backward pass** $\hat{c} = \pi$.
 
 {{< /collapse-h3 >}}
@@ -195,6 +212,7 @@ It means that on the **forward pass** $\hat{c} = c$, but on the **backward pass*
 {{< collapse-h3 summary="Stochastic Times Smooth ([Bengio et al. 2013](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=62c76ca0b2790c34e85ba1cce09d47be317c7235))" >}} <a></a>
 
 This method relaxes **Bernoulli** random variable $c \sim \mathrm{Be}(\pi)$ by the following:
+
 $$
 \begin{aligned}
 p &= \sigma(a), \\\
@@ -202,6 +220,7 @@ b &\sim \mathrm{Be}(\sqrt{p}), \\\
 \hat{c} &= b \sqrt{p},
 \end{aligned}
 $$
+
 where $a$ is a parameter of this distribution.
 
 {{< /collapse-h3 >}}
@@ -212,18 +231,23 @@ This method relaxes **multivariate Bernoulli** random variable $\mathbf{c} \sim 
 
 > Multivariate Bernoulli distribution assumes that each component $c_{k}$ can be correlated with others.
 > It can be constructed via Gaussian copula $C_{\mathbf{R}}$ ([Nelsen, 2007](https://link.springer.com/book/10.1007/0-387-28678-0)):
+
 $$
     C_{\mathbf{R}}(u_1, \ldots, u_p) = \Phi_{\mathbf{R}}(\Phi^{-1}(u_1), \ldots, \Phi^{-1}(u_p)),
 $$
+
 > where $\Phi_{\mathbf{R}}$ is the joint CDF of a multivariate Gaussian distribution with correlation matrix $\mathbf{R}$, and $\Phi^{-1}$ is the inverse CDF of the standard univariate Gaussian distribution. Each component is defined as follows:
+
 $$
     c_{k} = \begin{cases} 1, \quad u_k \leq \pi_k,\\\ 0, \quad u_k > \pi_k. \end{cases}
 $$
 
 Relaxation is applied as follows:
+
 $$
     \hat{\mathbf{c}} = \sigma \left( \frac{1}{\tau} \left( \log \frac{\mathbf{u}}{1 - \mathbf{u}} + \log \frac{\boldsymbol{\pi}}{1 - \boldsymbol{\pi}} \right) \right),
 $$
+
 where $\sigma(x) = (1 + \exp(-x))^{-1}$ is a sigmoid function, and $\tau$ is a temperature hyperparameter.
 
 {{< /collapse-h3 >}}
@@ -232,6 +256,7 @@ where $\sigma(x) = (1 + \exp(-x))^{-1}$ is a sigmoid function, and $\tau$ is a t
 
 This method relaxes **Categorical** random variable $\mathbf{c} \sim \mathrm{Cat}(\boldsymbol{\pi})$.
 The idea is to transform Gaussian noise $\boldsymbol{\epsilon}$ through invertible transformation $g(\cdot, \tau)$ with temperature $\tau$ onto the simplex:
+
 $$
 \begin{aligned}
 \boldsymbol{\epsilon} &\sim \mathcal{N}(0, \mathbf{I}),\\\
@@ -239,17 +264,20 @@ $$
 \hat{\mathbf{c}} &= g(\mathbf{z}, \tau) = \mathrm{softmax}\_{++}(\mathbf{z/\tau}),
 \end{aligned}
 $$
+
 where the latter function remains invertible via introduction $\delta > 0$ as follows:
+
 $$
     \mathrm{softmax}\_{++}(\mathbf{z/\tau}) = \frac{\exp(\mathbf{z}/\tau)}{\sum\_{k=1}^{K} \exp(z\_k/\tau) + \delta}.
 $$
+
 {{< /collapse-h3 >}}
 
 {{< collapse-h3 summary="Gumbel-Softmax TOP-K ([Kool et al. 2019](https://arxiv.org/abs/1903.06059))" >}} <a></a>
 
 This method relaxes **Categorical** random variable $\mathbf{c} \sim \mathrm{Cat}(\boldsymbol{\pi})$.
 However, it solves quite different problem.
-Suppose we want to get $K$ samples without replacement (i.e., not repeating) according to the Categorical distribution with probabilities $\boldsymbol{\pi}$. Similar to the Gumbel-Max method,  let $g_k \sim \mathrm{Gumbel}(0, 1)$ for $k = 1, \ldots, K$, then the Gumbel-Max TOP-K Theorem says, that the values of the form
+Suppose we want to get $K$ samples without replacement (i.e., not repeating) according to the Categorical distribution with probabilities $\boldsymbol{\pi}$. Similar to the Gumbel-Max method, let $g_k \sim \mathrm{Gumbel}(0, 1)$ for $k = 1, \ldots, K$, then the Gumbel-Max TOP-K Theorem says, that the values of the form
 
 $$
     c\_1, \ldots , c\_K = \mathrm{arg}\underset{k}{\mathrm{top}\text{-}\mathrm{K}} [ \log\pi_k + g_k]
@@ -311,11 +339,11 @@ Our demo code is available at [this link](https://github.com/intsystems/relaxit/
 1. Laplace Bridge between Dirichlet and Logistic-Normal distributions;
 2. Other relaxation methods.
 
-**Laplace Bridge.** This part relates to the demonstration of closed-form Laplace Bridge between Dirichlet and Logistic-Normal distributions. We subsequently 1) initialize a Dirichlet distribution with random parameters; 2) approximate it with a Logistic-Normal distribution; 3) approximate obtained Logistic-Normal distribution with Dirichlet one. 
+**Laplace Bridge.** This part relates to the demonstration of closed-form Laplace Bridge between Dirichlet and Logistic-Normal distributions. We subsequently 1) initialize a Dirichlet distribution with random parameters; 2) approximate it with a Logistic-Normal distribution; 3) approximate obtained Logistic-Normal distribution with Dirichlet one.
 
 | Dirichlet <br> (with random parameters) | Logistic-Normal <br> (approximation to Dirichlet) | Dirichlet <br> (approximation to obtained Logistic-Normal) |
-| :--: | :--: | :--: |
-| ![](laplace-bridge-1.png) | ![](laplace-bridge-2.png) | ![](laplace-bridge-3.png) |
+| :-------------------------------------: | :-----------------------------------------------: | :--------------------------------------------------------: |
+|        ![](laplace-bridge-1.png)        |             ![](laplace-bridge-2.png)             |                 ![](laplace-bridge-3.png)                  |
 
 **VAE with discrete latents.** All the other 7 methods are used to train a VAE with discrete latents. Each of the discussed relaxation techniques allows us to learn the latent space with the corresponding distribution. All implemented distributions have a similar structure, so we chose one distribution for demonstration and conducted a number of experiments with it — **Correlated Relaxed Bernoulli**. This method generates correlated gate vectors from a multivariate Bernoulli distribution using a Gaussian copula. We define the parameters $\boldsymbol{\pi}$, $\mathbf{R}$, and $\tau$ as follows:
 
@@ -350,7 +378,7 @@ Finally, after training we obtained reconstruction and sampling results for a MN
 
 ## Conclusion
 
-In summary, ``Just Relax It`` is a powerful tool for researchers and practitioners working with discrete variables in neural networks. By offering a comprehensive set of relaxation techniques, our library aims to make the optimization process more efficient and accessible. We encourage you to explore our library, try out the demo, and contribute to its development. Together, we can push the boundaries of what is possible with discrete variable relaxation in machine learning.
+In summary, `Just Relax It` is a powerful tool for researchers and practitioners working with discrete variables in neural networks. By offering a comprehensive set of relaxation techniques, our library aims to make the optimization process more efficient and accessible. We encourage you to explore our library, try out the demo, and contribute to its development. Together, we can push the boundaries of what is possible with discrete variable relaxation in machine learning.
 
 Thank you for reading, and happy coding!
 

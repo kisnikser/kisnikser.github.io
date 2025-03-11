@@ -6,8 +6,15 @@
     <description>Recent content in Projects on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HippoTrainer: Gradient-Based Hyperparameter Optimization for PyTorch</title>
+      <link>http://localhost:1313/projects/hippotrainer/</link>
+      <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/hippotrainer/</guid>
+      <description>We release a Python library for gradient-based hyperparameter optimization, implementing cutting-edge algorithms that leverage automatic differentiation to efficiently tune hyperparameters.</description>
+    </item>
     <item>
       <title>Just Relax It! Leveraging relaxation for discrete variables optimization</title>
       <link>http://localhost:1313/projects/relaxit/</link>
