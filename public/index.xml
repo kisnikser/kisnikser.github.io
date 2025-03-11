@@ -6,8 +6,22 @@
     <description>Recent content on Nikita Kiselev</description>
     <generator>Hugo -- 0.125.5</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sample Size Determination: Posterior Distributions Proximity</title>
+      <link>http://localhost:1313/publications/ssd-posterior/</link>
+      <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/ssd-posterior/</guid>
+      <description>This paper presents two approaches to determining a sufficient sample size based on the proximity of posterior distributions of model parameters on similar subsets.</description>
+    </item>
+    <item>
+      <title>ConvNets Landscape Convergence: Hessian-Based Analysis of Matricized Networks</title>
+      <link>http://localhost:1313/publications/landscape-convnets/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/landscape-convnets/</guid>
+      <description>This paper introduces a method for estimating the Hessian matrix norm in convolutional neural networks, offering insights into the loss landscape&amp;rsquo;s local behaviour, supported by empirical convergence analysis.</description>
+    </item>
     <item>
       <title>Just Relax It! Leveraging relaxation for discrete variables optimization</title>
       <link>http://localhost:1313/projects/relaxit/</link>
@@ -42,13 +56,6 @@
       <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publications/coupled/</guid>
       <description>The method proposed is the first linearly convergent first-order decentralized algorithm for problems with general affine coupled constraints.</description>
-    </item>
-    <item>
-      <title>Sample Size Determination: Posterior Distributions Proximity</title>
-      <link>http://localhost:1313/publications/ssd-posterior/</link>
-      <pubDate>Sat, 04 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/ssd-posterior/</guid>
-      <description>This paper presents two approaches to determining a sufficient sample size based on the proximity of posterior distributions of model parameters on similar subsets.</description>
     </item>
     <item>
       <title>Determining a sufficient sample size based on the a posteriori distribution of model parameters</title>

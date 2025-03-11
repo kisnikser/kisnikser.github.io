@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Loss Function on Nikita Kiselev</title>
+    <link>http://localhost:1313/tags/loss-function/</link>
+    <description>Recent content in Loss Function on Nikita Kiselev</description>
+    <generator>Hugo -- 0.125.5</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 11 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/loss-function/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ConvNets Landscape Convergence: Hessian-Based Analysis of Matricized Networks</title>
+      <link>http://localhost:1313/publications/landscape-convnets/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/landscape-convnets/</guid>
+      <description>This paper introduces a method for estimating the Hessian matrix norm in convolutional neural networks, offering insights into the loss landscape&amp;rsquo;s local behaviour, supported by empirical convergence analysis.</description>
+    </item>
+  </channel>
+</rss>
