@@ -13,7 +13,7 @@
       <link>http://localhost:1313/projects/hippotrainer/</link>
       <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/hippotrainer/</guid>
-      <description>her</description>
+      <description>We release a Python library for gradient-based hyperparameter optimization, implementing cutting-edge algorithms that leverage automatic differentiation to efficiently tune hyperparameters.</description>
     </item>
   </channel>
 </rss>
