@@ -17,13 +17,13 @@ In this blog-post we present our Python library [HippoTrainer](https://github.co
 
 ## Introduction <a name="introduction"></a>
 
-Hyperparameter tuning is time-consuming and computationally expensive, often requiring extensive trial and error to find optimal configurations. There is a variety of hyperparameter optimization methods, such as Grid Search, Random Search, Bayesian Optimization, etc. In the case of continuous hyperparameters, the gradient-based methods arise.
+Hyperparameter tuning remains one of the most laborious and resource-intensive aspects of machine learning development. Traditional methods like grid search, random search, or Bayesian optimization often demand exhaustive iterations to identify optimal configurations, especially for high-dimensional problems. However, when hyperparameters are **continuous** (e.g., regularization coefficients, learning rates, or architectural parameters), gradient-based optimization offers a compelling alternative by leveraging automatic differentiation to compute hypergradients—gradients of validation loss with respect to hyperparameters.
 
-We implemented four effective and popular methods in one package, leveraging the unified, simple and clean structure. Below we delve into the problem statement and methods description.
+In this post, we introduce **HippoTrainer**, a PyTorch-native library that democratizes access to state-of-the-art gradient-based hyperparameter optimization (HPO) methods. Our library implements four powerful algorithms: T1-T2, IFT, HOAG, and DrMAD, that efficiently approximate the inverse Hessian required for hypergradient computation, enabling scalable optimization even for large neural networks. By abstracting these complex techniques into a unified, user-friendly interface inspired by PyTorch's `Optimizer`, HippoTrainer bridges the gap between theoretical advances in HPO and practical implementation.
 
-### Hyperparameter Optimization Problem
+### The Bi-Level Optimization Framework
 
-Given a vector of model parameters $\mathbf{w} \in \mathbb{R}^P$ and a vector of hyperparameters $\boldsymbol{\lambda} \in \mathbb{R}^H$. One aims to find optimal hyperparameters $\boldsymbol{\lambda}^*$, solving the bi-level optimization problem:
+At the core of gradient-based HPO lies the bi-level optimization problem:
 
 $$
 \begin{aligned}
@@ -32,31 +32,18 @@ $$
 \end{aligned}
 $$
 
-Often $\mathbf{w}$ are optimized with gradient descent, so **unrolled optimization** is typically used:
+Here, $\boldsymbol{\lambda}$ represents hyperparameters (e.g., L2 regularization strength), and $\mathbf{w}$ denotes model parameters. The inner loop minimizes training loss to produce optimal weights $\mathbf{w}^*$, while the outer loop adjusts $\boldsymbol{\lambda}$ to minimize validation loss. Gradient-based methods differentiate through the inner optimization process to compute hypergradients $\frac{d\mathcal{L}\_{\text{val}}}{d\boldsymbol{\lambda}}$, enabling direct optimization of $\boldsymbol{\lambda}$ via gradient descent.
 
+### Key Challenges and HippoTrainer's Solutions
+
+Computing hypergradients requires solving:
 $$
-\mathbf{w}\_{t+1} = \boldsymbol{\Phi}(\mathbf{w}\_{t}, \boldsymbol{\lambda}), \quad t = 0, \ldots, T-1.
-$$
-
-Typical way to optimize continuous hyperparameters is the **gradient-based optimization** that involves automatic differentiation through this unrolled optimization formula.
-
-### Hypergradient Calculation
-
-Chain rule gives us a hypergradient $d\_{\boldsymbol{\lambda}} \mathcal{L}\_{\text{val}}(\mathbf{w}\_T, \boldsymbol{\lambda})$, viewing $\mathbf{w}\_T$ as a function of $\boldsymbol{\lambda}$:
-$$
-    \underbrace{d\_{\boldsymbol{\lambda}} \mathcal{L}\_{\text{val}}(\mathbf{w}\_T, \boldsymbol{\lambda})}\_{\text{hypergradient}} = \underbrace{\nabla\_{\boldsymbol{\lambda}} \mathcal{L}\_{\text{val}}(\mathbf{w}\_T, \boldsymbol{\lambda})}\_{\text{hyperparam direct grad.}} + \underbrace{\nabla\_{\mathbf{w}} \mathcal{L}\_{\text{val}}(\mathbf{w}\_T, \boldsymbol{\lambda})}\_{\text{parameter direct grad.}} \times \underbrace{\frac{d\mathbf{w}\_T}{d\boldsymbol{\lambda}}}\_{\text{\textbf{best-response Jacobian}}}
+\frac{d\mathcal{L}\_{\text{val}}}{d\boldsymbol{\lambda}} = \nabla\_{\boldsymbol{\lambda}} \mathcal{L}\_{\text{val}} + \nabla\_{\mathbf{w}} \mathcal{L}\_{\text{val}} \cdot \underbrace{\frac{d\mathbf{w}}{d\boldsymbol{\lambda}}}_{\text{Best-Response Jacobian}}
 $$
 
-- Here **best-response Jacobian** is hard to compute!
+The **best-response Jacobian** $\frac{d\mathbf{w}}{d\boldsymbol{\lambda}}$ involves inverting the Hessian $\nabla^2\_{\mathbf{w}} \mathcal{L}\_{\text{train}}$, a computationally prohibitive operation for large models. HippoTrainer tackles this with approximations like Neumann series expansions (IFT), conjugate gradient methods (HOAG), or trajectory simplifications (DrMAD), making HPO tractable for real-world applications.
 
-Typical Solution — Implicit Function Theorem:
-$$
-    \frac{d\mathbf{w}\_T}{d\boldsymbol{\lambda}} = - \underbrace{\left[ \nabla^2\_{\mathbf{w}} \mathcal{L}\_{\text{train}}(\mathbf{w}\_T, \boldsymbol{\lambda}) \right]^{-1}}\_{\text{\textbf{inverted} training Hessian}} \times \underbrace{\nabla\_{\mathbf{w}} \nabla\_{\boldsymbol{\lambda}} \mathcal{L}\_{\text{train}} (\mathbf{w}\_T, \boldsymbol{\lambda})}\_{\text{training mixed partials}}.
-$$
-
-- Hessian **inversion** is a cornerstone of many algorithms.
-
-The next section contains information about each of the methods presented in our library, as they can be generalized to solve the above problem in different ways.
+In the following sections, we explore these methods and demonstrate how HippoTrainer streamlines their implementation, empowering developers to focus on model innovation rather than optimization logistics.
 
 ## Methods
 
@@ -98,15 +85,48 @@ Then it uses such approximation to perform the backward pass on the hyperparamet
 
 ## Implementation (see our [GitHub](https://github.com/intsystems/hippotrainer) for details)
 
-TODO
+You can use our library to tune almost all (see below) hyperparameters in your own code.
+The `HyperOptimizer` interface is very similar to [`Optimizer`](https://pytorch.org/docs/2.6/optim.html#torch.optim.Optimizer) from `PyTorch`.
 
-## Demo
+It supports key functionalities:
+1. `step` to do an optimization step over parameters (or hyperparameters, see below)
+2. `zero_grad` to zero out the parameters gradients (same as `optimizer.zero_grad()`)
 
-TODO
+We provide demo experiments with each implemented method in [this notebook](https://github.com/intsystems/hippotrainer/blob/main/notebooks/demo.ipynb).
+They works as follows:
+1. Get next batch from train dataloader
+2. Forward and backward on calculated loss
+3. `hyper_optimizer.step(loss)` do model parameters step and (if inner steps were accumulated) hyperparameters step (calculate hypergradients, do the optimization step, zeroes hypergradients)
+4. `hyper_optimizer.zero_grad()` zeroes the model parameters gradients (same as `optimizer.zero_grad()`)
+
+### `Optimizer` vs. `HyperOptimizer` method `step`
+
+Gradient-based hyperparameters optimization involves hyper-optimization steps during the
+model parameters optimization. Thus, we combine `Optimizer` method `step` with `inner_steps`,
+defined by each method.
+
+For example, `T1T2` do NOT use any inner steps, therefore optimization over parameters
+and hyperparameters is done step by step. But `Neumann` method do some inner optimization steps
+over model parameters before it do the hyperstep.
+
+See more details [here](https://github.com/intsystems/hippotrainer/blob/60cbafd6614bf057e83268da6cebf04ae2e6d7e7/src/hippotrainer/hyper_optimizer.py#L121).
+
+### Supported hyperparameters types
+
+The `HyperOptimizer` logic is well-suited for almost all **CONTINUOUS** (required for gradient-based methods) hyperparameters types:
+1. Model hyperparameters (e.g., gate coefficients)
+2. Loss hyperparameters (e.g., L1/L2-regularization)
+
+However, it currently does **not** support (or support, but actually was not sufficiently tested) **learning rate tuning**.
+We plan to improve our functionality in future releases, stay tuned!
 
 ## Conclusion
 
-TODO
+HippoTrainer introduces a powerful toolkit for gradient-based hyperparameter optimization in `PyTorch`, bridging the gap between cutting-edge research and practical application. By implementing advanced methods like T1-T2, IFT, HOAG, and DrMAD, our library enables efficient tuning of continuous hyperparameters—such as regularization coefficients or model-specific parameters—through automatic differentiation and Hessian approximations. This approach drastically reduces the computational burden compared to traditional grid or random search, while offering scalability for modern neural networks.
+
+Our `HyperOptimizer` interface abstracts the complexity of these methods, providing a familiar, `PyTorch`-like API that integrates seamlessly into existing workflows. With support for customizable inner optimization steps and pre-built demos, users can experiment with hyperparameter tuning with minimal code changes. While current limitations include the exclusion of learning rate optimization (a focus of future work), HippoTrainer lays a robust foundation for gradient-driven hyperparameter discovery.
+
+We invite researchers and practitioners to explore HippoTrainer on [GitHub](https://github.com/intsystems/hippotrainer), where you can test the methods firsthand, contribute improvements, or adapt the framework to new use cases. By democratizing access to efficient hyperparameter optimization, we aim to accelerate progress in machine learning model development.
 
 ## References
 
