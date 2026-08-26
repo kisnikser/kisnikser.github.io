@@ -33,7 +33,7 @@ menu:
           weight: 7
 
 params:
-    description: "I am a PhD student in Computer Science in the Intelligent Systems Department at Moscow Institute of Physics and Technology. 
+    description: "I am a PhD student in Artificial Intelligence and Machine Learning in the Intelligent Systems Department at Moscow Institute of Physics and Technology. 
     My research focuses mostly on Generative AI, Computer Vision, and Optimization."
     author: Nikita Kiselev
     # googleAnalyticsID: "G-XXXXX"
@@ -63,7 +63,7 @@ params:
           subtitle: |-
             **Senior ML Research Engineer**
             >
-            I am a PhD student in Computer Science in the Intelligent Systems Department at Moscow Institute of Physics and Technology. Prior to that, I received my master's degree in Computer Science and my bachelor's degree in Applied Mathematics and Physics there.
+            I am a PhD student in Artificial Intelligence and Machine Learning in the Intelligent Systems Department at Moscow Institute of Physics and Technology. Prior to that, I received my master's degree in Computer Science and my bachelor's degree in Applied Mathematics and Physics there.
             >
             Currently, I am a Research Engineer at Kandinsky, Sber AI.
             >
