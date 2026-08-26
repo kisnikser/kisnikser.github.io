@@ -1,0 +1,4 @@
+{{- /* Site-specific additions to <head>; the theme's head.html stays untouched. */ -}}
+{{- if or .Params.math site.Params.math }}
+{{- partial "math.html" . }}
+{{- end }}

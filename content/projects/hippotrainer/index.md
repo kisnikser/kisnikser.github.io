@@ -11,6 +11,7 @@ editPost:
   Text: GitHub
 showToc: true
 showReadingTime: true
+math: true
 ---
 
 In this blog-post we present our Python library [HippoTrainer](https://github.com/intsystems/hippotrainer) (or `hippotrainer`) for gradient-based hyperparameter optimization, implementing cutting-edge algorithms that leverage automatic differentiation to efficiently tune hyperparameters.

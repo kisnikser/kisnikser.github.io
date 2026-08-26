@@ -1,0 +1,47 @@
+<div class="profile">
+    {{- with site.Params.profileMode }}
+    <div class="profile_inner">
+        {{- if .imageUrl -}}
+        {{- /* Resize the avatar (assets/photo.jpg) instead of shipping the original; 2x variant keeps it crisp on Retina. */ -}}
+        {{- $img := "" }}
+        {{- if not (urls.Parse .imageUrl).IsAbs }}
+            {{- $img = resources.Get .imageUrl }}
+        {{- end }}
+        {{- $w := .imageWidth | default 150 }}
+        {{- $h := .imageHeight | default 150 }}
+        {{- if $img }}
+            {{- $img1x := $img.Fill (printf "%dx%d webp q85 photo" $w $h) }}
+            {{- $img2x := $img.Fill (printf "%dx%d webp q85 photo" (mul 2 $w) (mul 2 $h)) }}
+            <img draggable="false" src="{{ $img1x.Permalink }}" srcset="{{ $img1x.Permalink }} 1x, {{ $img2x.Permalink }} 2x"
+                alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}" height="{{ $h }}" width="{{ $w }}" />
+        {{- else }}
+        <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+            height="{{ $h }}" width="{{ $w }}" />
+        {{- end }}
+        {{- end }}
+        <h1>{{ .title | default site.Title | markdownify }}</h1>
+        <span>{{ .subtitle | markdownify }}</span>
+        {{- partial "social_icons.html" -}}
+
+        {{- with .buttons }}
+        <div class="buttons">
+            {{- range . }}
+            <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name }}">
+                <span class="button-inner">
+                    {{ .name }}
+                    {{- if (findRE "://" .url) }}&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="14" width="14">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                    {{- end }}
+                </span>
+            </a>
+            {{- end }}
+        </div>
+        {{- end }}
+    </div>
+    {{- end}}
+</div>

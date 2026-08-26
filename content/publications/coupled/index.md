@@ -9,11 +9,12 @@ summary: "The method proposed is the first linearly convergent first-order decen
 cover:
     image: "plot.png"
     alt: "Comparison"
-    relative: false
+    relative: true
 editPost:
     URL:
     Text:
 
+math: true
 ---
 
 ---

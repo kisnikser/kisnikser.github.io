@@ -1,0 +1,31 @@
+{{- /*
+  Images referenced from Markdown (![alt](file.png)) that live in the page bundle are
+  served as WebP with a responsive srcset. The original file is left untouched and still
+  published, so it can be linked directly. Everything else (external URLs, SVG, GIF)
+  falls back to the theme's plain <img>.
+  Content is at most 720 CSS px wide, so 1440 px (2x) is the largest variant generated.
+*/ -}}
+{{- $u := urls.Parse .Destination -}}
+{{- $img := "" -}}
+{{- if and (not $u.IsAbs) .Page.Resources -}}
+{{- $img = .Page.Resources.GetMatch (strings.TrimPrefix "./" $u.Path) -}}
+{{- end -}}
+{{- if and $img (in (slice "png" "jpeg" "jpg" "tiff" "bmp" "webp") $img.MediaType.SubType) -}}
+{{- $spec := "webp q90 drawing" -}}
+{{- $w := $img.Width -}}
+{{- $srcset := slice -}}
+{{- $largest := "" -}}
+{{- range $s := slice 720 1440 -}}
+{{- if lt $s $w -}}
+{{- $largest = $img.Resize (printf "%dx %s" $s $spec) -}}
+{{- $srcset = $srcset | append (printf "%s %dw" $largest.RelPermalink $s) -}}
+{{- end -}}
+{{- end -}}
+{{- if le $w 1440 -}}
+{{- $largest = $img.Resize (printf "%dx %s" $w $spec) -}}
+{{- $srcset = $srcset | append (printf "%s %dw" $largest.RelPermalink $w) -}}
+{{- end -}}
+<img loading="lazy" src="{{ $largest.RelPermalink }}" srcset="{{ delimit $srcset ", " }}" sizes="(min-width: 768px) 720px, 100vw" width="{{ $w }}" height="{{ $img.Height }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} />
+{{- else -}}
+<img loading="lazy" src="{{ .Destination | safeURL }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} />
+{{- end -}}

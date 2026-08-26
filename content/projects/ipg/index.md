@@ -9,11 +9,12 @@ summary: "Application for generating presentations based on text files using top
 cover:
     image: "ipg.png"
     alt: "Overview"
-    relative: false
+    relative: true
 editPost:
     URL: 
     Text:
 
+math: true
 ---
 
 ---

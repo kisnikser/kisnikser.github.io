@@ -9,7 +9,7 @@ summary: "This paper presents two approaches to determining a sufficient sample 
 cover:
     image:
     alt: "Overview"
-    relative: false
+    relative: true
 editPost:
     URL:
     Text:

@@ -9,7 +9,7 @@ summary: "67th MIPT All-Russian Scientific Conference"
 cover:
   image: "losses_difference.png"
   alt: "Overview"
-  relative: false
+  relative: true
 editPost:
   URL:
   Text:

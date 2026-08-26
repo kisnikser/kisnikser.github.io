@@ -9,7 +9,7 @@ summary: "This paper presents two approaches to determining a sufficient sample 
 cover:
     image: "posterior.png"
     alt: "Overview"
-    relative: false
+    relative: true
 editPost:
     URL: "https://doi.org/10.1007/s10287-024-00528-9"
     Text: "Computational Management Science"

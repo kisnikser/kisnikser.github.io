@@ -9,7 +9,7 @@ summary: "This paper propose a method for creating a linear model that predicts 
 cover:
     image: "overview.png"
     alt: "Method Overview"
-    relative: false
+    relative: true
 editPost:
     URL: "https://doi.org/10.1007/s13755-024-00315-5"
     Text: "Health Information Science and Systems"

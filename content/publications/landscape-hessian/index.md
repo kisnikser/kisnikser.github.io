@@ -9,7 +9,7 @@ summary: "This paper explore the convergence of the loss landscape in neural net
 cover:
     image: "losses_difference.png"
     alt: "Overview"
-    relative: false
+    relative: true
 editPost:
     URL:
     Text:

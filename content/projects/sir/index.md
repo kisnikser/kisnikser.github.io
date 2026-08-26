@@ -9,7 +9,7 @@ summary: "Various approaches to modeling the spread of epidemics, differential e
 cover:
     image: "SIR.png"
     alt: "Overview"
-    relative: false
+    relative: true
 editPost:
     URL: 
     Text:

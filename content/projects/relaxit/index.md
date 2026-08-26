@@ -19,12 +19,13 @@ summary: "We release a cutting-edge Python library designed to streamline the op
 cover:
   image: "overview.png"
   alt: "Overview"
-  relative: false
+  relative: true
 editPost:
   URL: https://github.com/intsystems/relaxit
   Text: GitHub
 showToc: true
 showReadingTime: true
+math: true
 ---
 
 <img src="overview.png" style="width: 80%;" class="center" />

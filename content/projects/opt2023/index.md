@@ -9,7 +9,7 @@ summary: "Comparison of different methods of solving high-dimensional linear reg
 cover:
     image: "different_methods.png"
     alt: "Overview"
-    relative: false
+    relative: true
 editPost:
     URL: 
     Text:
