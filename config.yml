@@ -38,9 +38,9 @@ params:
     author: Nikita Kiselev
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
-    defaultTheme: light
+    defaultTheme: auto
     hideFooter: false
-    disableThemeToggle: true
+    disableThemeToggle: false
     ShowShareButtons: false
     ShowReadingTime: false
     disableSpecial1stPost: true
@@ -97,6 +97,7 @@ params:
 
     assets:
         disableScrollBarStyle: true
+        theme_color: "#fcfcfb"
     cover:
         hiddenInList: false
         hiddenInSingle: true
@@ -111,7 +112,7 @@ markup:
             unsafe: true
     highlight:
         guessSyntax: true
-        style: xcode 
+        noClasses: false   # colours come from assets/css/extended/chroma.css (light + dark palettes)
     tableOfContents:
         endLevel: 2
         ordered: false

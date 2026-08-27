@@ -6,18 +6,20 @@
     --header-height: 44px;
     --footer-height: 70px;
     --radius: 8px;
-    --theme: rgb(255, 255, 255);
-    --entry: rgb(255, 255, 255);
-    --primary: rgb(30, 30, 30);
-    --secondary: rgb(108, 108, 108);
-    --tertiary: rgb(214, 214, 214);
-    --gray: rgb(165, 165, 165);
-    --content: rgb(30, 30, 30);
-    --code-block-bg: rgb(28, 29, 33);
-    --code-bg: rgb(245, 245, 245);
-    --border: rgb(238, 238, 238);
-    --darkcolor: rgb(56, 115, 179);
-    --lightcolor: #fed582;
+    /* Warm neutrals (light) */
+    --theme: #fcfcfb;
+    --entry: #ffffff;
+    --primary: #1c1917;
+    --secondary: #57534e;
+    --tertiary: #e7e5e4;
+    --gray: #a8a29e;
+    --content: #292524;
+    --code-block-bg: #1c1917;
+    --code-bg: #f4f3f1;
+    --border: #e7e5e4;
+    /* Single accent: brand blue; --lightcolor is its tint for hover backgrounds */
+    --darkcolor: #3873b3;
+    --lightcolor: rgba(56, 115, 179, 0.12);
     --semibold: 500;
     --homesize: 16px;
     --textsize: 16px;
@@ -31,15 +33,24 @@
 }
 
 .dark {
-    --theme: rgb(29, 30, 32);
-    --entry: rgb(46, 46, 51);
-    --primary: rgb(218, 218, 219);
-    --secondary: rgb(155, 156, 157);
-    --tertiary: rgb(65, 66, 68);
-    --content: rgb(196, 196, 197);
-    --code-block-bg: rgb(46, 46, 51);
-    --code-bg: rgb(55, 56, 62);
-    --border: rgb(51, 51, 51);
+    --theme: #1a1918;
+    --entry: #232120;
+    --primary: #e7e5e4;
+    --secondary: #a8a29e;
+    --tertiary: #3b3835;
+    --gray: #78716c;
+    --content: #d6d3d1;
+    --code-block-bg: #232120;
+    --code-bg: #262422;
+    --border: #2e2b29;
+    --darkcolor: #7aaee3;
+    --lightcolor: rgba(122, 174, 227, 0.16);
+}
+
+/* Figures are mostly PNGs drawn on white: keep them readable on the dark background */
+.dark .post-content img,
+.dark .entry-cover img {
+    background: #fff;
 }
 
 .list {
