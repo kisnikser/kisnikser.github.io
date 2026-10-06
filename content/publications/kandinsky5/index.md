@@ -19,7 +19,7 @@ links:
     draft: # TODO
     code: "https://github.com/kandinskylab/kandinsky-5"
     slides: # TODO
-    poster: # TODO
+    poster: "/publications/kandinsky5/poster.pdf"
     video: # TODO
     doi: # TODO
 editPost:
