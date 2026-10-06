@@ -1,17 +1,27 @@
 ---
 title: "HippoTrainer: Gradient-Based Hyperparameter Optimization for PyTorch"
 date: 2025-03-11
-lastmod: 2025-03-11
+lastmod: 2026-10-05
 tags: ["hyperparameter optimization", "PyTorch", "Optuna"]
 author: ["Daniil Dorin", "Igor Ignashin", "Nikita Kiselev", "Andrey Veprikov"]
 description:
 summary: "We release a Python library for gradient-based hyperparameter optimization, implementing cutting-edge algorithms that leverage automatic differentiation to efficiently tune hyperparameters."
+links:
+    arxiv: # TODO
+    openreview: # TODO
+    draft: # TODO
+    code: "https://github.com/intsystems/hippotrainer"
+    slides: # TODO
+    poster: # TODO
+    video: # TODO
+    doi: # TODO
 editPost:
   URL: https://github.com/intsystems/hippotrainer
   Text: GitHub
 showToc: true
 showReadingTime: true
 math: true
+
 ---
 
 In this blog-post we present our Python library [HippoTrainer](https://github.com/intsystems/hippotrainer) (or `hippotrainer`) for gradient-based hyperparameter optimization, implementing cutting-edge algorithms that leverage automatic differentiation to efficiently tune hyperparameters.

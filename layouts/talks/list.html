@@ -1,0 +1,13 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+</header>
+
+<div class="entry-list">
+  {{- range $i, $p := .RegularPages.ByDate.Reverse }}
+  {{- partial "entry_row.html" (dict "page" $p "num" (add $i 1)) }}
+  {{- end }}
+</div>
+
+{{- end }}

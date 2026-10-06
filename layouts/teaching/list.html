@@ -1,0 +1,43 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+</header>
+
+<div class="entry-list">
+  {{- range $i, $p := .RegularPages.ByDate.Reverse }}
+  <article class="entry-row entry-row-numbered">
+    <span class="entry-num">[{{ add $i 1 }}]</span>
+    <div class="entry-body">
+      <h2 class="entry-title">{{ .Title }}</h2>
+      {{- with .Summary }}
+      {{- $parts := split . ". " }}
+      <p class="entry-meta">
+        <span class="venue-name">{{ index $parts 0 }}</span>
+        {{- with index $parts 1 }}<span class="entry-year">{{ strings.TrimSuffix "." . }}</span>{{ end }}
+      </p>
+      {{- end }}
+      {{- $any := false -}}
+      {{- if .Params.page }}{{ $any = true }}{{ end -}}
+      {{- range .Params.playlists }}{{ if .url }}{{ $any = true }}{{ end }}{{ end -}}
+      {{- if $any }}
+      <div class="entry-actions">
+        {{- with .Params.page -}}
+        <span class="entry-action"><a href="{{ . }}"{{- if hasPrefix . "http" }} target="_blank" rel="noopener noreferrer"{{- end }}>Page</a></span>
+        {{- end -}}
+        {{- range .Params.playlists -}}
+          {{- if .url -}}
+          <span class="entry-action"><a href="{{ .url }}"{{- if hasPrefix .url "http" }} target="_blank" rel="noopener noreferrer"{{- end }}>Playlist {{ .year }}</a></span>
+          {{- end -}}
+        {{- end -}}
+      </div>
+      {{- end }}
+      {{- with .Content }}
+      <div class="course-body">{{ . }}</div>
+      {{- end }}
+    </div>
+  </article>
+  {{- end }}
+</div>
+
+{{- end }}

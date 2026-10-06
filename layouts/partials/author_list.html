@@ -1,0 +1,6 @@
+{{- /* Renders the author list with Nikita Kiselev bolded, used on publication/talk list and detail pages. */ -}}
+{{- $names := .Params.author -}}
+{{- range $i, $n := $names -}}
+{{- if $i }}, {{ end -}}
+{{- if eq $n "Nikita Kiselev" }}<strong>{{ $n }}</strong>{{ else }}{{ $n }}{{ end -}}
+{{- end -}}

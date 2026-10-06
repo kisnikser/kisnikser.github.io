@@ -1,0 +1,26 @@
+/* Floating "Copied to clipboard!" hint shown next to the cursor after clicking the email icon. */
+.copy-toast {
+    position: fixed;
+    z-index: 999;
+    padding: 4px 10px;
+    background: var(--primary);
+    color: var(--theme);
+    font-size: 0.75rem;
+    line-height: 1.4;
+    border-radius: 6px;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-50%, 6px);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.copy-toast.is-visible {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .copy-toast {
+        transition: opacity 0.01ms;
+    }
+}

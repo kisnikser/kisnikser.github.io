@@ -8,6 +8,10 @@
     background: var(--code-bg);
 }
 
+.dark .nav {
+    background: var(--theme);
+}
+
 .nav a {
     display: block;
 }

@@ -1,0 +1,92 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+</header>
+
+{{- $journals := where .RegularPages "Params.venue.type" "journal" }}
+{{- $conferences := where .RegularPages "Params.venue.type" "conference" }}
+{{- $other := where .RegularPages "Params.venue.type" "in" (slice "preprint" "report") }}
+{{- $n := 0 }}
+
+{{- with $journals.ByDate.Reverse }}
+<section class="entry-group">
+  <h2 class="entry-notes-title">Journal articles</h2>
+  <div class="entry-list">
+    {{- range $i, $p := . }}
+    {{- partial "entry_row.html" (dict "page" $p "num" (add $n (add $i 1))) }}
+    {{- end }}
+  </div>
+</section>
+{{- $n = add $n (len .) }}
+{{- end }}
+
+{{- with $conferences.ByDate.Reverse }}
+<section class="entry-group">
+  <h2 class="entry-notes-title">Conference papers</h2>
+  <div class="entry-list">
+    {{- range $i, $p := . }}
+    {{- partial "entry_row.html" (dict "page" $p "num" (add $n (add $i 1))) }}
+    {{- end }}
+  </div>
+</section>
+{{- $n = add $n (len .) }}
+{{- end }}
+
+{{- with $other.ByDate.Reverse }}
+<section class="entry-group">
+  <h2 class="entry-notes-title">Preprints and reports</h2>
+  <div class="entry-list">
+    {{- range $i, $p := . }}
+    {{- partial "entry_row.html" (dict "page" $p "num" (add $n (add $i 1))) }}
+    {{- end }}
+  </div>
+</section>
+{{- $n = add $n (len .) }}
+{{- end }}
+
+{{- with hugo.Data.theses }}
+<section class="entry-notes">
+  <h2 class="entry-notes-title">Conference abstracts</h2>
+  {{- range $i, $note := sort . "year" "desc" }}
+  <article class="entry-row entry-row-plain entry-row-thin entry-row-numbered">
+    <span class="entry-num">[{{ add $n (add $i 1) }}]</span>
+    <div class="entry-body">
+      <h3 class="entry-title">{{ .title }}</h3>
+      <div class="entry-authors">
+        {{- range $i, $n := .authors -}}
+        {{- if $i }}, {{ end -}}
+        {{- if eq $n "Nikita Kiselev" }}<strong>{{ $n }}</strong>{{ else }}{{ $n }}{{ end -}}
+        {{- end -}}
+      </div>
+      <div class="entry-meta">
+        <span class="venue-cite">
+          <span class="venue-name">{{ .venue }}</span>
+          {{- if not (findRE `[0-9]{4}` .venue) }}, <span class="entry-year">{{ .year }}</span>{{ end }}
+        </span>
+      </div>
+      {{- with .links }}
+      {{- $links := . -}}
+      {{- $order := slice "arxiv" "openreview" "draft" "code" "slides" "poster" "video" "doi" -}}
+      {{- $labels := dict "arxiv" "arXiv" "openreview" "OpenReview" "draft" "Draft" "code" "Code" "slides" "Slides" "poster" "Poster" "video" "Video" "doi" "DOI" -}}
+      {{- $any := false -}}
+      {{- range $key := $order -}}
+        {{- if index $links $key }}{{ $any = true }}{{ end -}}
+      {{- end -}}
+      {{- if $any }}
+      <div class="entry-actions">
+        {{- range $key := $order -}}
+          {{- with index $links $key -}}
+            <span class="entry-action"><a href="{{ . }}"{{- if hasPrefix . "http" }} target="_blank" rel="noopener noreferrer"{{- end }}>{{ index $labels $key }}</a></span>
+          {{- end -}}
+        {{- end -}}
+      </div>
+      {{- end }}
+      {{- end }}
+    </div>
+  </article>
+  {{- end }}
+</section>
+{{- end }}
+
+{{- end }}

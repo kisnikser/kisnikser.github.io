@@ -23,10 +23,10 @@
     --semibold: 500;
     --homesize: 16px;
     --textsize: 16px;
-    --h1size: 25px;
-    --entrysize: 15px;
+    --h1size: 1.5rem;
+    --entrysize: 0.875rem;
     --headersize: 16px;
-    --footersize: 13px;
+    --footersize: 0.875rem;
     --lineheight: 1.6;
     --lineclamp: 8;
     --marginleft: 26px;
@@ -53,10 +53,4 @@
     background: #fff;
 }
 
-.list {
-    background: var(--code-bg);
-}
-
-.dark.list {
-    background: var(--theme);
-}
+/* Page background is set in extended CSS, after reset.css, so article pages match the lists. */

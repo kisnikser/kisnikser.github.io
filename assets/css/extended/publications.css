@@ -1,0 +1,310 @@
+/* Publication, talk, and project rows: record and links. Abstract opens in place. */
+
+.entry-list .entry-row:first-child {
+    padding-top: 0.2rem;
+}
+
+.entry-row {
+    padding: 1.05rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.entry-row-numbered {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.entry-num {
+    flex: 0 0 2.6em;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    color: var(--gray);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: calc(1.125rem * 1.4);
+}
+
+.entry-list .entry-row:last-child {
+    border-bottom: none;
+}
+
+.entry-body {
+    min-width: 0;
+    flex: 1;
+}
+
+.entry-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 0.2rem;
+}
+
+.entry-title a {
+    color: var(--darkcolor);
+}
+
+.entry-title a:hover {
+    text-decoration: underline;
+}
+
+.entry-authors {
+    margin-top: 0.12rem;
+    color: var(--secondary);
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.entry-authors strong {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.entry-meta,
+.venue-meta {
+    margin: 0.18rem 0 0.08rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--secondary);
+}
+
+.entry-meta > :not(:last-child)::after,
+.venue-meta > :not(:last-child)::after {
+    content: "\00a0· ";
+    color: var(--gray);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.entry-year,
+.venue-details {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.entry-summary {
+    margin: 0.15rem 0 0.35rem;
+    color: var(--secondary);
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.entry-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-top: 0.35rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.entry-actions:empty {
+    display: none;
+}
+
+.entry-action {
+    white-space: nowrap;
+}
+
+.entry-fold:not([open]) {
+    flex: 0 0 auto;
+    width: max-content;
+}
+
+.entry-fold:not([open]) .entry-panel {
+    display: none;
+}
+
+.entry-action:not(.entry-fold):not(:last-child)::after,
+.entry-fold:not([open]):not(:last-child) summary::after {
+    content: "|";
+    color: var(--gray);
+    margin: 0 0.45rem 0 0.4rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.entry-actions a,
+.entry-fold summary {
+    color: var(--darkcolor);
+}
+
+.entry-actions a:hover,
+.entry-fold summary:hover {
+    text-decoration: underline;
+}
+
+.entry-sep {
+    color: var(--gray);
+    margin: 0 0.4rem;
+    user-select: none;
+}
+
+.entry-fold summary {
+    display: inline;
+    cursor: pointer;
+    list-style: none;
+}
+
+.entry-fold summary::-webkit-details-marker {
+    display: none;
+}
+
+.entry-fold[open] {
+    display: block;
+    flex: 1 0 100%;
+    white-space: normal;
+}
+
+.entry-action:not(.entry-fold):has(+ .entry-fold[open])::after {
+    content: none;
+    margin: 0;
+}
+
+.entry-panel {
+    margin: 0.55rem 0 0.15rem;
+    color: var(--content);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.entry-panel p {
+    margin: 0 0 0.6rem;
+}
+
+.entry-panel p:last-child {
+    margin-bottom: 0;
+}
+
+.entry-bib {
+    margin: 0.55rem 0 0.15rem;
+    padding: 0.7rem 0.8rem;
+    background: var(--code-bg);
+    border-radius: 6px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+.entry-group {
+    margin-top: 1.6rem;
+}
+
+.entry-group:first-child {
+    margin-top: 0;
+}
+
+.entry-notes {
+    margin-top: 2rem;
+}
+
+.entry-notes-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin: 0 0 0.45rem;
+    padding: 0;
+    color: var(--secondary);
+}
+
+.entry-row-thin {
+    padding: 0.85rem 0;
+}
+
+.course-body > hr:first-child,
+.course-body > h5:first-of-type {
+    display: none;
+}
+
+.course-body ul {
+    margin: 0.55rem 0 0;
+    padding-left: 1.15rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.course-body li {
+    margin: 0.2rem 0;
+    padding-left: 0.15rem;
+}
+
+.course-body li::marker {
+    color: var(--gray);
+}
+
+.venue-meta {
+    margin-bottom: 0.55rem;
+}
+
+.venue-name {
+    font-style: italic;
+}
+
+.venue-note {
+    color: var(--secondary);
+}
+
+.badge {
+    display: inline;
+    padding: 0;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.badge > span {
+    display: inline-block;
+    padding: 0 0.4em;
+    border: 1px solid color-mix(in srgb, var(--darkcolor) 42%, var(--border));
+    border-radius: 3px;
+    background: var(--lightcolor);
+    color: var(--primary);
+    font-size: inherit;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 1.35;
+    vertical-align: 0.05em;
+}
+
+.link-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.link-pill {
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 2px 9px;
+    font-size: 0.875rem;
+    color: var(--secondary);
+    transition: background 0.15s, color 0.15s;
+}
+
+.link-pill:hover {
+    background: var(--tertiary);
+    color: var(--primary);
+}
+
+/* On a publication's own page, reuse the same venue/link styling under the title. */
+.post-header .venue-meta,
+.post-header .link-pills {
+    margin-top: 0.6rem;
+}
+
+/* reset.css paints the body with --theme, which is white on article pages in the light theme.
+   These rules load later and keep one canvas color for lists and single pages. */
+html,
+body,
+.list {
+    background: var(--code-bg);
+}
+
+html.dark,
+body.dark,
+.dark.list {
+    background: var(--theme);
+}

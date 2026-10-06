@@ -16,21 +16,18 @@ menu:
         - name: Talks
           url: talks/
           weight: 2
+        - name: Teaching
+          url: teaching/
+          weight: 3
         - name: Projects
           url: projects/
-          weight: 3
+          weight: 4
         - name: Resume
           url: resume.pdf
-          weight: 4
+          weight: 5
         - name: CV
           url: cv.pdf
-          weight: 5
-        - name: Tags
-          url: tags/
           weight: 6
-        - name: Archive
-          url: archive/
-          weight: 7
 
 params:
     description: "I am a PhD student in Artificial Intelligence and Machine Learning in the Intelligent Systems Department at Moscow Institute of Physics and Technology. 
@@ -49,7 +46,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["publications","talks","projects"]
+    MainSections: ["publications","talks","teaching","projects"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -76,6 +73,8 @@ params:
               url: publications/
             - name: Talks
               url: talks/
+            - name: Teaching
+              url: teaching/
             - name: Projects
               url: projects/
             - name: Resume
@@ -92,6 +91,8 @@ params:
           url: https://scholar.google.com/citations?user=8BOqs70AAAAJ
         - name: github
           url: https://github.com/kisnikser
+        - name: youtube
+          url: https://www.youtube.com/@kisnikser
         - name: linkedin
           url: https://www.linkedin.com/in/kisnikser
 

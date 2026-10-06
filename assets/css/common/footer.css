@@ -12,6 +12,10 @@
     background: var(--code-bg);
 }
 
+.dark .footer {
+    background: var(--theme);
+}
+
 .footer span {
     margin-inline-start: 1px;
     margin-inline-end: 1px;

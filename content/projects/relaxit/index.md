@@ -1,7 +1,7 @@
 ---
 title: "Just Relax It! Leveraging relaxation for discrete variables optimization"
 date: 2024-12-07
-lastmod: 2024-12-07
+lastmod: 2026-10-05
 tags:
   [
     "Relaxation",
@@ -16,6 +16,15 @@ tags:
 author: ["Daniil Dorin", "Igor Ignashin", "Nikita Kiselev", "Andrey Veprikov"]
 description:
 summary: "We release a cutting-edge Python library designed to streamline the optimization of discrete probability distributions in neural networks, offering a suite of advanced relaxation techniques compatible with PyTorch."
+links:
+    arxiv: # TODO
+    openreview: # TODO
+    draft: # TODO
+    code: "https://github.com/intsystems/relaxit"
+    slides: # TODO
+    poster: # TODO
+    video: # TODO
+    doi: # TODO
 cover:
   image: "overview.png"
   alt: "Overview"
@@ -26,6 +35,7 @@ editPost:
 showToc: true
 showReadingTime: true
 math: true
+
 ---
 
 <img src="overview.png" style="width: 80%;" class="center" />

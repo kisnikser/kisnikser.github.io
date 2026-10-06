@@ -1,0 +1,28 @@
+{{- /*
+  Renders the venue line (journal/conference name + quartile/rank badges + a free-form note) and the
+  row of link pills, from the `venue` and `links` front-matter fields. Used on Publications list and
+  detail pages; both blocks are skipped when the corresponding field isn't set, so thin entries (no
+  links yet) still render cleanly.
+*/ -}}
+{{- with .Params.venue }}
+<div class="venue-meta">
+    <span class="venue-cite">
+        {{- with .name }}<span class="venue-name">{{ . }}</span>{{ end }}
+        {{- with .details }}, <span class="venue-details">{{ . }}</span>{{ end }}
+    </span>
+    {{- range .badges }}<span class="badge"><span>{{ . }}</span></span>{{ end }}
+    {{- with .note }}<span class="venue-note">{{ . }}</span>{{ end }}
+</div>
+{{- end }}
+{{- with .Params.links }}
+{{- $order := slice "arxiv" "openreview" "draft" "code" "slides" "poster" "video" "doi" }}
+{{- $labels := dict "arxiv" "arXiv" "openreview" "OpenReview" "draft" "Draft" "code" "Code" "slides" "Slides" "poster" "Poster" "video" "Video" "doi" "DOI" }}
+{{- $links := . }}
+<div class="link-pills">
+    {{- range $key := $order }}
+    {{- with index $links $key }}
+    <a class="link-pill" href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ index $labels $key }}</a>
+    {{- end }}
+    {{- end }}
+</div>
+{{- end }}

@@ -2,7 +2,9 @@
     {{- with site.Params.profileMode }}
     <div class="profile_inner">
         {{- if .imageUrl -}}
-        {{- /* Resize the avatar (assets/photo.jpg) instead of shipping the original; 2x variant keeps it crisp on Retina. */ -}}
+        {{- /* Resize the avatar (assets/photo.jpg) instead of shipping the original. A single 1024x1024 high-quality
+               JPEG covers every pixel density on its own (no srcset needed) with a plain center crop, so a square
+               source is never actually cropped, only scaled down. */ -}}
         {{- $img := "" }}
         {{- if not (urls.Parse .imageUrl).IsAbs }}
             {{- $img = resources.Get .imageUrl }}
@@ -10,9 +12,8 @@
         {{- $w := .imageWidth | default 150 }}
         {{- $h := .imageHeight | default 150 }}
         {{- if $img }}
-            {{- $img1x := $img.Fill (printf "%dx%d webp q85 photo" $w $h) }}
-            {{- $img2x := $img.Fill (printf "%dx%d webp q85 photo" (mul 2 $w) (mul 2 $h)) }}
-            <img draggable="false" src="{{ $img1x.Permalink }}" srcset="{{ $img1x.Permalink }} 1x, {{ $img2x.Permalink }} 2x"
+            {{- $imgHQ := $img.Fill "1024x1024 q95 Center jpg" }}
+            <img draggable="false" src="{{ $imgHQ.Permalink }}"
                 alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}" height="{{ $h }}" width="{{ $w }}" />
         {{- else }}
         <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"

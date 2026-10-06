@@ -1,0 +1,94 @@
+{{- /* One record on Publications, Talks, and Projects: authors, venue, outbound links.
+     Abstract and BibTeX open in place. The title links to the page only when there is a real write-up. */ -}}
+{{- $p := .page -}}
+{{- $raw := $p.RawContent | replaceRE `(?s)<!--.*?-->` "" -}}
+{{- $abstract := "" -}}
+{{- if in $raw "##### Abstract" -}}
+    {{- $after := index (split $raw "##### Abstract") 1 -}}
+    {{- $abstract = trim (index (split $after "#####") 0) " \n\r\t-" -}}
+    {{- if in $abstract "\n---" -}}
+        {{- $abstract = trim (index (split $abstract "\n---") 0) " \n\r\t" -}}
+    {{- end -}}
+{{- end -}}
+{{- $showAbstract := gt (len $abstract) 280 -}}
+{{- $bib := "" -}}
+{{- if in $raw "```BibTeX" -}}
+    {{- $bib = trim (index (split (index (split $raw "```BibTeX") 1) "```") 0) " \n\r\t" -}}
+{{- end -}}
+{{- $linked := gt $p.WordCount 45 -}}
+{{- $order := slice "arxiv" "openreview" "draft" "code" "slides" "poster" "video" "doi" -}}
+{{- $labels := dict "arxiv" "arXiv" "openreview" "OpenReview" "draft" "Draft" "code" "Code" "slides" "Slides" "poster" "Poster" "video" "Video" "doi" "DOI" -}}
+{{- $linkMap := $p.Params.links | default dict -}}
+{{- $venueLabel := $p.Params.venue.name | default "" -}}
+{{- $summary := $p.Summary -}}
+{{- $venueYear := findRE `[0-9]{4}` $venueLabel -}}
+{{- $normSum := lower (strings.TrimSuffix "." (strings.TrimSpace $summary)) -}}
+{{- $normVenue := lower (strings.TrimSpace $venueLabel) -}}
+{{- $summaryDup := and $summary $venueLabel (or (eq $normSum $normVenue) (in $normSum $normVenue)) -}}
+{{- $n := .num -}}
+<article class="entry-row{{ with $n }} entry-row-numbered{{ end }}">
+    {{- with $n }}<span class="entry-num">[{{ . }}]</span>{{ end }}
+    <div class="entry-body">
+        <h3 class="entry-title">
+            {{- if $linked -}}
+            <a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
+            {{- else -}}
+            {{ $p.Title }}
+            {{- end -}}
+        </h3>
+        {{- with $p.Params.author }}
+        <div class="entry-authors">{{ partial "author_list.html" $p }}</div>
+        {{- end }}
+        {{- if or $p.Params.venue (eq $p.Section "talks") }}
+        <div class="entry-meta">
+            {{- if $p.Params.venue -}}
+                <span class="venue-cite">
+                    {{- with $p.Params.venue.name }}<span class="venue-name">{{ . }}</span>{{ end }}
+                    {{- with $p.Params.venue.details }}, <span class="venue-details">{{ . }}</span>{{ end }}
+                    {{- if eq (len $venueYear) 0 }}, <span class="entry-year">{{ $p.Date.Format "2006" }}</span>{{ end }}
+                </span>
+                {{- range $p.Params.venue.badges }}<span class="badge"><span>{{ . }}</span></span>{{ end }}
+                {{- with $p.Params.venue.note }}<span class="venue-note">{{ . }}</span>{{ end }}
+            {{- else -}}
+                {{- with $p.Summary }}<span class="venue-name">{{ . }}</span>{{ end }}
+                <span class="entry-year">{{ $p.Date.Format "January 2, 2006" }}</span>
+            {{- end }}
+        </div>
+        {{- end }}
+        {{- if and (not $summaryDup) (or (and (not $showAbstract) (ne $p.Section "talks") $summary) (and (eq $p.Section "projects") $summary)) }}
+        <p class="entry-summary">{{ $summary }}{{ if eq $p.Section "projects" }} <span class="entry-year">· {{ $p.Date.Format "2006" }}</span>{{ end }}</p>
+        {{- end }}
+        {{- $hasLink := false -}}
+        {{- range $key := $order -}}
+            {{- if index $linkMap $key }}{{ $hasLink = true }}{{ end -}}
+        {{- end -}}
+        {{- $showEdit := and $p.Params.editPost.URL (not (index $linkMap "draft")) (not (index $linkMap "code")) -}}
+        {{- if or $hasLink $showEdit $showAbstract $bib }}
+        <div class="entry-actions">
+            {{- with $linkMap -}}
+                {{- $links := . -}}
+                {{- range $key := $order -}}
+                    {{- with index $links $key -}}
+                        <span class="entry-action"><a href="{{ . }}"{{- if hasPrefix . "http" }} target="_blank" rel="noopener noreferrer"{{- end }}>{{ index $labels $key }}</a></span>
+                    {{- end -}}
+                {{- end -}}
+            {{- end -}}
+            {{- if $showEdit -}}
+                <span class="entry-action"><a href="{{ $p.Params.editPost.URL }}"{{- if hasPrefix $p.Params.editPost.URL "http" }} target="_blank" rel="noopener noreferrer"{{- end }}>{{ $p.Params.editPost.Text | default "Link" }}</a></span>
+            {{- end -}}
+            {{- if $showAbstract -}}
+                <details class="entry-fold entry-action">
+                    <summary>Abstract</summary>
+                    <div class="entry-panel">{{ $abstract | markdownify }}</div>
+                </details>
+            {{- end -}}
+            {{- with $bib -}}
+                <details class="entry-fold entry-action">
+                    <summary>BibTeX</summary>
+                    <pre class="entry-panel entry-bib">{{ . }}</pre>
+                </details>
+            {{- end -}}
+        </div>
+        {{- end }}
+    </div>
+</article>

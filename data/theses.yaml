@@ -1,0 +1,92 @@
+# Conference abstracts. English titles from the list of 1 September 2026.
+- title: "A mean-square criterion for loss-landscape convergence based on the leading eigenspace of the Hessian"
+  authors: ["Nikita Kiselev", "Andrey Grabovoy"]
+  venue: "Proceedings of the 68th MIPT All-Russian Scientific Conference"
+  year: 2026
+  links:
+    arxiv: # TODO
+    openreview: # TODO
+    draft: # TODO
+    code: # TODO
+    slides: # TODO
+    poster: # TODO
+    video: # TODO
+    doi: "https://mipt.ru/upload/%D0%9E%D0%9A%D0%9F%D0%98/+@%2007%20%D0%A4%D0%9F%D0%9C%D0%98-2026.pdf"
+- title: "Sufficient sample size and its connection to the loss landscape convergence"
+  authors: ["Nikita Kiselev", "Vladislav Meshkov", "Andrey Grabovoy"]
+  venue: "Abstracts of the 22nd All-Russian Conference on Mathematical Methods for Pattern Recognition"
+  year: 2025
+  links:
+    arxiv: # TODO
+    openreview: # TODO
+    draft: # TODO
+    code: # TODO
+    slides: # TODO
+    poster: # TODO
+    video: # TODO
+    doi: "https://www.elibrary.ru/item.asp?id=83055790&pff=1"
+- title: "Decoding visual stimuli from multimodal brain signals"
+  authors: ["Daniil Dorin", "Nikita Kiselev", "Andrey Grabovoy"]
+  venue: "Abstracts of the 22nd All-Russian Conference on Mathematical Methods for Pattern Recognition"
+  year: 2025
+  links:
+    arxiv: # TODO
+    openreview: # TODO
+    draft: # TODO
+    code: # TODO
+    slides: # TODO
+    poster: # TODO
+    video: # TODO
+    doi: "https://www.elibrary.ru/item.asp?id=83055810&pff=1"
+- title: "Loss landscape convergence as an indicator of sufficient sample size"
+  authors: ["Nikita Kiselev", "Andrey Grabovoy"]
+  venue: "Proceedings of the 67th MIPT All-Russian Scientific Conference"
+  year: 2025
+  links:
+    arxiv: # TODO
+    openreview: # TODO
+    draft: # TODO
+    code: # TODO
+    slides: # TODO
+    poster: # TODO
+    video: # TODO
+    doi: "https://old.mipt.ru/upload/medialibrary/1e0/konferentsiya_5_fpmi.pdf"
+- title: "ConvNets landscape convergence: Hessian-based analysis of matricized networks"
+  authors: ["Vladislav Meshkov", "Nikita Kiselev", "Andrey Grabovoy"]
+  venue: "Proceedings of the 67th MIPT All-Russian Scientific Conference"
+  year: 2025
+  links:
+    arxiv: # TODO
+    openreview: # TODO
+    draft: # TODO
+    code: # TODO
+    slides: # TODO
+    poster: # TODO
+    video: # TODO
+    doi: "https://old.mipt.ru/upload/medialibrary/1e0/konferentsiya_5_fpmi.pdf"
+- title: "Determining a sufficient sample size from the posterior distribution of model parameters"
+  authors: ["Nikita Kiselev", "Andrey Grabovoy"]
+  venue: "Proceedings of the 66th MIPT All-Russian Scientific Conference"
+  year: 2024
+  links:
+    arxiv: # TODO
+    openreview: # TODO
+    draft: # TODO
+    code: # TODO
+    slides: # TODO
+    poster: # TODO
+    video: # TODO
+    doi: "https://old.mipt.ru/upload/medialibrary/a49/5.-fpmi_2024-_1_.pdf"
+- title: "Spatial and temporal methods of time series analysis"
+  authors: ["Daniil Dorin", "Nikita Kiselev", "Andrey Grabovoy"]
+  venue: "Proceedings of the 66th MIPT All-Russian Scientific Conference"
+  year: 2024
+  links:
+    arxiv: # TODO
+    openreview: # TODO
+    draft: # TODO
+    code: # TODO
+    slides: # TODO
+    poster: # TODO
+    video: # TODO
+    doi: "https://old.mipt.ru/upload/medialibrary/a49/5.-fpmi_2024-_1_.pdf"

@@ -81,9 +81,11 @@
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
         if (document.body.className.includes("dark")) {
+            document.documentElement.classList.remove('dark');
             document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
+            document.documentElement.classList.add('dark');
             document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
@@ -141,3 +143,41 @@
     });
 </script>
 {{- end }}
+
+<script>
+    document.querySelectorAll('a.js-copy-email').forEach((link) => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const address = link.getAttribute('href').replace(/^mailto:/, '').split('?')[0];
+
+            const showToast = () => {
+                const toast = document.createElement('span');
+                toast.className = 'copy-toast';
+                toast.textContent = '{{ i18n "copied_email" | default "Copied to clipboard!" }}';
+                document.body.appendChild(toast);
+                toast.style.left = e.clientX + 'px';
+                toast.style.top = (e.clientY + 16) + 'px';
+                requestAnimationFrame(() => toast.classList.add('is-visible'));
+                setTimeout(() => {
+                    toast.classList.remove('is-visible');
+                    setTimeout(() => toast.remove(), 200);
+                }, 1400);
+            };
+
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(address).then(showToast).catch(showToast);
+                return;
+            }
+
+            const helper = document.createElement('textarea');
+            helper.value = address;
+            helper.style.position = 'fixed';
+            helper.style.opacity = '0';
+            document.body.appendChild(helper);
+            helper.select();
+            try { document.execCommand('copy'); } catch (err) { }
+            helper.remove();
+            showToast();
+        });
+    });
+</script>

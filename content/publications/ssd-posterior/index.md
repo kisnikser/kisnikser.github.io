@@ -1,60 +1,33 @@
 ---
 title: "Sample Size Determination: Posterior Distributions Proximity"
-date: 2025-01-07
-lastmod: 2025-01-09
+date: 2025-12-01
+lastmod: 2026-10-05
 tags: ["Sufficient sample size", "Posterior distributions proximity", "Normal posterior distribution", "Linear regression"]
 author: ["Nikita Kiselev", "Andrey Grabovoy"]
 description:
-summary: "This paper presents two approaches to determining a sufficient sample size based on the proximity of posterior distributions of model parameters on similar subsets." 
+summary: # TODO
 cover:
     image: "posterior.png"
     alt: "Overview"
     relative: true
+
+venue:
+    type: journal
+    name: "Computational Management Science"
+    details: "Vol. 22, No. 1, p. 1"
+    badges: # TODO
+    note: # TODO
+links:
+    arxiv: # TODO
+    openreview: # TODO
+    draft: # TODO
+    code: "https://github.com/kisnikser/Posterior-Distributions-Proximity"
+    slides: # TODO
+    poster: # TODO
+    video: # TODO
+    doi: "https://doi.org/10.1007/s10287-024-00528-9"
 editPost:
-    URL: "https://doi.org/10.1007/s10287-024-00528-9"
-    Text: "Computational Management Science"
+    URL: # TODO
+    Text: # TODO
 
 ---
-
----
-
-##### Links
-
-+ [Paper](https://rdcu.be/d5x08) 
-+ [Code](https://github.com/kisnikser/Posterior-Distributions-Proximity)
-+ [Video](https://www.youtube.com/watch?v=WnIRaRl730A&t=1728s)
-
----
-
-##### Abstract
-
-The issue of sample size determination is crucial for constructing an effective machine learning model. However, the existing methods for determining a sufficient sample size are either not strictly proven, or relate to the specific statistical hypothesis about the distribution of model parameters. In this paper we present two approaches based on the proximity of posterior distributions of model parameters on similar subsamples. We show that these two methods are valid for the model with normal posterior distribution of parameters. Computational experiments demonstrate the convergence of the proposed functions as the sample size increases. We also compare the proposed methods with other approaches on different datasets.
-
----
-
-##### Figure 1: Overview
-
-![](posterior.png)
-
----
-
-##### Citation
-
-```BibTeX
-@article{kiselev2025ssdposterior,
-  author = {Kiselev, Nikita and Grabovoy, Andrey},
-  title = {Sample size determination: posterior distributions proximity},
-  journal = {Computational Management Science},
-  year = {2025},
-  volume = {22},
-  number = {1},
-  pages = {1}
-}
-```
-
-<!-- ---
-
-##### Related material
-
-+ [Presentation slides](presentation1.pdf)
-+ [Summary of the paper](https://www.penguinrandomhouse.com/books/110403/unusual-uses-for-olive-oil-by-alexander-mccall-smith/) -->
