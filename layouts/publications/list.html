@@ -4,14 +4,15 @@
   <h1>{{ .Title }}</h1>
 </header>
 
-{{- $journals := where .RegularPages "Params.venue.type" "journal" }}
+{{- $reports := where .RegularPages "Params.venue.type" "report" }}
 {{- $conferences := where .RegularPages "Params.venue.type" "conference" }}
-{{- $other := where .RegularPages "Params.venue.type" "in" (slice "preprint" "report") }}
+{{- $journals := where .RegularPages "Params.venue.type" "journal" }}
+{{- $preprints := where .RegularPages "Params.venue.type" "preprint" }}
 {{- $n := 0 }}
 
-{{- with $journals.ByDate.Reverse }}
+{{- with $reports.ByDate.Reverse }}
 <section class="entry-group">
-  <h2 class="entry-notes-title">Journal articles</h2>
+  <h2 class="entry-notes-title">Technical Reports</h2>
   <div class="entry-list">
     {{- range $i, $p := . }}
     {{- partial "entry_row.html" (dict "page" $p "num" (add $n (add $i 1))) }}
@@ -23,7 +24,7 @@
 
 {{- with $conferences.ByDate.Reverse }}
 <section class="entry-group">
-  <h2 class="entry-notes-title">Conference papers</h2>
+  <h2 class="entry-notes-title">Conference Proceedings</h2>
   <div class="entry-list">
     {{- range $i, $p := . }}
     {{- partial "entry_row.html" (dict "page" $p "num" (add $n (add $i 1))) }}
@@ -33,9 +34,21 @@
 {{- $n = add $n (len .) }}
 {{- end }}
 
-{{- with $other.ByDate.Reverse }}
+{{- with $journals.ByDate.Reverse }}
 <section class="entry-group">
-  <h2 class="entry-notes-title">Preprints and reports</h2>
+  <h2 class="entry-notes-title">Journal Papers</h2>
+  <div class="entry-list">
+    {{- range $i, $p := . }}
+    {{- partial "entry_row.html" (dict "page" $p "num" (add $n (add $i 1))) }}
+    {{- end }}
+  </div>
+</section>
+{{- $n = add $n (len .) }}
+{{- end }}
+
+{{- with $preprints.ByDate.Reverse }}
+<section class="entry-group">
+  <h2 class="entry-notes-title">Preprints</h2>
   <div class="entry-list">
     {{- range $i, $p := . }}
     {{- partial "entry_row.html" (dict "page" $p "num" (add $n (add $i 1))) }}
@@ -47,7 +60,7 @@
 
 {{- with hugo.Data.theses }}
 <section class="entry-notes">
-  <h2 class="entry-notes-title">Conference abstracts</h2>
+  <h2 class="entry-notes-title">Conference Abstracts</h2>
   {{- range $i, $note := sort . "year" "desc" }}
   <article class="entry-row entry-row-plain entry-row-thin entry-row-numbered">
     <span class="entry-num">[{{ add $n (add $i 1) }}]</span>

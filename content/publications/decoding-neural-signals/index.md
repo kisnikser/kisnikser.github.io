@@ -17,7 +17,7 @@ links:
     arxiv: # TODO
     openreview: # TODO
     draft: # TODO
-    code: "https://doi.org/10.1007/s10287-024-00528-9"
+    code: "https://github.com/intsystems/CreationOfIntelligentSystems_Simultaneous_fMRI-EEG"
     slides: # TODO
     poster: # TODO
     video: # TODO

@@ -51,19 +51,6 @@
     poster: # TODO
     video: # TODO
     doi: "https://old.mipt.ru/upload/medialibrary/1e0/konferentsiya_5_fpmi.pdf"
-- title: "ConvNets landscape convergence: Hessian-based analysis of matricized networks"
-  authors: ["Vladislav Meshkov", "Nikita Kiselev", "Andrey Grabovoy"]
-  venue: "Proceedings of the 67th MIPT All-Russian Scientific Conference"
-  year: 2025
-  links:
-    arxiv: # TODO
-    openreview: # TODO
-    draft: # TODO
-    code: # TODO
-    slides: # TODO
-    poster: # TODO
-    video: # TODO
-    doi: "https://old.mipt.ru/upload/medialibrary/1e0/konferentsiya_5_fpmi.pdf"
 - title: "Determining a sufficient sample size from the posterior distribution of model parameters"
   authors: ["Nikita Kiselev", "Andrey Grabovoy"]
   venue: "Proceedings of the 66th MIPT All-Russian Scientific Conference"

@@ -1,3 +1,7 @@
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "resume"]
+	path = resume
+	url = https://github.com/kisnikser/resume.git
+	branch = main
