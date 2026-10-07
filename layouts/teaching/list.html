@@ -12,8 +12,18 @@
       <h2 class="entry-title">{{ .Title }}</h2>
       {{- with .Summary }}
       {{- $parts := split . ". " }}
-      <p class="entry-meta">
-        <span class="venue-name">{{ index $parts 0 }}</span>
+      {{- $head := index $parts 0 }}
+      {{- $bits := split $head ", " }}
+      {{- $nbits := len $bits }}
+      {{- $role := $head }}
+      {{- $place := "" }}
+      {{- if gt $nbits 1 }}
+        {{- $role = delimit (first (sub $nbits 1) $bits) ", " }}
+        {{- $place = index $bits (sub $nbits 1) }}
+      {{- end }}
+      <p class="entry-meta entry-lines">
+        <span>{{ $role }}</span>
+        {{- with $place }}<span class="venue-name">{{ . }}</span>{{ end }}
         {{- with index $parts 1 }}<span class="entry-year">{{ strings.TrimSuffix "." . }}</span>{{ end }}
       </p>
       {{- end }}

@@ -1,11 +1,13 @@
 ---
 title: "Subspace of Maximum Curvature for Loss Landscape Stabilization"
 date: 2026-09-28T16:00:00
-lastmod: 2026-10-06
-tags: ["sufficient sample size", "loss landscape convergence", "hessian"]
 author: ["Nikita Kiselev", "Andrey Grabovoy"]
-description:
-summary: "16st International Conference on Intellectual Data Processing"
+summary: # TODO
+
+venue:
+    type: # TODO
+    name: "16th International Conference on Intelligent Data Processing: Theory and Applications"
+    badges: # TODO
 links:
     arxiv: # TODO
     openreview: # TODO
@@ -15,8 +17,5 @@ links:
     poster: # TODO
     video: # TODO
     doi: # TODO
-editPost:
-    URL: # TODO
-    Text: # TODO
 
 ---

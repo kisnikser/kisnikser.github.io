@@ -1,19 +1,29 @@
 ---
 title: "Diffusion Models"
 date: 2024-11-01
-lastmod: 2026-09-18
-tags: ["diffusion models", "generative AI", "teaching"]
 author: ["Nikita Kiselev"]
-description:
 summary: "Instructor, Standard Data × Sber University. Nov 2024 – Present."
-page: # TODO
+
+venue:
+    type: # TODO
+    name: # TODO
+    badges: # TODO
+links:
+    arxiv: # TODO
+    openreview: # TODO
+    draft: # TODO
+    code: # TODO
+    slides: # TODO
+    poster: # TODO
+    video: # TODO
+    doi: # TODO
 playlists:
-    - year: 2026
-      url: # TODO
-    - year: 2025
-      url: # TODO
-    - year: 2024
-      url: # TODO
+    - year: "2026"
+      url: null
+    - year: "2025"
+      url: null
+    - year: "2024"
+      url: null
 
 ---
 

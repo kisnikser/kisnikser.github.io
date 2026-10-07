@@ -1,21 +1,13 @@
 ---
 title: "Just Relax It! Leveraging relaxation for discrete variables optimization"
 date: 2024-12-07
-lastmod: 2026-10-05
-tags:
-  [
-    "Relaxation",
-    "Gumbel-Softmax",
-    "Straight-Through Estimator",
-    "Python",
-    "Library",
-    "Package",
-    "PyTorch",
-    "Pyro",
-  ]
 author: ["Daniil Dorin", "Igor Ignashin", "Nikita Kiselev", "Andrey Veprikov"]
-description:
 summary: "We release a cutting-edge Python library designed to streamline the optimization of discrete probability distributions in neural networks, offering a suite of advanced relaxation techniques compatible with PyTorch."
+
+venue:
+    type: # TODO
+    name: # TODO
+    badges: # TODO
 links:
     arxiv: # TODO
     openreview: # TODO
@@ -26,14 +18,10 @@ links:
     video: # TODO
     doi: # TODO
 cover:
-  image: "overview.png"
-  alt: "Overview"
-  relative: true
-editPost:
-  URL: https://github.com/intsystems/relaxit
-  Text: GitHub
+    image: "overview.png"
+    alt: "Overview"
+    relative: true
 showToc: true
-showReadingTime: true
 math: true
 
 ---

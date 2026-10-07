@@ -6,11 +6,15 @@
 <html lang="{{ site.Language }}" dir="auto">
 
 <head>
-    {{- partial "head.html" . }}
+    {{- $head := partial "head.html" . -}}
+    {{- if eq .Kind "404" -}}
+    {{- $head = replace $head "<title>404 Page not found | Nikita Kiselev</title>" "<title>Page not found | Nikita Kiselev</title>" -}}
+    {{- end -}}
+    {{- $head | safeHTML -}}
 </head>
 
 <body class="
-{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
+{{- if ne .Kind `page` -}}
 {{- print "list" -}}
 {{- end -}}
 {{- if eq site.Params.defaultTheme `dark` -}}

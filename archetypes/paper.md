@@ -1,20 +1,22 @@
 ---
-title: "Paper Title (less than 70 characters)" 
+title: "Paper Title"
 date: 2012-06-01
-url: /paper/
-aliases: 
-    - /old_url.html
-tags: ["keyword 1","keyword 2","keyword 3","keyword 4","keyword 5","keyword 6","keyword 7","keyword 8"]
 author: ["Paper Author 1", "Paper Author 2"]
-description: "Paper description for search engines (less than 155 characters)" 
-summary: "Paper summary for list page (less than 265 characters)"
-cover:
-    image: "/paper_figure.png"
-    alt: "Figure title (preferably 16:9 ratio: 1280x720 pixels)"
-    relative: false
-editPost:
-    URL: "https://doi.org/paper_doi"
-    Text: "Journal/Repository Name"
+summary: # TODO
+
+venue:
+    type: # TODO
+    name: # TODO
+    badges: # TODO
+links:
+    arxiv: # TODO
+    openreview: # TODO
+    draft: # TODO
+    code: # TODO
+    slides: # TODO
+    poster: # TODO
+    video: # TODO
+    doi: # TODO
 
 ---
 

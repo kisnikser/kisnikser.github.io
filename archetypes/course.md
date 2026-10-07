@@ -1,22 +1,22 @@
 ---
-title: "Course Title (less than 70 characters)" 
+title: "Course Title"
 date: 2006-03-15
-url: /course/
-aliases:
-    - /old_url.html
-tags: ["keyword 1","keyword 2","keyword 3","keyword 4","keyword 5","keyword 6","keyword 7","keyword 8"]
 author: ["Course Author 1", "Course Author 2"]
-description: "Course description for search engines (less than 155 characters)" 
-summary: "Course summary for list page (less than 265 characters)
-cover:
-    image: "/course_figure.png"
-    alt: "Figure title (preferably 16:9 ratio: 1280x720 pixels)"
-    relative: false
-editPost:
-    URL: "https://youtube.com/course_playlist"
-    Text: "YouTube playlist"
-disableAnchoredHeadings: false
-showToc: true
+summary: # TODO
+
+venue:
+    type: # TODO
+    name: # TODO
+    badges: # TODO
+links:
+    arxiv: # TODO
+    openreview: # TODO
+    draft: # TODO
+    code: # TODO
+    slides: # TODO
+    poster: # TODO
+    video: # TODO
+    doi: # TODO
 
 ---
 

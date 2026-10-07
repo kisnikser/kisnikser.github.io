@@ -78,8 +78,16 @@
     font-weight: 400;
 }
 
-.entry-year,
-.venue-details {
+.entry-meta.entry-lines {
+    display: flex;
+    flex-direction: column;
+}
+
+.entry-meta.entry-lines > :not(:last-child)::after {
+    content: none;
+}
+
+.entry-year {
     font-weight: 400;
     font-style: normal;
 }
@@ -241,14 +249,6 @@
     margin-bottom: 0.55rem;
 }
 
-.venue-name {
-    font-style: italic;
-}
-
-.venue-note {
-    color: var(--secondary);
-}
-
 .badge {
     display: inline;
     padding: 0;
@@ -312,9 +312,6 @@ body.dark,
 
 /* The page canvas is --code-bg, so chips that reuse it disappear in the light theme. */
 body:not(.dark) .toc,
-body:not(.dark) .post-content :not(pre) > code,
-body:not(.dark) .post-tags a,
-body:not(.dark) .share-buttons,
-body:not(.dark) .paginav {
+body:not(.dark) .post-content :not(pre) > code {
     background: var(--entry);
 }

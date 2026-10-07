@@ -39,20 +39,18 @@
         {{- with $p.Params.author }}
         <div class="entry-authors">{{ partial "author_list.html" $p }}</div>
         {{- end }}
-        {{- if or $p.Params.venue (eq $p.Section "talks") }}
-        <div class="entry-meta">
-            {{- if $p.Params.venue -}}
+        {{- if or $p.Params.venue.name (eq $p.Section "talks") }}
+        <div class="entry-meta{{ if eq $p.Section "talks" }} entry-lines{{ end }}">
+            {{- with $p.Params.venue.name }}
                 <span class="venue-cite">
-                    {{- with $p.Params.venue.name }}<span class="venue-name">{{ . }}</span>{{ end }}
-                    {{- with $p.Params.venue.details }}, <span class="venue-details">{{ . }}</span>{{ end }}
-                    {{- if eq (len $venueYear) 0 }}, <span class="entry-year">{{ $p.Date.Format "2006" }}</span>{{ end }}
+                    <span class="venue-name">{{ . }}</span>
+                    {{- if and (ne $p.Section "talks") (eq (len $venueYear) 0) }}, <span class="entry-year">{{ $p.Date.Format "2006" }}</span>{{ end }}
                 </span>
-                {{- range $p.Params.venue.badges }}<span class="badge"><span>{{ . }}</span></span>{{ end }}
-                {{- with $p.Params.venue.note }}<span class="venue-note">{{ . }}</span>{{ end }}
-            {{- else -}}
-                {{- with $p.Summary }}<span class="venue-name">{{ . }}</span>{{ end }}
+            {{- end }}
+            {{- if eq $p.Section "talks" }}
                 <span class="entry-year">{{ $p.Date.Format "January 2, 2006" }}</span>
             {{- end }}
+            {{- range $p.Params.venue.badges }}<span class="badge"><span>{{ . }}</span></span>{{ end }}
         </div>
         {{- end }}
         {{- if and (not $summaryDup) (or (and (not $showAbstract) (ne $p.Section "talks") $summary) (and (eq $p.Section "projects") $summary)) }}
@@ -62,8 +60,7 @@
         {{- range $key := $order -}}
             {{- if index $linkMap $key }}{{ $hasLink = true }}{{ end -}}
         {{- end -}}
-        {{- $showEdit := and $p.Params.editPost.URL (not (index $linkMap "draft")) (not (index $linkMap "code")) -}}
-        {{- if or $hasLink $showEdit $showAbstract $bib }}
+        {{- if or $hasLink $showAbstract $bib }}
         <div class="entry-actions">
             {{- with $linkMap -}}
                 {{- $links := . -}}
@@ -72,9 +69,6 @@
                         <span class="entry-action"><a href="{{ . }}"{{- if hasPrefix . "http" }} target="_blank" rel="noopener noreferrer"{{- end }}>{{ index $labels $key }}</a></span>
                     {{- end -}}
                 {{- end -}}
-            {{- end -}}
-            {{- if $showEdit -}}
-                <span class="entry-action"><a href="{{ $p.Params.editPost.URL }}"{{- if hasPrefix $p.Params.editPost.URL "http" }} target="_blank" rel="noopener noreferrer"{{- end }}>{{ $p.Params.editPost.Text | default "Link" }}</a></span>
             {{- end -}}
             {{- if $showAbstract -}}
                 <details class="entry-fold entry-action">

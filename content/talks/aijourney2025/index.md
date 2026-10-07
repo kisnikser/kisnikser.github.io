@@ -1,11 +1,13 @@
 ---
 title: "Kandinsky: launching and fine-tuning image and video generation models"
 date: 2025-11-20
-lastmod: 2026-10-05
-tags: ["diffusion models", "generative AI", "Kandinsky"]
 author: ["Nikita Kiselev"]
-description:
-summary: "AI Journey"
+summary: # TODO
+
+venue:
+    type: # TODO
+    name: "AI Journey"
+    badges: # TODO
 links:
     arxiv: # TODO
     openreview: # TODO
@@ -15,8 +17,5 @@ links:
     poster: # TODO
     video: "https://youtu.be/796HaXKMJL8?si=Yq2CzJaBvhJaHnEa"
     doi: # TODO
-editPost:
-    URL: # TODO
-    Text: # TODO
 
 ---

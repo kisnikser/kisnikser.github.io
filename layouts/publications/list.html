@@ -10,18 +10,6 @@
 {{- $preprints := where .RegularPages "Params.venue.type" "preprint" }}
 {{- $n := 0 }}
 
-{{- with $reports.ByDate.Reverse }}
-<section class="entry-group">
-  <h2 class="entry-notes-title">Technical Reports</h2>
-  <div class="entry-list">
-    {{- range $i, $p := . }}
-    {{- partial "entry_row.html" (dict "page" $p "num" (add $n (add $i 1))) }}
-    {{- end }}
-  </div>
-</section>
-{{- $n = add $n (len .) }}
-{{- end }}
-
 {{- with $conferences.ByDate.Reverse }}
 <section class="entry-group">
   <h2 class="entry-notes-title">Conference Proceedings</h2>
@@ -37,6 +25,18 @@
 {{- with $journals.ByDate.Reverse }}
 <section class="entry-group">
   <h2 class="entry-notes-title">Journal Papers</h2>
+  <div class="entry-list">
+    {{- range $i, $p := . }}
+    {{- partial "entry_row.html" (dict "page" $p "num" (add $n (add $i 1))) }}
+    {{- end }}
+  </div>
+</section>
+{{- $n = add $n (len .) }}
+{{- end }}
+
+{{- with $reports.ByDate.Reverse }}
+<section class="entry-group">
+  <h2 class="entry-notes-title">Technical Reports</h2>
   <div class="entry-list">
     {{- range $i, $p := . }}
     {{- partial "entry_row.html" (dict "page" $p "num" (add $n (add $i 1))) }}

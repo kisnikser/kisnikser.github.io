@@ -1,23 +1,20 @@
-{{- /*
-  Renders the venue line (journal/conference name + quartile/rank badges + a free-form note) and the
-  row of link pills, from the `venue` and `links` front-matter fields. Used on Publications list and
-  detail pages; both blocks are skipped when the corresponding field isn't set, so thin entries (no
-  links yet) still render cleanly.
-*/ -}}
-{{- with .Params.venue }}
+{{- /* Venue name, badges, and link pills. Empty values are skipped. */ -}}
+{{- $venue := .Params.venue -}}
+{{- if or $venue.name $venue.badges }}
 <div class="venue-meta">
-    <span class="venue-cite">
-        {{- with .name }}<span class="venue-name">{{ . }}</span>{{ end }}
-        {{- with .details }}, <span class="venue-details">{{ . }}</span>{{ end }}
-    </span>
-    {{- range .badges }}<span class="badge"><span>{{ . }}</span></span>{{ end }}
-    {{- with .note }}<span class="venue-note">{{ . }}</span>{{ end }}
+    {{- with $venue.name }}
+    <span class="venue-cite"><span class="venue-name">{{ . }}</span></span>
+    {{- end }}
+    {{- range $venue.badges }}<span class="badge"><span>{{ . }}</span></span>{{ end }}
 </div>
 {{- end }}
 {{- with .Params.links }}
 {{- $order := slice "arxiv" "openreview" "draft" "code" "slides" "poster" "video" "doi" }}
 {{- $labels := dict "arxiv" "arXiv" "openreview" "OpenReview" "draft" "Draft" "code" "Code" "slides" "Slides" "poster" "Poster" "video" "Video" "doi" "DOI" }}
 {{- $links := . }}
+{{- $any := false }}
+{{- range $key := $order }}{{ if index $links $key }}{{ $any = true }}{{ end }}{{ end }}
+{{- if $any }}
 <div class="link-pills">
     {{- range $key := $order }}
     {{- with index $links $key }}
@@ -25,4 +22,5 @@
     {{- end }}
     {{- end }}
 </div>
+{{- end }}
 {{- end }}

@@ -1,11 +1,13 @@
 ---
 title: "Hessian-based convergence analysis of convolutional network loss landscapes"
 date: 2024-12-12
-lastmod: 2026-10-05
-tags: ["convolutional neural network", "Hessian matrix", "loss function landscape"]
 author: ["Vladislav Meshkov", "Nikita Kiselev", "Andrey Grabovoy"]
-description:
-summary: "Ivannikov ISPRAS Open Conference"
+summary: # TODO
+
+venue:
+    type: # TODO
+    name: "Ivannikov ISP RAS Open Conference"
+    badges: # TODO
 links:
     arxiv: # TODO
     openreview: # TODO
@@ -15,8 +17,5 @@ links:
     poster: # TODO
     video: # TODO
     doi: # TODO
-editPost:
-  URL: # TODO
-  Text: # TODO
 
 ---

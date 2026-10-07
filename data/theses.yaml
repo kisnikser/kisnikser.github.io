@@ -14,7 +14,7 @@
     doi: "https://mipt.ru/upload/%D0%9E%D0%9A%D0%9F%D0%98/+@%2007%20%D0%A4%D0%9F%D0%9C%D0%98-2026.pdf"
 - title: "Sufficient sample size and its connection to the loss landscape convergence"
   authors: ["Nikita Kiselev", "Vladislav Meshkov", "Andrey Grabovoy"]
-  venue: "Abstracts of the 22nd All-Russian Conference on Mathematical Methods for Pattern Recognition"
+  venue: "Abstracts of the 22nd All-Russian Conference with International Participation “Mathematical Methods of Pattern Recognition”"
   year: 2025
   links:
     arxiv: # TODO
@@ -27,7 +27,7 @@
     doi: "https://www.elibrary.ru/item.asp?id=83055790&pff=1"
 - title: "Decoding visual stimuli from multimodal brain signals"
   authors: ["Daniil Dorin", "Nikita Kiselev", "Andrey Grabovoy"]
-  venue: "Abstracts of the 22nd All-Russian Conference on Mathematical Methods for Pattern Recognition"
+  venue: "Abstracts of the 22nd All-Russian Conference with International Participation “Mathematical Methods of Pattern Recognition”"
   year: 2025
   links:
     arxiv: # TODO
