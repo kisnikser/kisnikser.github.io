@@ -250,24 +250,33 @@
 }
 
 .badge {
+    --badge-bg: var(--lightcolor);
+    --badge-border: color-mix(in srgb, var(--darkcolor) 42%, var(--border));
     display: inline;
-    padding: 0;
-    font-weight: 400;
-    white-space: nowrap;
-}
-
-.badge > span {
-    display: inline-block;
-    padding: 0 0.4em;
-    border: 1px solid color-mix(in srgb, var(--darkcolor) 42%, var(--border));
+    padding: 0.12em 0.4em;
+    border: 1px solid var(--badge-border);
     border-radius: 3px;
-    background: var(--lightcolor);
+    background: var(--badge-bg);
     color: var(--primary);
-    font-size: inherit;
     font-weight: 600;
     letter-spacing: 0.02em;
     line-height: 1.35;
+    white-space: normal;
     vertical-align: 0.05em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.badge > span {
+    display: inline;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
 }
 
 .link-pills {
