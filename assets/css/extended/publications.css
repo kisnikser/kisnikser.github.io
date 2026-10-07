@@ -25,7 +25,8 @@
     line-height: calc(1.125rem * 1.4);
 }
 
-.entry-list .entry-row:last-child {
+.entry-list .entry-row:last-child,
+.entry-notes .entry-row:last-child {
     border-bottom: none;
 }
 
@@ -307,4 +308,13 @@ html.dark,
 body.dark,
 .dark.list {
     background: var(--theme);
+}
+
+/* The page canvas is --code-bg, so chips that reuse it disappear in the light theme. */
+body:not(.dark) .toc,
+body:not(.dark) .post-content :not(pre) > code,
+body:not(.dark) .post-tags a,
+body:not(.dark) .share-buttons,
+body:not(.dark) .paginav {
+    background: var(--entry);
 }
