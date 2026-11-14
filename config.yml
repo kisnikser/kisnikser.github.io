@@ -59,11 +59,11 @@ params:
           enabled: true
           title: Nikita Kiselev
           subtitle: |-
-            **Senior ML Research Engineer**
+            **Lead Research Engineer, Image Alignment**
             >
             I am a PhD student in Artificial Intelligence and Machine Learning in the Intelligent Systems Department at Moscow Institute of Physics and Technology. Prior to that, I received my master's degree in Computer Science and my bachelor's degree in Applied Mathematics and Physics there.
             >
-            Currently, I am a Senior Research Engineer at Kandinsky Lab.
+            Currently, I am a Lead Research Engineer at Kandinsky Lab, where I lead image alignment (SFT and RL) for Kandinsky 7.0 Image.
             >
             My research interests include Generative AI, Computer Vision, and Optimization.
           imageUrl: "photo.jpg"
